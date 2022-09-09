@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+
+<html lang="en">
+   <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet" href="calendar.css">
+   
+
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    
+    
+    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
+
+  <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
+<link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    
+    
+  </head>
+  
+  
+  <body>
+ 
+    
+    <nav>
+      <div class="topnav" id="myTopnav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a style="color: #32b3a3" href="calendar.html">Calendar</a>
+        <div class="dropdown">
+          <button class="dropbtn">
+            Themes
+            <i class="fa fa-caret-down"></i>
+          </button>
+
+          <div class="dropdown-content">
+            <a href="reforestation.html">Reforestation</a>
+            <a href="pollution.html">Physical Pollution</a>
+            <a href="transportation.html">Transportation</a>
+            <a href="plant.html" style="padding-bottom: 20px">Sustainable Agriculture</a>
+          </div>
+        </div>
+        <a href="blog.html">News Updates</a>
+        <a href="contact.html">Contact</a>
+
+        <div class="loginstuff">
+          <a class="exr" href="index.html">Home</a>
+
+          <button id="modal-btn" class="butt">Register Now &#8594;</button>
+
+          <div id="my-modal" class="modal">
+            <div class="modal-content">
+              <div class="modal-header">
+                <span class="close"
+                  ><i class="fa fa-times-circle" aria-hidden="true"></i
+                ></span>
+              </div>
+
+              <div class="modal-body">
+                <h2>Register</h2>
+                <p>
+                  Please complete the form to register for our event.
+                </p>
+                <div class="form">
+                  <form>
+                    <input
+                      type="text"
+                      name="username"
+                      placeholder="Full Name"
+                    />
+                    <input type="text" name="username" placeholder="Email" />
+                    <input
+                      type="text"
+                      name="username"
+                      placeholder="Phone Number"
+                    />
+                    <button>Submit</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <script>
+            // Get DOM Elements
+            const modal = document.querySelector("#my-modal");
+            const modalBtn = document.querySelector("#modal-btn");
+            const closeBtn = document.querySelector(".close");
+
+            // Events
+            modalBtn.addEventListener("click", openModal);
+            closeBtn.addEventListener("click", closeModal);
+            window.addEventListener("click", outsideClick);
+
+            // Open
+            function openModal() {
+              modal.style.display = "block";
+            }
+
+            // Close
+            function closeModal() {
+              modal.style.display = "none";
+            }
+
+            // Close If Outside Click
+            function outsideClick(e) {
+              if (e.target == modal) {
+                modal.style.display = "none";
+              }
+            }
+          </script>
+        </div>
+
+        <a
+          href="javascript:void(0);"
+          style="font-size: 20px; padding-right: 20px"
+          class="icon"
+          onclick="myFunction()"
+          >&#9776;</a
+        >
+      </div>
+    </nav>
+    
+    
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+    </script>
+  
+    
+    
+    
+  
+  <div class="back">
+    
+    
+  <div class="container" id="calendar">
+  <div class="row">
+    <div class="col-12">
+      <div class="row day-columns">
+        <div class="day-column">
+          <div class="day-header">Friday</div>
+          <div class="day-content">
+            <div class = "begin">
+            <div class="event">
+                <span class="title">5:00 </span>
+                <footer>
+                 <!-- <span>4 Assets</span>-->
+                  <span>Day 1 Begins!</span>
+                </footer>
+            </div>
+              </div>
+            <div class = "speaker">
+            <div class="event">
+                <span class="title">5:15-6:15 PM </span>
+                <footer>
+              
+                  <span>We start off with our first activist booth session with our guest speaker, Ioan M Magee.
+</span>
+                </footer>
+            </div>
+            </div>
+            <div class = "food">
+            <div class="event ">
+                <span class="title">6:30-7:30 PM</span>
+                <footer>
+                  <span>Dinner Break!</span>
+                </footer>
+            </div>
+            </div>
+            <div class = "expo">
+            <div class="event">
+                <span class="title">7:30-9:00 PM</span>
+                <footer>
+             
+                  <span>We continue with a presentation about our Climate Literacy Project.</span>
+                </footer>
+            </div>
+            </div>
+          </div>
+        </div>
+        <div class="day-column">
+          <div class="day-header">Saturday</div>
+          <div class="day-content">
+            <div class = "begin">
+            <div class="event">
+                <span class="title">9 AM </span>
+                <footer>
+                 
+                  <span>Day 2 Begins!</span>
+                  
+                </footer>
+            </div>
+            </div>
+            <div class = "speaker">
+            <div class="event">
+                <span class="title">9:15-10:15 AM</span>
+                <footer>
+              
+                  <span>Listen to Osbeorn I Howard and his fight against deforestation.
+</span>
+                </footer>
+            </div>
+            </div>
+            <div class = "expo">
+            <div class="event">
+                <span class="title"> 10:30-12:30 PM
+</span>
+                <footer>
+               
+                  <span>Plant Together Event!</span>
+                </footer>
+            </div>
+            </div>
+            <div class = "food">
+            <div class="event">
+                <span class="title">12:30-2:30 PM </span>
+                <footer>
+                  
+                  <span>Join us for a virtual luncheon, where we honor all our donors.
+</span>
+                </footer>
+            </div>
+            </div>
+            <div class = "expo">
+            <div class="event">
+                <span class="title">3:00-4:00 PM </span>
+                <footer>
+                
+                  <span>We continue with a presentation about our Reforestation Program. 
+</span>
+                </footer>
+            </div>
+            </div>
+            <div class = "expo">
+            <div class="event ">
+                <span class="title">4:15-5:00 PM</span>
+                <footer>
+               
+                  <span>End the day with a presentation about our Global Trash Pickup. 
+</span>
+                  
+                </footer>
+            </div>
+            </div>
+          </div>
+        </div>
+        <div class="day-column">
+          <div class="day-header">Sunday</div>
+          <div class="day-content">
+            <div class = "begin">
+            <div class="event">
+                <span class="title">9:00 AM</span>
+                <footer>
+                  
+                  <span>Day 3 begins!</span>
+                  
+                </footer>
+            </div>
+            </div>
+            <div class = "speaker">
+            <div class="event">
+                <span class="title">9:15-10:15 AM</span>
+                <footer>
+                  
+                  <span>We begin the day with another activist booth session, featuring Marta K Bello. 
+</span>
+                </footer>
+            </div>
+            </div>
+            <div class = "expo">
+            <div class="event ">
+                <span class="title">10:30-12:00 PM</span>
+                <footer>
+                 
+                  <span>Listen to our presentation about our Regenerative Agricultural Initiative. 
+</span>
+                </footer>
+            </div>
+            </div>
+            <div class = "food">
+            <div class="event ">
+                <span class="title">12:30-1:30 PM</span>
+                <footer>
+               
+                  <span>Lunch break!</span>
+                </footer>
+            </div>
+            </div>
+            <div class = "speaker">
+            <div class="event">
+                <span class="title">1:30-2:00 PM</span>
+                <footer>
+                
+                  <span>We continue after lunch with a presentation from Esteve O Amhalghaidh. 
+</span>
+                  
+                </footer>
+            </div>
+            </div>
+            <!--<div class = "speaker">
+            <div class="event">
+                <span class="title">2:15-3:15 PM</span>
+                <footer>
+                  
+                  <span>Conclude our activist booths with Lakshmi K Abramsen as she shares her presentation. 
+</span>
+                  
+                </footer>
+            </div>
+            </div>-->
+            <div class = "expo">
+            <div class="event">
+                <span class="title">2:15-4:00 PM</span>
+                <footer>
+                  
+                  <span>Tune in to our award ceremony for our Recycling Program. 
+</span>
+                  
+                </footer>
+            </div>
+            </div>
+          </div>
+        </div>
+      
+        
+       
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+    
+    
+    
+      <!---Footer---->
+   
+
+<footer class="footer">
+<div class="l-footer">
+<h1>CC22 Summit</h1>
+<p>
+CC22 Summit is a climate conference dedicated to teaching others about the devastating effects of climate change and what we can do to combat it. Our mission is to ensure that our planet will be habitable for our future generations.
+  </p>
+  </div>
+<ul class="r-footer">
+<li>
+  <h2>
+Conference</h2>
+<ul class="box">
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="calendar.html">Calendar</a></li>
+</ul>
+</li>
+
+  <li>
+  <h2>
+Themes</h2>
+<ul class="box">
+<li><a href="plant.html">Plant-A-Tree</a></li>
+<li><a href="recycling.html">Recycling Competition</a></li>
+<li><a href="speakers.html">Speakers</a></li>
+<li><a href="projects.html">Projects</a></li>
+</ul>
+</li>
+  
+  <li>
+  <h2>
+More</h2>
+<ul class="box">
+<li><a href="blog.html">News Updates</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</li>
+  
+  
+</ul>
+
+</footer>
+    
+    
+    
+    
+  </body>
+  
+</html>

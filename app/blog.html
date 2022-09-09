@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="stylesheet" href="blog.css" />
+
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <nav>
+      <div class="topnav" id="myTopnav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="schedule.html">Schedule</a>
+        <div class="dropdown">
+          <button class="dropbtn">
+            Themes
+            <i class="fa fa-caret-down"></i>
+          </button>
+
+          <div class="dropdown-content">
+            <a href="reforestation.html">Reforestation</a>
+            <a href="pollution.html">Physical Pollution</a>
+            <a href="transportation.html">Transportation</a>
+            <a href="plant.html" style="padding-bottom: 20px">Sustainable Agriculture</a>
+          </div>
+        </div>
+        <a style="color: #32b3a3" href="blog.html">News Updates</a>
+                <a href="donation.html">Take Action</a>
+
+        <a href="contact.html">Contact</a>
+
+   <div class="loginstuff">
+
+          <button id="modal-btn" class="butt">Register Now &#8594;</button>
+          
+          
+          
+          
+
+          <div id="my-modal" class="modal">
+            
+            
+            
+            <div class="modal-content">
+              <div class="modal-header">
+                <span class="close"
+                  ><i class="fa fa-times-circle" aria-hidden="true"></i
+                ></span>
+              </div>
+
+              <div class="modal-body">
+                <h2>Register</h2>
+                
+                 <div id="thanks" style="display: none;">
+            <p style="font-size: 20px;">
+             Thanks for registering! See you soon!
+            </p>
+          </div>
+                
+                <div id="hide">
+                  
+              
+                <p>Please complete the form to register for our event.</p>
+                <div class="form" >
+                  <form>
+                    <input
+                      type="text"
+                      name="username"
+                      placeholder="Full Name"
+                    />
+                    <input type="text" name="username" placeholder="Email" />
+                    <input
+                      type="text"
+                      name="username"
+                      placeholder="Phone Number"
+                    />
+                    <button type='button' onclick="showDiv()">Submit</button>
+                  </form>
+                </div>
+                    </div>
+              </div>
+            </div>
+          </div>
+
+          <script>
+            
+            
+          function showDiv() {
+            document.getElementById('thanks').style.display = "block";
+            document.getElementById('hide').style.display = "none";
+          }
+         
+            
+            // Get DOM Elements
+            const modal = document.querySelector("#my-modal");
+            const modalBtn = document.querySelector("#modal-btn");
+            const closeBtn = document.querySelector(".close");
+
+            // Events
+            modalBtn.addEventListener("click", openModal);
+            closeBtn.addEventListener("click", closeModal);
+            window.addEventListener("click", outsideClick);
+
+            // Open
+            function openModal() {
+              modal.style.display = "block";
+            }
+
+            // Close
+            function closeModal() {
+              modal.style.display = "none";
+            }
+
+            // Close If Outside Click
+            function outsideClick(e) {
+              if (e.target == modal) {
+                modal.style.display = "none";
+              }
+            }
+          </script>
+        </div>
+
+        <a
+          href="javascript:void(0);"
+          style="font-size: 20px; padding-right: 20px"
+          class="icon"
+          onclick="myFunction()"
+          >&#9776;</a
+        >
+      </div>
+    </nav>
+    
+
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+    </script>
+
+    <!-- End Header -->
+
+    <!-- ======= Hero Section ======= -->
+
+    <div class="test2-heading">
+      <div class="smallblurb1">
+       
+      </div>
+      <h1>News Updates</h1>
+    </div>
+
+    <div class="mainblog">
+      <div class="wrapper">
+        <div class="card">
+          <div class="card-banner">
+            <p class="tag news">News</p>
+            <img
+              class="banner-img"
+              src="https://images.unsplash.com/photo-1482192596544-9eb780fc7f66?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
+            />
+          </div>
+          <div class="card-body">
+            <p class="hashtag">04 March 2022</p>
+            <h2 class="blog-title">
+              Wildfires, Sea levels, and The Ozone.
+            </h2>
+            <p class="blog-description">
+              From rising sea levels to holes in the sky to another fire somewhere in California, detrimental natural disasters have become scarily more common in the past few decades. But why? Is it us, or is just nature responding to an ever-evolving world? Read more to find out…
+            </p>
+            <a class="blog-description" id="morelink" href="blogpage1.html">
+              Read More</a
+            >
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-banner">
+            <p class="tag news">News</p>
+            <img
+              class="banner-img"
+              src="https://images.unsplash.com/photo-1535438414045-70dbc0464d5a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
+            />
+          </div>
+          <div class="card-body">
+            <p class="hashtag">04 April 2022</p>
+            <h2 class="blog-title">
+Why Plants Can Save The World.            </h2>
+            <p class="blog-description">
+              	The power to save the world is just at your fingertips, ok, maybe, more in the house plants you raise. But what matters is you invest your time in making the world a better place, one plant at a time…
+            </p>
+            <a class="blog-description" id="morelink" href="blogpage3.html">
+              Read More</a
+            >
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-banner">
+            <p class="tag blog">Blog</p>
+            <img
+              class="banner-img"
+              src="https://images.unsplash.com/photo-1437964706703-40b90bdf563b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80"
+            />
+          </div>
+          <div class="card-body">
+            <p class="hashtag">01 Jan 2022</p>
+            <h2 class="blog-title">One Tree At A Time. </h2>
+            <p class="blog-description">
+              	One of the main goals of this organization is to raise awareness about deforestation, its effect on the environment, and climate change. Through our hands-on approach to planting trees, we've helped make a difference in what seems like an unsolvable issue. But why is this worth the attention and why is it so important for us and the people working with the organization? Read to find out more…
+            </p>
+            <a class="blog-description" id="morelink" href="blogpage5.html">
+              Read More</a
+            >
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-banner">
+            <p class="tag blog">Blog</p>
+            <img
+              class="banner-img"
+              src="https://cdn.glitch.global/a3e1e2df-01b9-4a3f-ba7e-87785f32b8ed/pexels-arnie-chou-927414.jpg?v=1649649055668"
+            />
+          </div>
+          <div class="card-body">
+            <p class="hashtag">11 March 2022</p>
+            <h2 class="blog-title">The Amazon Rainforest.</h2>
+            <p class="blog-description">
+             The Amazon is the most famous rainforest in the world. Home to species that you wouldn't even be able to imagine and people who originate from interesting backstories. The fight for its preservation and along with it ours starts now…
+
+            </p>
+            <a class="blog-description" id="morelink" href="blogpage4.html">
+              Read More</a
+            >
+          </div>
+        </div>
+
+        
+        <div class="card">
+          <div class="card-banner">
+            <p class="tag news">News</p>
+            <img
+              class="banner-img"
+              src="https://cdn.glitch.global/a3e1e2df-01b9-4a3f-ba7e-87785f32b8ed/pexels-jeanchristophe-andre%CC%81-2574983.jpg?v=1649649055570"
+            />
+          </div>
+          <div class="card-body">
+            <p class="hashtag">07 March 2022</p>
+            <h2 class="blog-title">
+             The Arctic.
+            </h2>
+            <p class="blog-description">
+              There's more than just glaciers melting, and a whole habitat being endangered and the rising heat has everything to do with it…
+
+            </p>
+            <a class="blog-description" id="morelink" href="blogpage2.html">
+              Read More</a
+            >
+          </div>
+        </div>
+
+      <div class="card">
+          <div class="card-banner">
+            <p class="tag blog">Blog</p>
+            <img
+              class="banner-img"
+              src="https://images.pexels.com/photos/4226140/pexels-photo-4226140.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+            />
+          </div>
+          <div class="card-body">
+            <p class="hashtag">19 March 2022</p>
+            <h2 class="blog-title">A List Of 8 Things You Need To Know For Your First Conference!</h2>
+            <p class="blog-description">
+              Read to find out just what you need know to be ready for your very first conference with us…
+            </p>
+            <a class="blog-description" id="morelink" href="blogpage6.html">
+              Read More</a
+            >
+          </div>
+        </div>
+      </div>
+      
+    </div>
+
+  
+      
+ <!-- footer -->
+    <div class="bottomfooter">
+      
+      <div class="custom-shape-divider-top-1644035655">
+    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M1200 0L0 0 598.97 114.72 1200 0z" class="shape-fill"></path>
+    </svg>
+</div>
+      
+      
+   <footer class="footer">
+  	 <div class="container">
+  	 	<div class="row">
+  	 		<div class="footer-col">
+  	 			<h4>CC22</h4>
+  	 			<ul>
+  	 				<li><a href="index.html">home</a></li>
+  	 				<li><a href="about.html">about us</a></li>
+  	 				<li><a href="blog.html">news updates</a></li>
+  	 			</ul>
+  	 		</div>
+  	 		<div class="footer-col">
+  	 			<h4>Themes</h4>
+  	 			<ul>
+  	 				<li><a href="reforestation.html">Reforestation</a></li>
+  	 				<li><a href="pollution.html">Physical Pollution</a></li>
+  	 				<li><a href="transportation.html">Transportation</a></li>
+  	 				<li><a href="plant.html">Sustainable Agriculture</a></li>
+  	 			</ul>
+  	 		</div>
+  	 		<div class="footer-col">
+  	 			<h4>event details</h4>
+  	 			<ul>
+              <li><a href="schedule.html">Schedule</a></li>
+  	 				 <li><a href="contact.html">contact us</a></li>
+
+  	 			</ul>
+  	 		</div>
+  	 		<div class="footer-col">
+  	 			<h4>More</h4>
+  	 			<ul>
+            <li><a href="donation.html">Take Action</a></li>
+  	 				<li><a href="about.html">citations</a></li>
+            
+  	 			</ul>
+          
+  	 		</div>
+  	 	</div>
+  	 </div>
+  
+  </footer>
+      
+      
+      
+            
+    </div>
+    
+
+      
+
+    <!--========== SCROLL REVEAL ==========-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!--========== MAIN JS ==========-->
+    <script src="main.js"></script>
+  </body>
+</html>

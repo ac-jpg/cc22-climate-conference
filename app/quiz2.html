@@ -1,0 +1,47 @@
+<html>
+  <head>
+    <title>Carbon Footprint Quiz</title>
+    <link href="quiz.css" rel="stylesheet">
+</head>
+
+<body>
+
+  
+    <div class="quiz-container">
+        <div class="title">Carbon Footprint Quiz</div>
+        <div id="question" class="question"></div>
+        <form action="/action_page.php">
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" value="Enter Value Here"><br>
+  <input type="submit" value="Submit">
+</form>
+        <label class="option">
+            <input type="radio" name="option" value="2" />
+            <span class="option2"></span>
+        </label>
+        <label class="option">
+            <input type="radio" name="option" value="3" />
+            <span class="option3"></span>
+        </label>
+       <label class="option">
+            <input type="radio" name="option" value="4" />
+            <span class="option4"></span>
+        </label>
+      <label class="option">
+            <input type="radio" name="option" value="5" />
+            <span class="option5"></span>
+        </label>
+        <!-- Buttons -->
+        <div class="controls">
+            <button class="previous">Previous</button>
+            <button class="next">Next</button>
+        </div>
+    </div>
+
+    <div class="result">
+
+    </div>
+  <script src="question.js"></script>
+</body>
+</html>
+    

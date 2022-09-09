@@ -1,0 +1,944 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet" href="reforestation.css">
+   
+
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=PlayfairDisplay:wght@400;700&display=swap" rel="stylesheet">
+  </head>
+  
+  
+  <body>
+  
+    <nav>
+      <div class="topnav" id="myTopnav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="schedule.html">Schedule</a>
+        <div class="dropdown">
+          <button class="dropbtn">
+            Themes
+            <i class="fa fa-caret-down"></i>
+          </button>
+
+          <div class="dropdown-content">
+            <a style="color: #32b3a3" href="reforestation.html"> Reforestation</a>
+            <a href="pollution.html">Physical Pollution</a>
+            <a href="transportation.html">Transportation</a>
+            <a style="padding-bottom: 20px" href="plant.html" >Sustainable Agriculture</a>
+          </div>
+        </div>
+        <a href="blog.html">News Updates</a>
+                <a href="donation.html">Take Action</a>
+
+        <a href="contact.html">Contact</a>
+
+       <div class="loginstuff">
+
+          <button id="modal-btn" class="butt">Register Now &#8594;</button>
+          
+          
+          
+          
+
+          <div id="my-modal" class="modal">
+            
+            
+            
+            <div class="modal-content">
+              <div class="modal-header">
+                <span class="close"
+                  ><i class="fa fa-times-circle" aria-hidden="true"></i
+                ></span>
+              </div>
+
+              <div class="modal-body">
+                <h2>Register</h2>
+                
+                 <div id="thanks" style="display: none;">
+            <p style="font-size: 20px;">
+             Thanks for registering! See you soon!
+            </p>
+          </div>
+                
+                <div id="hide">
+                  
+              
+                <p>Please complete the form to register for our event.</p>
+                <div class="form" >
+                  <form>
+                    <input
+                      type="text"
+                      name="username"
+                      placeholder="Full Name"
+                    />
+                    <input type="text" name="username" placeholder="Email" />
+                    <input
+                      type="text"
+                      name="username"
+                      placeholder="Phone Number"
+                    />
+                    <button type='button' onclick="showDiv()">Submit</button>
+                  </form>
+                </div>
+                    </div>
+              </div>
+            </div>
+          </div>
+
+          <script>
+            
+            
+          function showDiv() {
+            document.getElementById('thanks').style.display = "block";
+            document.getElementById('hide').style.display = "none";
+          }
+         
+            
+            // Get DOM Elements
+            const modal = document.querySelector("#my-modal");
+            const modalBtn = document.querySelector("#modal-btn");
+            const closeBtn = document.querySelector(".close");
+
+            // Events
+            modalBtn.addEventListener("click", openModal);
+            closeBtn.addEventListener("click", closeModal);
+            window.addEventListener("click", outsideClick);
+
+            // Open
+            function openModal() {
+              modal.style.display = "block";
+            }
+
+            // Close
+            function closeModal() {
+              modal.style.display = "none";
+            }
+
+            // Close If Outside Click
+            function outsideClick(e) {
+              if (e.target == modal) {
+                modal.style.display = "none";
+              }
+            }
+          </script>
+        </div>
+
+        <a
+          href="javascript:void(0);"
+          style="font-size: 20px; padding-right: 20px"
+          class="icon"
+          onclick="myFunction()"
+          >&#9776;</a
+        >
+      </div>
+    </nav>
+    
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+   
+    
+   
+    
+    
+ 
+
+   
+
+<!-- End Header -->
+  
+    
+    
+       <!-- ======= Hero Section ======= -->
+
+     
+     
+<!--========== HOME ==========-->
+  
+   
+
+    
+      <div class="header">
+      
+      <h1 class="fade">
+         Reforestation<br> 
+        
+       
+    </h1>
+   <a
+        class="downbtn"
+        type="button"
+        onclick="document.getElementById('scroll').scrollIntoView();"
+      > <i class="fa fa-angle-down"></i>
+      </a> 
+   
+        </div>
+    
+   
+      
+ 
+    
+    <!---- Text Info --->
+    <div class="textinfo" id="scroll" >
+    <div class="row" >
+      
+       
+      <div class="col-lg-6" id="lefttext">
+         <h2>About the Theme</h2>  
+        <p>Deforestation occurs when humans cut down forests around the world, usually faster than the trees can be replenished. 
+          This is a massive problem as trees are imperative to life on earth. Trees help regulate the carbon dioxide levels as 
+          they take in carbon dioxide from the atmosphere and release oxygen, helping humans. Forests also have great biodiversity, 
+          and cutting them down leaves numerous species without habitats. Reforestation is a movement meant to combat deforestation 
+          by simply planting more trees. Join us on our first day of this conference to embark on a path to save our planet! </p>
+      </div>
+      
+      <div class="col-lg-6" id="rightimage1">
+        <img src="https://cdn.glitch.global/a3e1e2df-01b9-4a3f-ba7e-87785f32b8ed/Untitled%2081.png?v=1642908177686" alt="" class="home__img">
+      </div>
+     
+    </div> 
+    </div> 
+    
+    
+    
+<div>
+        <div id="lefttext">
+          <h3>Events</h3>
+          
+      </div>
+    </div>
+    
+    
+    <div class="svgback">
+      
+   
+  <div class="custom-shape-divider-top-1644096856">
+    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M741,116.23C291,117.43,0,27.57,0,6V120H1200V6C1200,27.93,1186.4,119.83,741,116.23Z" class="shape-fill"></path>
+    </svg>
+</div>
+      
+       </div>
+    
+    
+
+      <div class="textinfo1">
+      <div class="row">
+        <div class="col-lg-6" id="lefttext3">
+          <h3>Meet Our Speakers</h3>
+          
+          
+        </div>
+
+        
+      </div>
+    </div>
+
+    
+
+<section id="testim" class="testim">
+<!--         <div class="testim-cover"> -->
+            <div class="wrap">
+
+              
+                <span id="right-arrow" ></span>
+                <span id="left-arrow"></span>
+                <ul id="testim-dots" class="dots">
+                    <li class="dot active"></li><!--
+                    --><li class="dot"></li>
+                    
+                </ul>
+                <div id="testim-content" class="cont">
+                    
+                    <div class="active">
+                      <div class="img">
+                        <img src="https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80">
+                      </div>
+                        <h2>Eevi Celina (Morning)</h2>
+                      <p>
+                         Originally from Finland, Celina got her degree in environmental studies at UC Berkeley. Cultivating her 
+                        passion for helping the world from a young age, she set her sights on making a real change in the world. 
+                        She founded One Tree One Life, a well-known non-profit organization that is actively fighting against 
+                        climate change through reforestation.  Gathering around 300,000 plus activists over the past few years, 
+                        the organization has had a big part in funding and helping major reforestation projects in places from the 
+                        Amazon to local communities.  </p>
+                    </div>
+
+               
+
+                    <div>
+                      <div class="img">
+                        <img src="https://images.unsplash.com/photo-1589156280159-27698a70f29e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=986&q=80">
+                      </div>                       
+ <h2>Iman Wil (Evening) </h2>
+                      <p>
+                        Growing up in Nigeria, Iman started experiencing the effects of deforestation all around her at an early age. 
+                        Losing approximately 55% of its primary forests from 2000 to 2005, things in Nigeria didn’t seem to be getting 
+                        any better.  With local support and a set goal, she set out to increase awareness about deforestation. Since 
+                        starting her non-profit organization and campaign, One With Nature, in her 20’s, Iman has been steadily increasing 
+                        the reach of this organization. From setting up small-scale to big-scale projects on re-planting trees to holding 
+                        educational classes about the dangers of deforestation, Iman is healing the nature around her.  </p>                    </div>
+
+                </div>
+
+            </div>
+<!--         </div> -->
+    </section>
+
+    
+<script src="https://use.fontawesome.com/1744f3f671.js"></script>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      <!---- Text Info --->
+    <div class="textinfo3">
+    <div class="row" >
+      
+       
+     
+      
+      
+     <!-- <div class="col-lg-6" id="rightimage">
+        <img src="https://cdn.glitch.global/a3e1e2df-01b9-4a3f-ba7e-87785f32b8ed/Untitled%20104.png?v=1644156647727" alt="" class="home__img">
+      </div>
+       <div class="col-lg-6" id="righttext">
+         
+         <h2>Feeding the World</h2>  
+           <p style="padding-top: 30px;">Giving back to the world we live in is so important because it has given so much to us.
+         So, we partnered up with one of your favorite restaurants, Garden Dome, to raise money for charities that give back to nature. 
+          </p>
+          <p>One way to support the fight against deforestation and all the negative consequences that come from it is to fund the organizations actively fighting against it.  What better way to do this than by partnering with an environmentally-friendly organization?
+          </p>
+         
+          <p>So go to your nearby Garden Dome and mention our event and all your expenses will be donated to the charity of your choice! And as a bonus, If you spend over $50, you win a free handmade bracelet! </p>
+          <p>This is only active during this 4-day event, so don't miss the opportunity to help us reach our overall goal of $500,000 in donations!
+
+                </p>      
+      </div>-->
+     
+    </div> 
+    </div> 
+    <div class="test3-heading" style="background-color: #ffffff"></div>
+
+    <div class="burr" style="background-color: #f0f0f0">
+      <div class="analytic">
+        <div class="row no-gutters" id="2col">
+          <div class="col-lg-6" id="rightimage">
+        <img src="https://cdn.glitch.global/a3e1e2df-01b9-4a3f-ba7e-87785f32b8ed/Untitled%20129.png?v=1649652777345" alt="" class="home__img">
+      </div>
+          <div class="col-lg-5" id="righttext">
+            <h2 style="font-weight: 600">Feeding the World</h2>
+
+           <p >Giving back to the world we live in is so important because it has given so much to us.
+         So, we partnered up with one of your favorite restaurants, Garden Dome, to raise money for charities that give back to nature. 
+          </p>
+          <p>One way to support the fight against deforestation and all the negative consequences that come from it is to fund the organizations actively fighting against it.  What better way to do this than by partnering with an environmentally-friendly organization?
+          </p>
+         
+          <p>So go to your nearby Garden Dome and mention our event and all your expenses will be donated to the charity of your choice! And as a bonus, If you spend over $50, you win a free handmade bracelet! </p>
+          <p>This is only active during this 4-day event, so don't miss the opportunity to help us reach our overall goal of $500,000 in donations!
+
+                </p>  
+           
+          </div>
+
+      
+        </div>
+      </div>
+    </div>
+    
+    
+    
+    
+    
+      
+     
+      
+        <!---- Text Info --->
+    <div class="textinfo2">
+      
+       <div id="lefttext4">
+         <h2>Virtual Safari</h2>  
+        <p> <b>Seeing is believing. </b> 
+Seeing the dwindling forests, seeing the loss of habitat, and seeing the loss of history and nature, is believing that something needs to change. So we give you a life-altering opportunity to see the real effects of deforestation through our virtual forest safari conducted by local nurseries all over the world. You will be informed of critical information about deforestation and the ways to combat it as you also enjoy the beauty around you. From the sprawling Amazon to the Monteverde Cloud Forest in Costa Rica, to Daintree Rainforest in Australia, we give you the opportunities to see the most beautiful forests all around the world. Sign up to book a slot in our virtual safari as slots are limited! Don't miss this educational and therapeutic opportunity! 
+
+ </p>
+          <h4>Click to listen!</h4>  
+           
+         
+         <audio src="https://cdn.glitch.global/a3e1e2df-01b9-4a3f-ba7e-87785f32b8ed/Untitled%202.wav?v=1649564420034" id="Audio1"></audio>
+   <audio src="https://cdn.glitch.global/a3e1e2df-01b9-4a3f-ba7e-87785f32b8ed/elephant1.mp3?v=1649380412262" id="Audio2"></audio>
+         <audio src="https://cdn.glitch.global/a3e1e2df-01b9-4a3f-ba7e-87785f32b8ed/mixkit-wild-lion-animal-roar-6.wav?v=1649381923269" id="Audio3"></audio>
+       
+         <audio src="https://cdn.glitch.global/a3e1e2df-01b9-4a3f-ba7e-87785f32b8ed/mixkit-monkey-excited-screech-105.wav?v=1649381924543" id="Audio4"></audio>
+         
+         
+         <script>
+     function playMyAudio(){
+       document.getElementById("Audio1").play();
+     }
+     function playMyAudio2(){
+       document.getElementById("Audio2").play();
+     }
+     function playMyAudio3(){
+       document.getElementById("Audio3").play();
+     }
+     function playMyAudio4(){
+       document.getElementById("Audio4").play();
+     }
+   </script>
+         
+         <div class="sounds">
+         
+         <div class="button2">
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  <button2 onclick="playMyAudio()">AMBIENCE</button2>
+</div>
+         
+          
+         <div class="button2">
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  <button3 onclick="playMyAudio2()">ELEPHANT</button3>
+</div>
+         
+         <div class="button2">
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  <button4 onclick="playMyAudio3()">LION</button4>
+</div>
+         
+         <div class="button2">
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  <button5 onclick="playMyAudio4()">MONKEY</button5>
+</div>
+         
+      </div>
+     
+
+      </div>
+     
+   
+    </div> 
+    
+    
+  
+    <div class="container-fluid" id="videoinfo1">
+  <div class="row">
+    <div class="col-sm-6">
+    <h2>
+        Carbon Footprint Quiz
+      </h2>
+        <p>
+        Take this Carbon Footprint Quiz now to calculate your impact on the environment and figure out what you can do to reduce it.
+      </p>
+       
+    </div>
+    <div class="col-sm-6" >
+     <a class="cht-btn" href="quiz.html" target="_blank" onclick="window.open(this.href,'targetWindow',
+                                   `toolbar=no,
+                                    location=no,
+                                    status=no,
+                                    menubar=no,
+                                    scrollbars=yes,
+                                    resizable=yes,
+                                    width=1000,
+                                    height=900`);
+ return false;">Try it Out!</a>
+      <a class="cht-btn"  href="contact.html"> Have Questions? </a>
+      
+      
+    </div>
+  </div>
+</div>
+    
+  
+    
+    
+    
+    
+    
+    
+    
+  
+  
+ 
+    
+  
+    
+  <!----  
+        
+  <div class="box4">
+    
+   
+   
+    <div class="container">
+      <!--image row start--
+      <div class="row">
+        <!--image card start--
+        
+        <!--image card end--
+        <!--image card start--
+        <div class="image">
+         
+          <div class="details">
+            <h4> </h4>
+            <h2> <span>Climate Literacy</span></h2>
+            <p>One of our biggest projects is about teaching kids about climate change. We send teams of volunteers 
+              and scientists that work with us to schools around the world. Our team shares climate change statistics with 
+              school age children to highlight how pressing this issue is. We also teach them about actions that they can take
+              to reduce their own carbon footprint.</p>
+            
+          </div>
+        </div>
+        <!--image card end--
+        <!--image card start--
+        <div class="image3">
+        
+          <img src="https://images.unsplash.com/photo-1542810634-71277d95dcbb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80" alt="" class="image3" background-image= "linear-gradient(to bottom, rgba(22, 22, 22, .6), rgba(0, 0, 0, .8))" background-size="cover">
+          <div class="details">
+            <h4> </h4>
+            
+            
+            <!---<h2> <span>project 1 pic</span></h2>
+            <p>When scheduling appointments, our system considers insurance, availability, type, location, age, history, and more. Our scheduling service utilizes advanced technology to make decisions easy and self-sufficient so patients can go through this process effortlessly. </p>
+            --
+          </div>
+        </div>
+        <!--image card end--
+      </div>
+      <!--image row end--
+      <!--image row start--
+      <div class="row">
+        <!--image card start--
+        <div class="image3">
+         
+          <div class="details">
+            <img src="https://images.unsplash.com/photo-1598064902710-b3b0ebb32ffd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80" alt="" class="image3" background-image= "linear-gradient(to bottom, rgba(22, 22, 22, .6), rgba(0, 0, 0, .8))" background-size="cover">
+            <h4> </h4>
+            <!--<h2> <span>project 2 pic</span></h2>
+            <p>Our solution optimizes your appointments by allowing you and your patients to add notes and details, which are easily accessible in the calendar, in advance. Custom vitals give providers the ability to create baseline health data and monitor each patient’s data over time.</p>
+           --
+          </div>
+        </div>
+        <!--image card end--
+        <!--image card start--
+        <div class="image">
+         
+          <div class="details">
+            <h4> </h4>
+            <h2> <span>Reforestation Program</span></h2>
+            <p>This project is all about combating deforestation. We send our employees and local volunteers to rainforests and forests around the world to help repopulate them. We provide all the necessary supplies to our groups to ensure that they are as successful as they possibly can.</p>
+          </div>
+        </div>
+        <!--image card end--
+        <!--image row end--
+      <!--image row start--
+        <div class="row">
+        <!--image card start--
+        <div class="image">
+         
+          <div class="details">
+            <h4> </h4>
+            <h2> <span>Regenerative Agriculture</span></h2>
+            <p> This initiative allows our organization to work with farmers to teach them about regenerative agriculture. Regenerative agriculture practices include no till agriculture, composting, using biochar, and planting perennial plants when possible. These practices improve soil health by increasing organic matter, which increases biodiversity and carbon drawdown (taking carbon out of the atmosphere).  
+</p>
+            
+          </div>
+        </div>
+        <!--image card end--
+        <!--image card start--
+        <div class="image3">
+         
+          <div class="details">
+            <img src="https://images.unsplash.com/photo-1560493676-04071c5f467b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80" alt="" class="image3" background-image= "linear-gradient(to bottom, rgba(22, 22, 22, .6), rgba(0, 0, 0, .8))" background-size="cover">
+            <h4> </h4>
+           <!-- <h2> <span>project 3 pic</span></h2>
+            <p>Make it easy for your patients to alter their appointments and modify their medical calendar with just one click. All the available dates and time slots are accessible without the need for constant staff assistance or to go through the entire process of booking another appointment.
+</p>--
+            
+          </div>
+        </div>
+        <!--image card end--
+        <!--image row end--
+      <!--image row start--
+        <div class="row">
+        <div class="image3">
+         <img src="https://images.unsplash.com/photo-1582408921715-18e7806365c1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80" alt="" class="image3" background-image= "linear-gradient(to bottom, rgba(22, 22, 22, .6), rgba(0, 0, 0, .8))" background-size="cover">
+          <div class="details">
+            <h4> </h4>
+         <!--   <h2> <span>project 4 pic</span></h2>
+            <p>Make it easy for your patients to alter their appointments and modify their medical calendar with just one click. All the available dates and time slots are accessible without the need for constant staff assistance or to go through the entire process of booking another appointment.
+</p>--
+            
+          </div>
+        </div>
+        <!--image card end--
+        <!--image card start--
+        <div class="image">
+         
+          <div class="details">
+            <h4> </h4>
+            <h2> <span>Global Trash Cleanup</span></h2>
+            <p> We employ different groups of volunteers all over the world that clean land near them. 
+              Any group can sign up with us and we provide them with instructions of how to properly clean 
+              the land and what to do with the waste. We have employees in charge of each project so our 
+              organization personally oversees each cleanup.  
+</p>
+            
+          </div>
+        </div>
+        <!--image card end--
+      </div>
+      <!--image row end--
+    </div>
+    <!--image card layout end--
+
+
+    
+     </div>
+   
+    </div>
+    </div>
+    
+    -->
+    
+    
+     <!-- footer -->
+    <div class="bottomfooter">
+      
+      <div class="custom-shape-divider-top-1644035655">
+    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M1200 0L0 0 598.97 114.72 1200 0z" class="shape-fill"></path>
+    </svg>
+</div>
+      
+      
+   <footer class="footer">
+  	 <div class="container">
+  	 	<div class="row">
+  	 		<div class="footer-col">
+  	 			<h4>CC22 Summit</h4>
+  	 			<ul>
+  	 				<li><a href="index.html">home</a></li>
+  	 				<li><a href="about.html">about us</a></li>
+  	 				<li><a href="blog.html">news updates</a></li>
+  	 			</ul>
+  	 		</div>
+  	 		<div class="footer-col">
+  	 			<h4>Themes</h4>
+  	 			<ul>
+  	 				<li><a href="reforestation.html">Reforestation</a></li>
+  	 				<li><a href="pollution.html">Physical Pollution</a></li>
+  	 				<li><a href="transportation.html">Transportation</a></li>
+  	 				<li><a href="plant.html">Sustainable Agriculture</a></li>
+  	 			</ul>
+  	 		</div>
+  	 		<div class="footer-col">
+  	 			<h4>event details</h4>
+  	 			<ul>
+              <li><a href="schedule.html">Schedule</a></li>
+  	 				 <li><a href="contact.html">contact us</a></li>
+
+  	 			</ul>
+  	 		</div>
+  	 		<div class="footer-col">
+  	 			<h4>More</h4>
+  	 			<ul>
+            <li><a href="donation.html">Take Action</a></li>
+  	 				<li><a href="about.html">citations</a></li>
+            
+  	 			</ul>
+          
+  	 		</div>
+  	 	</div>
+  	 </div>
+  
+  </footer>
+      
+      
+      
+            
+    </div>
+    
+    
+    
+    <!--
+    
+    
+    <div class="slider">
+      
+      <div class="buttons">
+    <button class="btn btn-pre" id="pre"><i class="material-icons">
+        keyboard_arrow_left
+      </i></button>
+    <button class="btn btn-next" id="next"><i class="material-icons">
+        keyboard_arrow_right
+      </i></button>
+  </div>
+  <div class="container">
+    <div class="slide active">
+      <img class="slide-img"
+        src="https://images.unsplash.com/photo-1512407709198-1ef39dffb7ff?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80"
+        alt="image">
+      <div class="slide-body">
+        <h5 class="slide-title"><i class="material-icons">
+            location_on
+          </i>東京</h5>
+        <p class="slide-text">東京是位於日本關東地方的都市，狹義上指東京都、或東京都區部，亦可泛指東京都及周邊衛星都市群相連而成的「首都圈」...
+        </p>
+      </div>
+    </div>
+    <div class="slide">
+      <img class="slide-img"
+        src="https://images.unsplash.com/photo-1542051925014-faaadce62e4f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80"
+        alt="image">
+      <div class="slide-body">
+        <h5 class="slide-title"><i class="material-icons">
+            location_on
+          </i>澀谷區</h5>
+        <p class="slide-text">澀谷區，是日本東京都的特別區之一，其名稱源自於位於該行政區中央、以澀谷車站為中心的澀谷地區。 與新宿、池袋等因為位處於交通要衝上而發展出的商業街相同...
+        </p>
+      </div>
+    </div>
+    <div class="slide">
+      <img class="slide-img"
+        src="https://images.unsplash.com/photo-1502716502781-621f233d06c4?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80"
+        alt="image">
+      <div class="slide-body">
+        <h5 class="slide-title"><i class="material-icons">
+            location_on
+          </i>新宿區</h5>
+        <p class="slide-text">新宿區是日本東京都內23個特別區之一，為東京都廳所在地。區內的新宿站為東京主要的交通樞紐之一，而以新宿站為中心的商圈...
+        </p>
+      </div>
+    </div>
+  </div>
+        </div>
+-->
+    
+    <script>
+      // learn from Traversy Media
+
+let slides = document.querySelectorAll('.slide')
+let pre = document.querySelector('#pre')
+let next = document.querySelector('#next')
+let auto = true
+let slideInterval
+
+next.addEventListener('click', () => {
+  nextHandler();
+  if (auto) {
+    clearInterval(slideInterval)
+    slideInterval = setInterval(nextHandler, 5000);
+  }
+})
+pre.addEventListener('click', () => {
+  preHandler();
+  if (auto) {
+    clearInterval(slideInterval)
+    slideInterval = setInterval(nextHandler, 5000);
+  }
+})
+
+
+let nextHandler = function () {
+  let active = document.querySelector('.active')
+  active.classList.remove('active')
+  if (active.nextElementSibling) {
+    active.nextElementSibling.classList.add('active')
+  } else {
+    slides[0].classList.add('active')
+  }
+  setTimeout(() => { active.classList.remove('active'), 200 });
+
+}
+
+let preHandler = function () {
+  let active = document.querySelector('.active')
+  active.classList.remove('active')
+  if (active.previousElementSibling) {
+    active.previousElementSibling.classList.add('active')
+  } else {
+    slides[slides.length - 1].classList.add('active')
+  }
+  setTimeout(() => { active.classList.remove('active'), 200 });
+}
+if (auto) {
+  slideInterval = setInterval(nextHandler, 5000);
+}
+
+    </script>
+      
+      
+     
+    
+   
+    
+           
+
+        <!--========== SCROLL REVEAL ==========-->
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+        <!--========== MAIN JS ==========-->
+        <script src="main.js"></script>
+  </body>
+
+</html>
+
+ <script>
+      // vars
+'use strict'
+var	testim = document.getElementById("testim"),
+		testimDots = Array.prototype.slice.call(document.getElementById("testim-dots").children),
+    testimContent = Array.prototype.slice.call(document.getElementById("testim-content").children),
+    testimLeftArrow = document.getElementById("left-arrow"),
+    testimRightArrow = document.getElementById("right-arrow"),
+    testimSpeed = 4500,
+    currentSlide = 0,
+    currentActive = 0,
+    testimTimer,
+		touchStartPos,
+		touchEndPos,
+		touchPosDiff,
+		ignoreTouch = 30;
+;
+
+window.onload = function() {
+
+    // Testim Script
+    function playSlide(slide) {
+        for (var k = 0; k < testimDots.length; k++) {
+            testimContent[k].classList.remove("active");
+            testimContent[k].classList.remove("inactive");
+            testimDots[k].classList.remove("active");
+        }
+
+        if (slide < 0) {
+            slide = currentSlide = testimContent.length-1;
+        }
+
+        if (slide > testimContent.length - 1) {
+            slide = currentSlide = 0;
+        }
+
+        if (currentActive != currentSlide) {
+            testimContent[currentActive].classList.add("inactive");            
+        }
+        testimContent[slide].classList.add("active");
+        testimDots[slide].classList.add("active");
+
+        currentActive = currentSlide;
+    
+     
+    }
+
+    testimLeftArrow.addEventListener("click", function() {
+        playSlide(currentSlide -= 1);
+    })
+
+    testimRightArrow.addEventListener("click", function() {
+        playSlide(currentSlide += 1);
+    })    
+
+    for (var l = 0; l < testimDots.length; l++) {
+        testimDots[l].addEventListener("click", function() {
+            playSlide(currentSlide = testimDots.indexOf(this));
+        })
+    }
+
+    playSlide(currentSlide);
+
+    // keyboard shortcuts
+    document.addEventListener("keyup", function(e) {
+        switch (e.keyCode) {
+            case 37:
+                testimLeftArrow.click();
+                break;
+                
+            case 39:
+                testimRightArrow.click();
+                break;
+
+            case 39:
+                testimRightArrow.click();
+                break;
+
+            default:
+                break;
+        }
+    })
+		
+		testim.addEventListener("touchstart", function(e) {
+				touchStartPos = e.changedTouches[0].clientX;
+		})
+	
+		testim.addEventListener("touchend", function(e) {
+				touchEndPos = e.changedTouches[0].clientX;
+			
+				touchPosDiff = touchStartPos - touchEndPos;
+			
+				console.log(touchPosDiff);
+				console.log(touchStartPos);	
+				console.log(touchEndPos);	
+
+			
+				if (touchPosDiff > 0 + ignoreTouch) {
+						testimLeftArrow.click();
+				} else if (touchPosDiff < 0 - ignoreTouch) {
+						testimRightArrow.click();
+				} else {
+					return;
+				}
+			
+		})
+}
+  
+  
+  
+  
+
+
+  
+</script>
+    

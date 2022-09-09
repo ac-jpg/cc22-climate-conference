@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="stylesheet" href="schedule.css" />
+
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
+
+    <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css" />
+    <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css" />
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <nav>
+      <div class="topnav" id="myTopnav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a style="color: #32b3a3" href="schedule.html">Schedule</a>
+        <div class="dropdown">
+          <button class="dropbtn">
+            Themes
+            <i class="fa fa-caret-down"></i>
+          </button>
+
+          <div class="dropdown-content">
+            <a href="reforestation.html">Reforestation</a>
+            <a href="pollution.html">Physical Pollution</a>
+            <a href="transportation.html">Transportation</a>
+            <a href="plant.html" style="padding-bottom: 20px"
+              >Sustainable Agriculture</a
+            >
+          </div>
+        </div>
+        <a href="blog.html">News Updates</a>
+                <a href="donation.html">Take Action</a>
+
+        <a href="contact.html">Contact</a>
+
+        <div class="loginstuff">
+
+          <button id="modal-btn" class="butt">Register Now &#8594;</button>
+          
+          
+          
+          
+
+          <div id="my-modal" class="modal">
+            
+            
+            
+            <div class="modal-content">
+              <div class="modal-header">
+                <span class="close"
+                  ><i class="fa fa-times-circle" aria-hidden="true"></i
+                ></span>
+              </div>
+
+              <div class="modal-body">
+                <h2>Register</h2>
+                
+                 <div id="thanks" style="display: none;">
+            <p style="font-size: 20px;">
+             Thanks for registering! See you soon!
+            </p>
+          </div>
+                
+                <div id="hide">
+                  
+              
+                <p>Please complete the form to register for our event.</p>
+                <div class="form" >
+                  <form>
+                    <input
+                      type="text"
+                      name="username"
+                      placeholder="Full Name"
+                    />
+                    <input type="text" name="username" placeholder="Email" />
+                    <input
+                      type="text"
+                      name="username"
+                      placeholder="Phone Number"
+                    />
+                    <button type='button' onclick="showDiv()">Submit</button>
+                  </form>
+                </div>
+                    </div>
+              </div>
+            </div>
+          </div>
+
+          <script>
+            
+            
+          function showDiv() {
+            document.getElementById('thanks').style.display = "block";
+            document.getElementById('hide').style.display = "none";
+          }
+         
+            
+            // Get DOM Elements
+            const modal = document.querySelector("#my-modal");
+            const modalBtn = document.querySelector("#modal-btn");
+            const closeBtn = document.querySelector(".close");
+
+            // Events
+            modalBtn.addEventListener("click", openModal);
+            closeBtn.addEventListener("click", closeModal);
+            window.addEventListener("click", outsideClick);
+
+            // Open
+            function openModal() {
+              modal.style.display = "block";
+            }
+
+            // Close
+            function closeModal() {
+              modal.style.display = "none";
+            }
+
+            // Close If Outside Click
+            function outsideClick(e) {
+              if (e.target == modal) {
+                modal.style.display = "none";
+              }
+            }
+          </script>
+        </div>
+
+        <a
+          href="javascript:void(0);"
+          style="font-size: 20px; padding-right: 20px"
+          class="icon"
+          onclick="myFunction()"
+          >&#9776;</a
+        >
+      </div>
+    </nav>
+
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+    </script>
+
+    <div class="test2-heading">
+      <div class="smallblurb1"></div>
+      <h1>Schedule</h1>
+    </div>
+
+    <div class="cards">
+      <div class="row" id="event">
+        <div class="col-lg-5" id="leftheader">
+          <div class="image">
+            <img alt="" width="100%" height="100%" />
+            <div class="details">
+              <h4></h4>
+              <p>April 21st</p>
+              <h3 class="card__heading">Reforestation</h3>
+              <p>2 speakers</p>
+              <p style="padding-bottom: 20px;">
+              Activities
+            </p>
+              
+              <a href="reforestation.html" class="button">Learn More</a>
+
+                         </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="info">
+            <h5 class="time">9 am:</h5>
+
+            <h2>Day 1 Begins!</h2>
+
+            <p>So does our Feeding the World activity!</p>
+          </div>
+
+          <div class="info">
+            <h5 class="time">9:15 - 10 :15</h5>
+
+            <h2>Morning Speaker</h2>
+
+            <p>
+              We start off with our first activist booth session with our guest
+              speaker, Eive Celina.
+            </p>
+          </div>
+
+          <div class="info">
+            <h5 class="time">10:30 - 12: 30</h5>
+
+            <h2>Virtual Safari!</h2>
+
+            <p>Session 1 begins now!</p>
+          </div>
+          <div class="info">
+            <h5 class="time">12:30 - 2:30</h5>
+
+            <h2>Lunch Break!</h2>
+
+            <p>
+              Along with a short talk from our partners Garden Dome, to whomever
+              wishing to attend!
+            </p>
+          </div>
+          <div class="info">
+            <h5 class="time">3:00 - 4:00:</h5>
+
+            <h2>Session 2 of our Safaris!</h2>
+
+            <p></p>
+          </div>
+
+          <div class="info">
+            <h5 class="time">4:00 - 5:00:</h5>
+
+            <h2>Evening Speaker</h2>
+
+            <p>
+              We end today with our last guest speaker for the day, Iman Wil.
+            </p>
+          </div>
+        </div>
+      </div>
+      
+      
+      
+
+      <div class="row" id="event">
+        <div class="col-lg-5" id="leftheader">
+          <div class="image2">
+            <img alt="" width="100%" height="100%" />
+            <div class="details">
+              <h4></h4>
+              <p>April 22nd</p>
+              <h3 class="card__heading">Pollution</h3>
+              <p>2 speakers</p>
+              <p style="padding-bottom: 20px;">
+              Activities
+            </p>
+              <a href="pollution.html" class="button">Learn More</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="info">
+            <h5 class="time">9 am:</h5>
+
+            <h2>Day 2 Begins!</h2>
+
+            <p></p>
+          </div>
+
+          <div class="info">
+            <h5 class="time">9:15 - 10 :15</h5>
+
+            <h2>Morning Speaker</h2>
+
+            <p>
+              Listen to Ioan M Magee and his fight against physical pollution.
+            </p>
+          </div>
+
+          <div class="info">
+            <h5 class="time">10:30 - 12: 30</h5>
+
+            <h2>Recycling Competition!</h2>
+
+            <p></p>
+          </div>
+          <div class="info">
+            <h5 class="time">12:30 - 2:30</h5>
+
+            <h2>Lunch Break!</h2>
+
+            <p>
+              Join us for a virtual luncheon, where we honor all our donors.
+            </p>
+          </div>
+          <div class="info">
+            <h5 class="time">3:00 - 3:40:</h5>
+            Trash Cleanup!
+            <h2>
+              We continue with a presentation about our Trash Cleanup Program.
+            </h2>
+
+            <p></p>
+          </div>
+
+          <div class="info">
+            <h5 class="time">3:40 - 4:30​:</h5>
+
+            <h2>Evening Speaker</h2>
+
+            <p>
+              End the day with a talk from our guest speaker Osbeorn I Howard.
+            </p>
+          </div>
+          <div class="info">
+            <h5 class="time">4:30 - 5:00:</h5>
+
+            <h2>See the award winners for our recycling competition!</h2>
+          </div>
+        </div>
+      </div>
+      
+      
+ 
+
+    <div class="row" id="event">
+      <div class="col-lg-5" id="leftheader">
+        <div class="image3">
+          <img alt="" width="100%" height="100%" />
+          <div class="details">
+            <h4></h4>
+            <p>April 23rd</p>
+            <h3 class="card__heading">Transportation</h3>
+            <p>2 speakers</p>
+            <p style="padding-bottom: 20px;">
+              Stations
+            </p>
+            
+              <a href="transportation.html" class="button">Learn More</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-6">
+        <div class="info">
+          <h5 class="time">9 am:</h5>
+
+          <h2>Day 3 Begins!</h2>
+
+          <p></p>
+        </div>
+
+        <div class="info">
+          <h5 class="time">9:15 - 10 :15</h5>
+
+          <h2>Morning Speaker</h2>
+
+          <p>
+            We begin the day with another speaker session, featuring Marta K
+            Bello.
+          </p>
+        </div>
+
+        <div class="info">
+          <h5 class="time">10:30 - 12: 30</h5>
+
+          <h2>Join us for our Virtual Stations!</h2>
+
+          <p></p>
+        </div>
+        <div class="info">
+          <h5 class="time">12:30 - 1:30</h5>
+
+          <h2>Lunch Break!</h2>
+
+          <p></p>
+        </div>
+        <div class="info">
+          <h5 class="time">1:30 - 2:00:</h5>
+
+          <h2></h2>
+
+          <p>
+            We continue after lunch with a presentation about reducing vehicle
+            emissions.
+          </p>
+        </div>
+
+        <div class="info">
+          <h5 class="time">2:15 - 3:15:</h5>
+
+          <h2>Evening Speaker</h2>
+
+          <p>
+            Conclude our speaker sessions with Lakshmi K Abramsen as she shares
+            her presentation.
+          </p>
+        </div>
+        <div class="info">
+          <h5 class="time">3:30 - 5:00:</h5>
+
+          <h2>Panel</h2>
+
+          <p>End the day with our Politican Panel.</p>
+        </div>
+      </div>
+    </div>
+      
+      
+      
+      
+      
+      
+        <div class="row" id="event" style="padding-bottom: 180px;">
+        <div class="col-lg-5" id="leftheader">
+      
+          
+          <div class="image4">
+            <img alt="" width="100%" height="100%" />
+            <div class="details">
+              <h4></h4>
+                <p>
+            April 24th
+        </p>
+        <h3 class="card__heading">Sustainable Agriculture</h3>
+        <p>
+          2 speakers
+        </p>
+        <p style="padding-bottom: 20px;">
+          Panels
+        </p>
+                      <a href="plant.html" class="button">Learn More</a>
+
+            </div>
+          </div>
+          
+          
+          
+          
+      </div>
+        
+      <div class="col-lg-6">
+       
+        <div class="info">
+           <h5 class="time"> 
+               9 am:
+            </h5>
+
+            <h2>
+             Day 4 Begins! 
+
+
+            </h2>
+
+            <p>
+             
+            </p>
+        </div>
+        
+        <div class="info">
+           <h5 class="time">
+             9:15 - 10 :15
+            </h5>
+
+            <h2>
+Morning Speaker            </h2>
+
+            <p>
+Tune in with Esteve O Amhalghaidh, and his look on sustainable agriculture!
+
+            </p>
+        </div>
+        
+        <div class="info">
+          <h5 class="time">
+10:30 - 12: 30
+            </h5>
+
+            <h2>
+Plant Together Event!
+          </h2>
+
+            <p>
+             
+            </p>
+        </div>
+        <div class="info">
+          <h5 class="time">
+     
+            
+             12:30 - 1:30:
+
+
+
+            </h5>
+
+            <h2>
+Lunch Break! 
+            </h2>
+
+            <p>
+
+            </p>
+        </div>
+        <div class="info">
+           <h5  class="time">
+              1:30 - 2:30:
+
+            </h5>
+
+            <h2>
+ Panel
+            </h2>
+
+            <p>
+              We kick start our Farmers Panel!
+
+            </p>
+        </div>
+        
+        
+        <div class="info">
+           <h5 class="time">
+2:45 - 3:45:
+
+            </h5>
+
+            <h2>
+             Evening Speaker
+            </h2>
+
+            <p>
+We have our last guest speaker of the event, Mohandas Kumar.
+
+            </p>
+        </div>
+       
+         <div class="info">
+           <h5 class="time">
+4:00 - 5:00:
+
+            </h5>
+
+            <h2>
+            We end the event with a short talk with the conference representatives. 
+
+            </h2>
+
+            <p>
+
+
+            </p>
+        
+        
+      </div>
+          
+      
+    </div>
+    </div>
+    <!-- footer -->
+    <div class="bottomfooter">
+      <div class="custom-shape-divider-top-1644035655">
+        <svg
+          data-name="Layer 1"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1200 120"
+          preserveAspectRatio="none"
+        >
+          <path d="M1200 0L0 0 598.97 114.72 1200 0z" class="shape-fill"></path>
+        </svg>
+      </div>
+
+      <footer class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="footer-col">
+              <h4>CC22 Summit</h4>
+              <ul>
+                <li><a href="index.html">home</a></li>
+                <li><a href="about.html">about us</a></li>
+                <li><a href="blog.html">news updates</a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4>Themes</h4>
+              <ul>
+                <li><a href="reforestation.html">Reforestation</a></li>
+                <li><a href="pollution.html">Physical Pollution</a></li>
+                <li><a href="transportation.html">Transportation</a></li>
+                <li><a href="plant.html">Sustainable Agriculture</a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4>event details</h4>
+              <ul>
+                <li><a href="schedule.html">Schedule</a></li>
+                <li><a href="contact.html">contact us</a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4>More</h4>
+              <ul>
+                <li><a href="donation.html">Take Action</a></li>
+                <li><a href="about.html">citations</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

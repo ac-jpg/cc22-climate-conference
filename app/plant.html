@@ -1,0 +1,965 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="stylesheet" href="plant.css" />
+
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <nav>
+      <div class="topnav" id="myTopnav">
+        <a href="index.html">Home</a>
+        <a href="schedule.html">Schedule</a>
+        <a href="about.html">About</a>
+        <div class="dropdown">
+          <button class="dropbtn">
+            Themes
+            <i class="fa fa-caret-down"></i>
+          </button>
+
+          <div class="dropdown-content">
+            <a href="reforestation.html">Reforestation</a>
+            <a href="pollution.html">Physical Pollution</a>
+            <a href="transportation.html">Transportation</a>
+            <a style="padding-bottom: 20px; color: #32b3a3" href="plant.html"
+              >Sustainable Agriculture</a
+            >
+          </div>
+        </div>
+        <a href="blog.html">News Updates</a>
+                <a href="donation.html">Take Action</a>
+
+        <a href="contact.html">Contact</a>
+
+        <div class="loginstuff">
+
+          <button id="modal-btn" class="butt">Register Now &#8594;</button>
+          
+          
+          
+          
+
+          <div id="my-modal" class="modal">
+            
+            
+            
+            <div class="modal-content">
+              <div class="modal-header">
+                <span class="close"
+                  ><i class="fa fa-times-circle" aria-hidden="true"></i
+                ></span>
+              </div>
+
+              <div class="modal-body">
+                <h2>Register</h2>
+                
+                 <div id="thanks" style="display: none;">
+            <p style="font-size: 20px;">
+             Thanks for registering! See you soon!
+            </p>
+          </div>
+                
+                <div id="hide">
+                  
+              
+                <p>Please complete the form to register for our event.</p>
+                <div class="form" >
+                  <form>
+                    <input
+                      type="text"
+                      name="username"
+                      placeholder="Full Name"
+                    />
+                    <input type="text" name="username" placeholder="Email" />
+                    <input
+                      type="text"
+                      name="username"
+                      placeholder="Phone Number"
+                    />
+                    <button type='button' onclick="showDiv()">Submit</button>
+                  </form>
+                </div>
+                    </div>
+              </div>
+            </div>
+          </div>
+
+          <script>
+            
+            
+          function showDiv() {
+            document.getElementById('thanks').style.display = "block";
+            document.getElementById('hide').style.display = "none";
+          }
+         
+            
+            // Get DOM Elements
+            const modal = document.querySelector("#my-modal");
+            const modalBtn = document.querySelector("#modal-btn");
+            const closeBtn = document.querySelector(".close");
+
+            // Events
+            modalBtn.addEventListener("click", openModal);
+            closeBtn.addEventListener("click", closeModal);
+            window.addEventListener("click", outsideClick);
+
+            // Open
+            function openModal() {
+              modal.style.display = "block";
+            }
+
+            // Close
+            function closeModal() {
+              modal.style.display = "none";
+            }
+
+            // Close If Outside Click
+            function outsideClick(e) {
+              if (e.target == modal) {
+                modal.style.display = "none";
+              }
+            }
+          </script>
+        </div>
+
+        <a
+          href="javascript:void(0);"
+          style="font-size: 20px; padding-right: 20px"
+          class="icon"
+          onclick="myFunction()"
+          >&#9776;</a
+        >
+      </div>
+    </nav>
+
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+    </script>
+
+    <!-- End Header -->
+
+    <!-- ======= Hero Section ======= -->
+
+    <!--========== HOME ==========-->
+
+    <div class="header">
+      <h1 class="fade">Sustainable Agriculture</h1>
+      <a
+        class="downbtn"
+        type="button"
+        onclick="document.getElementById('scroll').scrollIntoView();"
+      >
+        <i class="fa fa-angle-down"></i>
+      </a>
+    </div>
+
+    <div class="textinfo" id="scroll">
+      <div class="row">
+        <div class="col-md-6 col-md-push-6" id="lefttext">
+          <h2>About the Theme</h2>
+          <p>
+            If we’re going to aim for a consistently sustainable future, we need
+            to adopt more environmentally friendly agricultural practices. On
+            the last day of our conference, learn about how current practices
+            are harming the environment and what we can do to amend these
+            methods.
+          </p>
+        </div>
+
+        <div class="col-md-6 col-md-pull-6" id="rightimage1">
+          <img
+            src="https://cdn.glitch.global/a3e1e2df-01b9-4a3f-ba7e-87785f32b8ed/Untitled%20102.png?v=1644156647886"
+            alt=""
+            class="home__img"
+          />
+        </div>
+      </div>
+    </div>
+    
+    
+    
+    
+    
+    
+     
+<div>
+        <div id="lefttext">
+          <h3>Events</h3>
+          
+      </div>
+    </div>
+    
+    
+    <div class="svgback">
+      
+   
+  <div class="custom-shape-divider-top-1644096856">
+    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M741,116.23C291,117.43,0,27.57,0,6V120H1200V6C1200,27.93,1186.4,119.83,741,116.23Z" class="shape-fill"></path>
+    </svg>
+</div>
+      
+       </div>
+    
+    
+
+      <div class="textinfo1">
+      <div class="row">
+        <div class="col-lg-6" id="lefttext3">
+          <h3>Meet Our Speakers</h3>
+          
+          
+        </div>
+
+        
+      </div>
+    </div>
+
+    
+
+<section id="testim" class="testim">
+<!--         <div class="testim-cover"> -->
+            <div class="wrap">
+
+              
+                <span id="right-arrow" ></span>
+                <span id="left-arrow"></span>
+                <ul id="testim-dots" class="dots">
+                    <li class="dot active"></li><!--
+                    --><li class="dot"></li>
+                    
+                </ul>
+                <div id="testim-content" class="cont">
+                    
+                    <div class="active">
+                      <div class="img">
+                        <img src="https://images.unsplash.com/photo-1564564321837-a57b7070ac4f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2352&q=80">
+                      </div>
+                        <h2>Esteve O Amhalghaidh (Morning)</h2>
+                      <p>
+
+              A leading environmental expert from Catalonia, Spain, Esteve began his journey in climate change after experiencing the first-hand effects of droughts and increased temperatures. As the founder of Youth & Harvest, Esteve is using the voice of the youth to help bring about change for the people who cannot. 
+            
+                      </p>
+                    </div>
+
+               
+
+                    <div>
+                      <div class="img">
+                        <img src="https://images.unsplash.com/photo-1616084403156-9ae114afa6a0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1407&q=80">
+                      </div>                       
+ <h2>Mohandas Kumar (Evening)</h2>
+                      <p>
+Born in Maharashtra, India, Mohandas was brought up in a poor family relying on agriculture and farming as a form of sustenance. With constant droughts and lowering supply of water, in addition to the depleting resources in the soil, things were very difficult. As he grew up, he realized this wasn’t something only he was going through, which only boosted his passion for change and agriculture. Now speaking on behalf of the agriculture sector of India in the UN climate change conferences, he has come a long way. He believes in making positive changes as time goes on.                      </p>                    </div>
+
+                </div>
+
+            </div>
+<!--         </div> -->
+    </section>
+
+    
+<script src="https://use.fontawesome.com/1744f3f671.js"></script>
+    
+    
+    
+    <!--
+    
+   
+     <div class="testimonials" id="scroll">
+      <div class="test-heading">
+	  <h1>Meet Our Speakers</h1>
+  
+    </div>
+    
+<div class="container">
+  
+  <div class="carousel">
+    <div class="slider">
+     
+      <section> 
+        <img
+            src="https://images.unsplash.com/photo-1588731234159-8b9963143fca?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80"
+            alt=""
+            class="home__img"
+          />
+        
+          
+        <div>
+        <h2> Ioan M Magee <br></h2>
+        <p >
+          
+          Born in Bulgaria, Ioan has been passionate about the effects of climate change since a young age. 
+          Ioan is the founder of Bulgaria For Change, a now nationally known non-profit organization seeking to increase awareness of 
+          climate change in his country and the world. He is known for helping youths in lesser-known communities have a greater voice in this 
+          fight for sustainability and advocating for green policies. </p>
+        
+        </div>
+</section>
+      
+       
+      <section>
+        <img
+            src="https://images.unsplash.com/photo-1558487661-9d4f01e2ad64?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80"
+            alt=""
+            class="home__img"
+          />
+        
+        <div>
+        <h2> Osbeorn I Howard <br></h2>
+        <p >
+          
+          Originally from Greater Manchester, England, Osbeorn comes from a long generation of people fighting against 
+          climate change, more specifically deforestation and its effects on the ecosystem.  Specializing in the field of ecology, 
+          Howard has made significant contributions in the field. Speaking at the UN Climate action conference, and being the 
+          co-founder of Earth Comes First, a non-profit organization raising awareness of the effect of deforestation and climate 
+          change on more than just humans, are two of his long list of accomplishments.  </p>
+        
+        </div>
+      </section>
+      
+    
+      
+      
+    </div>
+    <div class="control">
+      
+      <ul>
+        <li class="selected"></li>
+        <li1></li1>
+         <li></li>
+      </ul>
+      
+    </div>
+  
+    </div>
+  </div>
+    </div>
+      
+      -->
+    
+    
+    
+    
+    
+    
+      <div class="planttypes">
+      <h1>Farmer Panel</h1>
+
+      <p style="width: 50%; padding-top: 20px;">
+        There are numerous sustainable agricultural practices that farmers can
+        use on their crops. Join us as we present a panel of farmers who will
+        discuss the methods they use and their pros and cons. And at the end,
+        participate in a Q and A session where you can directly ask the farmers
+        questions.
+      </p>
+
+      <table>
+        <tr>
+          <td>
+            <img
+              src="https://cdn.glitch.global/a3e1e2df-01b9-4a3f-ba7e-87785f32b8ed/Untitled%2098.png?v=1644084004135"
+            />
+          </td>
+          <td>
+            <img
+              src="https://cdn.glitch.global/a3e1e2df-01b9-4a3f-ba7e-87785f32b8ed/Untitled%2097.png?v=1644084004251"
+            />
+          </td>
+          <td>
+            <img
+              src="https://cdn.glitch.global/a3e1e2df-01b9-4a3f-ba7e-87785f32b8ed/Untitled%20100.png?v=1644084004529"
+            />
+          </td>
+          <td>
+            <img
+              src="https://cdn.glitch.global/a3e1e2df-01b9-4a3f-ba7e-87785f32b8ed/Untitled%2099.png?v=1644084004617"
+            />
+          </td>
+          <td>
+            <img
+              src="https://cdn.glitch.global/a3e1e2df-01b9-4a3f-ba7e-87785f32b8ed/Untitled%2096.png?v=1644084004760"
+            />
+          </td>
+        </tr>
+
+        <tr>
+          <td><p>No-till Agriculture</p></td>
+
+          <td><p>Crop Rotation</p></td>
+
+          <td><p>Integrated Pest Management</p></td>
+
+          <td><p>Agroforestry</p></td>
+
+          <td><p>And More!</p></td>
+        </tr>
+      </table>
+    </div>
+    
+    
+
+    <!-- ======= Services Section ======= -->
+    <section class="services">
+      <div class="box4">
+        <div class="container"></div>
+        <div class="test-heading">
+          <h7>Plant Together Event</h7>
+        </div>
+        <img src="https://cdn.glitch.global/a3e1e2df-01b9-4a3f-ba7e-87785f32b8ed/Untitled%20105.png?v=1644156965296" alt="" id="planttog"> 
+        <!--image row start-->
+        <div class="row" style="margin-top: -30px;">
+          <!--image card start-->
+
+          <!--image card end-->
+          <!--image card start-->
+          <div class="image">
+            <img alt="" width="100%" height="100%" />
+            <div class="details">
+              <h4></h4>
+              <h2><span>What is it?</span></h2>
+              <p>
+                Our plant-together event is one of the most famous events of our
+                conference. We send everyone a packet of seeds for a plant that
+                is native to their region along with a booklet about how to care
+                for the plant in an environmentally sustainable way. And during
+                the event itself, we give everyone instructions on how to plant
+                their seeds and all of us, from around the world, plant the
+                seeds together.
+              </p>
+             <!-- <a class="test-btn-box" href="speakers.html">More</a>-->
+            </div>
+          </div>
+          <!--image card end-->
+          <!--image card start-->
+          <div class="image2">
+            <img alt="" width="100%" height="100%" />
+            <div class="details">
+              <h4></h4>
+              <h2><span>Why do we do it?</span></h2>
+              <p>
+                One way for individuals to help the environment is by growing
+                plants. More plants means more carbon dioxide taken from the
+                atmosphere and turned into oxygen through photosynthesis. The
+                best part is, planting is something that can be done by anyone!
+                Moreover, the sustainable agricultural practices we teach help
+                individuals become more mindful of the environment.
+              </p>
+             <!-- <a class="test-btn-box" href="projects.html">More</a>-->
+            </div>
+          </div>
+          <!--image card end-->
+        </div>
+        <!--image row end-->
+        <!--image row start-->
+
+        <!--image row end-->
+      </div>
+       <div class="col-sm-6">
+          <!----  <a class="cht-btn" target="_blank" href="pricing.html"> View Prices </a>---->
+        </div>
+      </div>
+    </div>
+     <div class="textinfo" style="padding-top: 120px !important;">
+      <div class="row">
+        <div class="col-md-6 col-md-pull-6" id="rightimage">
+          <img
+            src="https://cdn.glitch.global/a3e1e2df-01b9-4a3f-ba7e-87785f32b8ed/Untitled%20137%20copy.png?v=1652672297204"
+            alt=""
+            class="home__img1"
+            
+          />
+        </div>
+
+        <div class="col-md-6 col-md-push-6" id="lefttext">
+          <h2>Sign Up Here!</h2>
+          <p>
+            Do you want to participate in our plant together event? 
+            Fill out our form to register for the event. Get a plant chosen with your location in mind to protect local biodiversity! 
+          </p>
+           <div class="form">
+                  <form>
+                    <input
+                      type="text"
+                      name="username"
+                      placeholder="Full Name"
+                    />
+                    <input type="text" name="location" placeholder="Location" />
+                    
+                    <button>Submit</button>
+                  </form>
+                </div>
+        </div>
+      </div>
+    </div>  
+      <!--image card layout end-->
+    </section>
+
+    <!--        <p id="demo"></p>
+
+            <script>
+              // Set the date we're counting down to
+              var countDownDate = new Date("Jan 30, 2022 15:37:25").getTime();
+
+              // Update the count down every 1 second
+              var x = setInterval(function () {
+                // Get today's date and time
+                var now = new Date().getTime();
+
+                // Find the distance between now and the count down date
+                var distance = countDownDate - now;
+
+                // Time calculations for days, hours, minutes and seconds
+                var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                var hours = Math.floor(
+                  (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+                );
+                var minutes = Math.floor(
+                  (distance % (1000 * 60 * 60)) / (1000 * 60)
+                );
+                var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                // Output the result in an element with id="demo"
+                document.getElementById("demo").innerHTML =
+                  days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+
+                // If the count down is over, write some text
+                if (distance < 0) {
+                  clearInterval(x);
+                  document.getElementById("demo").innerHTML = "EXPIRED";
+                }
+              }, 1000);
+            </script> -->
+
+    <!---<div class="textinfo" id="scroll">
+      <div class="row">
+        <div class="col-md-6 col-md-push-6" id="lefttext">
+          <h2>About the Event</h2>
+          <p>
+            One way for individuals to help the environment is by growing
+            plants. More plants means more carbon dioxide taken from the
+            atmosphere and turned into oxygen through photosynthesis. And,
+            certain plants have even more specific benefits to the environment.
+            The best part is, planting is something that can be done by anyone!
+            To encourage this, we are hosting a Plant Together Event where
+            people all over the world plant a flower or shrub on the same day,
+            as an act of solidarity for our environment.
+          </p>
+        </div>
+
+        <div class="col-md-6 col-md-pull-6" id="rightimage">
+          <img
+            src="https://cdn.glitch.global/a3e1e2df-01b9-4a3f-ba7e-87785f32b8ed/pexels-akil-mazumder-1072824.jpg?v=1642744582765 "
+            alt=""
+            class="home__img"
+          />
+        </div>
+      </div>
+    </div>-->
+
+    <!--    
+    <div class="content">
+      <div class="services-section">
+        <div class="inner-width">
+          <div class="test2-heading">
+            <div class="smallblurb1"></div>
+            <h1>Farmer Panel</h1>
+            <p>
+              There are numerous sustainable agricultural practices that farmers can use on their crops. 
+        Join us as we present a panel of farmers who will discuss the methods they use and their pros and cons. 
+        And at the end,  participate in a q and a session where you can directly ask the farmers questions.
+            </p>
+            <p></p>
+          </div>
+
+          <div class="services-container">
+            <div class="service-box">
+              <div class="service-icon">
+                
+              </div>
+              <div class="service-title">
+                no-till agriculture
+              </div>
+              <div class="service-desc">
+                <p>
+                  
+                </p>
+              </div>
+            </div>
+
+            <div class="service-box">
+              <div class="service-icon">
+                
+              </div>
+              <div class="service-title">crop rotation</div>
+              <div class="service-desc">
+                <p>
+                  
+                </p>
+              </div>
+            </div>
+            
+
+            <div class="service-box">
+              <div class="service-icon">
+               
+              </div>
+              <div class="service-title">
+                IPM
+              </div>
+              <div class="service-desc">
+                
+              </div>
+            </div>
+
+            <div class="service-box">
+              <div class="service-icon">
+                
+              </div>
+              <div class="service-title">and more</div>
+              <div class="service-desc">
+              
+                
+              </div>
+            </div>
+
+          
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+   
+    
+    
+    -->
+
+  
+
+    <!---- Text Info -->
+    <div class="textinfo">
+      <div class="row">
+        <div class="col-lg-6" id="lefttext1">
+          <h2>Tips</h2>
+          <p>
+            1. Make sure that the plant you choose will thrive in the climate
+            you’re in. Certain plants do better in certain temperatures and
+            weather conditions and it’s important to keep that in mind when
+            choosing your plant.
+          </p>
+          <p>
+            2. Ensure that your plant isn’t an invasive species to the area. We
+            don’t want to hurt the environment through this project.
+          </p>
+          <p>
+            3. You can either plant seeds or seedlings. They need to be planted
+            in different ways, so make sure to look at the instructions that
+            came with the plant or research your specific plant.
+          </p>
+        </div>
+
+        <div class="col-lg-6" id="lefttext1" style="padding-top: 50px">
+          <p>
+            4. Choose a spot for your plant that has optimal sunlight during the
+            day and is close to a water source to make sure that your plant
+            really thrives. For an additional benefit, choose a location that
+            you see all the time so you don’t forget about your plant.
+          </p>
+          <p>
+            5. When it comes to watering your plant, make sure you don’t do it
+            too much or too little. The standard rule is to water your plants 1
+            inch per week, maybe more during summer. But, like with everything,
+            this is subjective to each plant.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!---- Text Info 
+    <div class="textinfo">
+      <div class="row">
+        <div class="col-md-6 col-md-push-6" id="lefttext">
+          <h2>Instructions</h2>
+          <p>
+            By using these analytics, you get an in-depth view of both your
+            patients and your own practice. You can then use this data to assess
+            your own online progress and success in order to tailor your methods
+            to better help your patients. At ConnectHealth, we believe in
+            helping our clients get whatever they need to help their patients in
+            the digital landscape, and this feature does exactly that.
+          </p>
+        </div>
+
+        <div class="col-md-6 col-md-pull-6" id="rightimage">
+          <img
+            src="https://cdn.glitch.com/fe9ee492-4350-4c23-91a3-7de989bb85f5%2FAnalytic%20Demo%20Graphic.svg?v=1617591333753"
+            alt=""
+            class="home__img"
+          />
+        </div>
+      </div>
+    </div>--->
+
+    <!-- footer -->
+    <div class="bottomfooter">
+      
+      <div class="custom-shape-divider-top-1644035655">
+    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M1200 0L0 0 598.97 114.72 1200 0z" class="shape-fill"></path>
+    </svg>
+</div>
+      
+      
+   <footer class="footer">
+  	 <div class="container">
+  	 	<div class="row">
+  	 		<div class="footer-col">
+  	 			<h4>CC22 Summit</h4>
+  	 			<ul>
+  	 				<li><a href="index.html">home</a></li>
+  	 				<li><a href="about.html">about us</a></li>
+  	 				<li><a href="blog.html">news updates</a></li>
+  	 			</ul>
+  	 		</div>
+  	 		<div class="footer-col">
+  	 			<h4>Themes</h4>
+  	 			<ul>
+  	 				<li><a href="reforestation.html">Reforestation</a></li>
+  	 				<li><a href="pollution.html">Physical Pollution</a></li>
+  	 				<li><a href="transportation.html">Transportation</a></li>
+  	 				<li><a href="plant.html">Sustainable Agriculture</a></li>
+  	 			</ul>
+  	 		</div>
+  	 		<div class="footer-col">
+  	 			<h4>event details</h4>
+  	 			<ul>
+              <li><a href="schedule.html">Schedule</a></li>
+  	 				 <li><a href="contact.html">contact us</a></li>
+
+  	 			</ul>
+  	 		</div>
+  	 		<div class="footer-col">
+  	 			<h4>More</h4>
+  	 			<ul>
+            <li><a href="donation.html">Take Action</a></li>
+  	 				<li><a href="about.html">citations</a></li>
+            
+  	 			</ul>
+          
+  	 		</div>
+  	 	</div>
+  	 </div>
+  
+  </footer>
+      
+      
+      
+            
+    </div>
+    
+
+    <script>
+      const accordionItemHeaders = document.querySelectorAll(".accordion-head");
+
+      accordionItemHeaders.forEach((accordionItemHeader) => {
+        accordionItemHeader.addEventListener("click", (event) => {
+          accordionItemHeader.classList.toggle("active");
+          const accordionItemBody = accordionItemHeader.nextElementSibling;
+          if (accordionItemHeader.classList.contains("active")) {
+            accordionItemBody.style.maxHeight =
+              accordionItemBody.scrollHeight + "px";
+          } else {
+            accordionItemBody.style.maxHeight = 0;
+          }
+        });
+      });
+
+      const left = document.querySelector(".left");
+      const right = document.querySelector(".right");
+
+      const slider = document.querySelector(".slider");
+
+      const indicatorParent = document.querySelector(".control ul");
+      const indicators = document.querySelectorAll(".control li");
+      index = 0;
+
+      indicators.forEach((indicator, i) => {
+        indicator.addEventListener("click", () => {
+          document
+            .querySelector(".control .selected")
+            .classList.remove("selected");
+          indicator.classList.add("selected");
+          slider.style.transform = "translateX(" + i * -25 + "%)";
+          index = i;
+        });
+      });
+
+      left.addEventListener("click", function () {
+        index = index > 0 ? index - 1 : 0;
+        document
+          .querySelector(".control .selected")
+          .classList.remove("selected");
+        indicatorParent.children[index].classList.add("selected");
+        slider.style.transform = "translateX(" + index * -25 + "%)";
+      });
+
+      right.addEventListener("click", function () {
+        index = index < 4 - 1 ? index + 1 : 3;
+        document
+          .querySelector(".control .selected")
+          .classList.remove("selected");
+        indicatorParent.children[index].classList.add("selected");
+        slider.style.transform = "translateX(" + index * -25 + "%)";
+      });
+    </script>
+
+    <!--========== SCROLL REVEAL ==========-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!--========== MAIN JS ==========-->
+    <script src="main.js"></script>
+  </body>
+</html>
+
+
+
+ <script>
+      // vars
+'use strict'
+var	testim = document.getElementById("testim"),
+		testimDots = Array.prototype.slice.call(document.getElementById("testim-dots").children),
+    testimContent = Array.prototype.slice.call(document.getElementById("testim-content").children),
+    testimLeftArrow = document.getElementById("left-arrow"),
+    testimRightArrow = document.getElementById("right-arrow"),
+    currentSlide = 0,
+    currentActive = 0,
+		touchStartPos,
+		touchEndPos,
+		touchPosDiff,
+		ignoreTouch = 30;
+;
+
+window.onload = function() {
+
+    // Testim Script
+    function playSlide(slide) {
+        for (var k = 0; k < testimDots.length; k++) {
+            testimContent[k].classList.remove("active");
+            testimContent[k].classList.remove("inactive");
+            testimDots[k].classList.remove("active");
+        }
+
+        if (slide < 0) {
+            slide = currentSlide = testimContent.length-1;
+        }
+
+        if (slide > testimContent.length - 1) {
+            slide = currentSlide = 0;
+        }
+
+        if (currentActive != currentSlide) {
+            testimContent[currentActive].classList.add("inactive");            
+        }
+        testimContent[slide].classList.add("active");
+        testimDots[slide].classList.add("active");
+
+        currentActive = currentSlide;
+    
+       
+    }
+
+    testimLeftArrow.addEventListener("click", function() {
+        playSlide(currentSlide -= 1);
+    })
+
+    testimRightArrow.addEventListener("click", function() {
+        playSlide(currentSlide += 1);
+    })    
+
+    for (var l = 0; l < testimDots.length; l++) {
+        testimDots[l].addEventListener("click", function() {
+            playSlide(currentSlide = testimDots.indexOf(this));
+        })
+    }
+
+    playSlide(currentSlide);
+
+    // keyboard shortcuts
+    document.addEventListener("keyup", function(e) {
+        switch (e.keyCode) {
+            case 37:
+                testimLeftArrow.click();
+                break;
+                
+            case 39:
+                testimRightArrow.click();
+                break;
+
+            case 39:
+                testimRightArrow.click();
+                break;
+
+            default:
+                break;
+        }
+    })
+		
+		testim.addEventListener("touchstart", function(e) {
+				touchStartPos = e.changedTouches[0].clientX;
+		})
+	
+		testim.addEventListener("touchend", function(e) {
+				touchEndPos = e.changedTouches[0].clientX;
+			
+				touchPosDiff = touchStartPos - touchEndPos;
+			
+				console.log(touchPosDiff);
+				console.log(touchStartPos);	
+				console.log(touchEndPos);	
+
+			
+				if (touchPosDiff > 0 + ignoreTouch) {
+						testimLeftArrow.click();
+				} else if (touchPosDiff < 0 - ignoreTouch) {
+						testimRightArrow.click();
+				} else {
+					return;
+				}
+			
+		})
+}
+  </script>

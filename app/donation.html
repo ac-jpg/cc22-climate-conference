@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="stylesheet" href="donation.css" />
+
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <nav>
+      <div class="topnav" id="myTopnav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="schedule.html">Schedule</a>
+        <div class="dropdown">
+          <button class="dropbtn">
+            Themes
+            <i class="fa fa-caret-down"></i>
+          </button>
+
+          <div class="dropdown-content">
+            <a href="reforestation.html">Reforestation</a>
+            <a href="pollution.html">Physical Pollution</a>
+            <a href="transportation.html">Transportation</a>
+            <a href="plant.html" style="padding-bottom: 20px">Sustainable Agriculture</a>
+          </div>
+        </div>
+        <a  href="blog.html">News Updates</a>
+                <a  href="donation.html" style="color: #32b3a3">Take Action</a>
+
+
+        <a href="contact.html">Contact</a>
+<div class="loginstuff">
+
+          <button id="modal-btn" class="butt">Register Now &#8594;</button>
+
+          <div id="my-modal" class="modal">
+            <div class="modal-content">
+              <div class="modal-header">
+                <span class="close"
+                  ><i class="fa fa-times-circle" aria-hidden="true"></i
+                ></span>
+              </div>
+
+              <div class="modal-body">
+                <h2>Register</h2>
+                <p>
+                  Please complete the form to register for our event.
+                </p>
+                <div class="form">
+                  <form>
+                    <input
+                      type="text"
+                      name="username"
+                      placeholder="Full Name"
+                    />
+                    <input type="text" name="username" placeholder="Email" />
+                    <input
+                      type="text"
+                      name="username"
+                      placeholder="Phone Number"
+                    />
+                    <button>Submit</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <script>
+            // Get DOM Elements
+            const modal = document.querySelector("#my-modal");
+            const modalBtn = document.querySelector("#modal-btn");
+            const closeBtn = document.querySelector(".close");
+
+            // Events
+            modalBtn.addEventListener("click", openModal);
+            closeBtn.addEventListener("click", closeModal);
+            window.addEventListener("click", outsideClick);
+
+            // Open
+            function openModal() {
+              modal.style.display = "block";
+            }
+
+            // Close
+            function closeModal() {
+              modal.style.display = "none";
+            }
+
+            // Close If Outside Click
+            function outsideClick(e) {
+              if (e.target == modal) {
+                modal.style.display = "none";
+              }
+            }
+          </script>
+        </div>
+
+        <a
+          href="javascript:void(0);"
+          style="font-size: 20px; padding-right: 20px"
+          class="icon"
+          onclick="myFunction()"
+          >&#9776;</a
+        >
+      </div>
+    </nav>
+    
+
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+    </script>
+
+    <!-- End Header -->
+
+    <!-- ======= Hero Section ======= -->
+
+    
+    
+    
+     <!-- ======= Hero Section ======= -->
+ <section  class="home" id="home">
+                <div class="home__container bd-container bd-grid">
+                    <div class="home__data">
+                        <h1 class="home_title">Take Action</h1>
+                                               <h2 class="home__subtitle">  Learn how you can join the fight against climate change in a few easy steps.
+</h2>
+                        <a href="contact.html" class="button">Contact Us</a>
+                    </div>
+    
+                    <img src="https://cdn.glitch.global/a3e1e2df-01b9-4a3f-ba7e-87785f32b8ed/Untitled%20130.png?v=1649700809923" alt="" class="home__img">
+                </div>
+              
+              
+              
+                
+             
+              
+  
+              
+            </section>
+    <!--
+    <div class="test2-heading">
+      <div class="smallblurb1">
+ 
+      </div>
+      <h1>Take Action</h1>
+    </div>
+-->
+
+    <!---- Text Info --->
+    <div class="textinfo" >
+      <div class="row" id="donate" style = "margin-top: -100px;">
+        <div class="col-lg-6" id="lefttext" >
+          <h2>Donate to the Fight Against Climate Change.</h2>
+          <p>
+                       We would love it if you could support our cause through donations. Because we are a non-profit organization, they are what help us run and take on all of the important projects we do. It would mean a lot to us if you consider donating!
+
+
+
+          </p>
+        </div>
+
+           <form>
+  
+    <p>Donation Type: </p> 
+    <input type="radio" value="monthly" name="gift-type"/> <label for="gift-type">Monthly</label> 
+    <input type="radio" value="one-time" name="gift-type"/> <label for="gift-type">One-Time</label><br/>
+
+     Gift Amount <span class="minimum">($10 Min.)</span>
+    
+    <label for="amount-undefined" class="undefined-amount"><input type="text" name="amount-undefined" placeholder="0.00"/></label>
+             <a class="submit-donation" href="payment.html">Donate Now</a>
+  </form>
+      </div>
+    </div>
+    
+    
+    
+    
+     <div class="textinfo6" id="scroll" >
+    <div class="row" >
+      
+       
+      <div class="col-lg-6" id="lefttext6">
+         <h2>Use Your Power</h2>  
+        <p>Legislative action is very important in the fight against climate change, 
+          so you can write to or call your representative to urge 
+          them to take action. </p>
+          
+          
+         <p>  Here are some pieces of legislation 
+          currently in Congress that you can write to your representatives about.
+         
+           
+        </p> <p> Note: This section only provides
+          information for US residents. But, if you live somewhere 
+          else, feel free to contact your own local and national 
+          representatives. </p> 
+      <p>
+             <a href="https://www.house.gov/representatives/find-your-representative" target="_blank"> Click here to find your representative.</a>
+        </p></div>
+      
+      
+     
+    </div> 
+    </div> 
+    <div class="test3-heading" style="background-color: #ffffff"></div>
+
+    <div class="burr" style="background-color: #f0f0f0; padding-bottom: 150px;">
+      <div class="analytic">
+        <div class="row no-gutters" id="2col">
+          
+          <div class="col-lg-6" id="rightimage">
+        <img src="https://cdn.glitch.global/a3e1e2df-01b9-4a3f-ba7e-87785f32b8ed/Untitled%20129%20copy.png?v=1652661664374" alt="" class="home__img">
+      </div>
+          
+          <div class="col-lg-5" id="righttext">
+            <h2 style="font-weight: 600">H.R.2310 - Climate Change Education Act</h2>
+
+           <p >This bill, if passed, would require the administrator of the National Oceanic and Atmospheric Administration (NOAA) to establish a Climate Change Education Program. It was introduced in the House on 4/01/2021.  </p>
+          <p>Bill Text: <a href="https://www.congress.gov/bill/117th-congress/house-bill/2310/text">https://www.congress.gov/bill/117th-congress/house-bill/2310/text</a>    </p>
+         
+         
+           
+          </div>
+          
+          
+          
+
+<button class="open-button" onclick="openForm()">Take Action Now</button>
+
+<div class="form-popup" id="myForm">
+  <form action="/action_page.php" class="form-container">
+
+    <label for="email"><b>Your Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email">
+    
+      <label for="email"><b>Representative Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email">
+    
+     <label for="email"><b>Please enter your name and the name of the bill in the placeholders provided.</b></label>
+    <textarea rows="4" cols="30"> Subject: Support ____
+     
+      Dear Senator/Representative ____________:
+    
+      I am writing today to urge your support for ___.
+      
+      Energy use and production is among the defining issues of our time, and I support this bipartisan legislation.  Please support measures to move forward with debate on ____.
+
+Thank you for your time and attention.
+
+Sincerely,
+      _____
+    
+    </textarea>
+    
+
+    <button class="btn">Submit</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+</div>
+
+<script>
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+</script>
+
+      
+        </div>
+      </div>
+    </div>
+    <div class="test3-heading" style="background-color: #ffffff"></div>
+
+    <div class="burr" style="background-color: #f0f0f0; padding-bottom: 150px;">
+      <div class="analytic">
+        <div class="row no-gutters" id="2col">
+            
+          <div class="col-lg-6" id="rightimage">
+        <img src="https://cdn.glitch.global/a3e1e2df-01b9-4a3f-ba7e-87785f32b8ed/Untitled%20132.png?v=1652665109709" alt="" class="home__img">
+      </div>
+          <div class="col-lg-5" id="righttext">
+            <h2 style="font-weight: 600">H.R.2826 - To establish a Global Climate Change Resilience Strategy, to authorize the admission of climate-displaced persons, and for other purposes.</h2>
+
+          
+           <p >This bill was introduced in the House on 04/22/2021. This bill wants to create a Global Climate Change Resilience Strategy that will create a pathway to immigration into the US for those displaced by climate change.  </p>
+          <p>Bill Text: <a href="https://www.congress.gov/bill/117th-congress/house-bill/2826/text">https://www.congress.gov/bill/117th-congress/house-bill/2826/text 
+</a>    </p>
+         
+         
+           
+          </div>
+
+      
+        </div>
+      </div>
+    </div>
+    <div class="test3-heading" style="background-color: #ffffff"></div>
+
+    <div class="burr" style="background-color: #f0f0f0">
+      <div class="analytic">
+        <div class="row no-gutters" id="2col">
+          
+          <div class="col-lg-6" id="rightimage">
+        <img src="https://cdn.glitch.com/fe9ee492-4350-4c23-91a3-7de989bb85f5%2FAnalytic%20Blob%20Graphic.svg?v=1617591208627" alt="" class="home__img">
+      </div>
+          <div class="col-lg-5" id="righttext">
+            <h2 style="font-weight: 600">S.1956 - Manufacturing Clean Energy and Energy Efficiency Act of 2021</h2>
+
+       <p >This bill is meant to require the Department of Energy to create a program that would give grants to small and medium sized companies that become more energy efficient or decrease their greenhouse gasses. It was introduced in the Senate on 05/28/2021. <p>Bill Text: <a href="https://www.congress.gov/bill/117th-congress/senate-bill/1956/text?r=59&s=1">https://www.congress.gov/bill/117th-congress/senate-bill/1956/text?r=59&s=1 
+</a>    </p> 
+           
+          </div>
+
+      
+        </div>
+      </div>
+    </div>
+    
+    
+  
+      
+ <!-- footer -->
+    <div class="bottomfooter">
+      
+      <div class="custom-shape-divider-top-1644035655">
+    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M1200 0L0 0 598.97 114.72 1200 0z" class="shape-fill"></path>
+    </svg>
+</div>
+      
+      
+   <footer class="footer">
+  	 <div class="container">
+  	 	<div class="row">
+  	 		<div class="footer-col">
+  	 			<h4>CC22</h4>
+  	 			<ul>
+  	 				<li><a href="index.html">home</a></li>
+  	 				<li><a href="about.html">about us</a></li>
+  	 				<li><a href="blog.html">news updates</a></li>
+  	 			</ul>
+  	 		</div>
+  	 		<div class="footer-col">
+  	 			<h4>Themes</h4>
+  	 			<ul>
+  	 				<li><a href="reforestation.html">Reforestation</a></li>
+  	 				<li><a href="pollution.html">Physical Pollution</a></li>
+  	 				<li><a href="transportation.html">Transportation</a></li>
+  	 				<li><a href="plant.html">Sustainable Agriculture</a></li>
+  	 			</ul>
+  	 		</div>
+  	 		<div class="footer-col">
+  	 			<h4>event details</h4>
+  	 			<ul>
+              <li><a href="schedule.html">Schedule</a></li>
+  	 				 <li><a href="contact.html">contact us</a></li>
+
+  	 			</ul>
+  	 		</div>
+  	 		<div class="footer-col">
+  	 			<h4>More</h4>
+  	 			<ul>
+              	 				<li><a href="donation.html">take action</a></li>
+
+  	 				<li><a href="about.html">citations</a></li>
+            
+  	 			</ul>
+          
+  	 		</div>
+  	 	</div>
+  	 </div>
+  
+  </footer>
+      
+      
+      
+            
+    </div>
+    
+
+      <script>
+        
+    </script>
+
+    <!--========== SCROLL REVEAL ==========-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!--========== MAIN JS ==========-->
+    <script src="main.js"></script>
+  </body>
+</html>
+
+
+      
+
+    <!--========== SCROLL REVEAL ==========-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!--========== MAIN JS ==========-->
+    <script src="main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="stylesheet" href="transportation.css" />
+
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+     <nav>
+      <div class="topnav" id="myTopnav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="schedule.html">Schedule</a>
+        <div class="dropdown">
+          <button class="dropbtn">
+            Themes
+            <i class="fa fa-caret-down"></i>
+          </button>
+
+          <div class="dropdown-content">
+            <a href="reforestation.html">Reforestation</a>
+            <a href="pollution.html">Physical Pollution</a>
+            <a style="color: #32b3a3" href="transportation.html">Transportation</a>
+            <a href="plant.html" style="padding-bottom: 20px">Sustainable Agriculture</a>
+          </div>
+        </div>
+        <a href="blog.html">News Updates</a>
+                <a href="donation.html">Take Action</a>
+
+        <a href="contact.html">Contact</a>
+
+       <div class="loginstuff">
+
+          <button id="modal-btn" class="butt">Register Now &#8594;</button>
+          
+          
+          
+          
+
+          <div id="my-modal" class="modal">
+            
+            
+            
+            <div class="modal-content">
+              <div class="modal-header">
+                <span class="close"
+                  ><i class="fa fa-times-circle" aria-hidden="true"></i
+                ></span>
+              </div>
+
+              <div class="modal-body">
+                <h2>Register</h2>
+                
+                 <div id="thanks" style="display: none;">
+            <p style="font-size: 20px;">
+             Thanks for registering! See you soon!
+            </p>
+          </div>
+                
+                <div id="hide">
+                  
+              
+                <p>Please complete the form to register for our event.</p>
+                <div class="form" >
+                  <form>
+                    <input
+                      type="text"
+                      name="username"
+                      placeholder="Full Name"
+                    />
+                    <input type="text" name="username" placeholder="Email" />
+                    <input
+                      type="text"
+                      name="username"
+                      placeholder="Phone Number"
+                    />
+                    <button type='button' onclick="showDiv()">Submit</button>
+                  </form>
+                </div>
+                    </div>
+              </div>
+            </div>
+          </div>
+
+          <script>
+            
+            
+          function showDiv() {
+            document.getElementById('thanks').style.display = "block";
+            document.getElementById('hide').style.display = "none";
+          }
+         
+            
+            // Get DOM Elements
+            const modal = document.querySelector("#my-modal");
+            const modalBtn = document.querySelector("#modal-btn");
+            const closeBtn = document.querySelector(".close");
+
+            // Events
+            modalBtn.addEventListener("click", openModal);
+            closeBtn.addEventListener("click", closeModal);
+            window.addEventListener("click", outsideClick);
+
+            // Open
+            function openModal() {
+              modal.style.display = "block";
+            }
+
+            // Close
+            function closeModal() {
+              modal.style.display = "none";
+            }
+
+            // Close If Outside Click
+            function outsideClick(e) {
+              if (e.target == modal) {
+                modal.style.display = "none";
+              }
+            }
+          </script>
+        </div>
+        <a
+          href="javascript:void(0);"
+          style="font-size: 20px; padding-right: 20px"
+          class="icon"
+          onclick="myFunction()"
+          >&#9776;</a
+        >
+      </div>
+    </nav>
+    
+    
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+    </script>
+
+    
+
+    <!-- End Header -->
+
+    <!-- ======= Hero Section ======= -->
+
+    <!--========== HOME ==========-->
+
+    <div class="header">
+      
+      <h1 class="fade">
+         Transporation<br> 
+        
+       
+    </h1>
+   <a
+        class="downbtn"
+        type="button"
+        onclick="document.getElementById('scroll').scrollIntoView();"
+      > <i class="fa fa-angle-down"></i>
+      </a> 
+   
+        </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+     <!---- Text Info  
+    --->
+    <div class="textinfo"  id="scroll">
+      <div class="row">
+        <div class="col-lg-6" id="lefttext">
+          <h2>About the Theme</h2>
+          <p>
+            One of the biggest contributors to carbon dioxide emissions is the transportation sector, which includes cars, 
+            buses and even planes. In 2019, emissions from this sector made up 29% of total U.S. carbon emissions. It’s clear 
+            that reducing our carbon footprint means that we are going to have to change our methods of transportation. Join day 
+            3 of our conference to learn more about how vehicles cause carbon emissions and the steps you can take to reduce them.
+          </p>
+          
+        </div>
+
+        <div class="col-lg-6" id="rightimage">
+          <img
+            src="https://cdn.glitch.global/a3e1e2df-01b9-4a3f-ba7e-87785f32b8ed/Untitled%2093.png?v=1644034819983"
+            alt=""
+            class="home__img"
+          />
+        </div>
+      </div>
+    </div>
+    
+
+    
+    
+       
+<div>
+        <div id="lefttext">
+          <h3>Events</h3>
+          
+      </div>
+    </div>
+    
+    
+    <div class="svgback">
+      
+   
+  <div class="custom-shape-divider-top-1644096856">
+    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M741,116.23C291,117.43,0,27.57,0,6V120H1200V6C1200,27.93,1186.4,119.83,741,116.23Z" class="shape-fill"></path>
+    </svg>
+</div>
+      
+       </div>
+    
+    
+
+      <div class="textinfo1">
+      <div class="row">
+        <div class="col-lg-6" id="lefttext3">
+          <h3>Meet Our Speakers</h3>
+          
+          
+        </div>
+
+        
+      </div>
+    </div>
+
+    
+
+<section id="testim" class="testim">
+<!--         <div class="testim-cover"> -->
+            <div class="wrap">
+
+              
+                <span id="right-arrow" ></span>
+                <span id="left-arrow"></span>
+                <ul id="testim-dots" class="dots">
+                    <li class="dot active"></li><!--
+                    --><li class="dot"></li>
+                    
+                </ul>
+                <div id="testim-content" class="cont">
+                    
+                    <div class="active">
+                      <div class="img">
+                        <img src="https://cdn.glitch.global/a3e1e2df-01b9-4a3f-ba7e-87785f32b8ed/thumbnails%2Fpexels-olga-lioncat-7291228.jpg?1642748161491">
+                      </div>
+                        <h2>Marta K Bello (Morning)</h2>
+                      <p>
+      A Dutch advocate, and an entrepreneur, Marta began her journey by exploring the field of Energy and Sustainability. 
+                        Starting by being an environmental engineer, Marta has made significant contributions in the field. With her knowledge 
+                        of the power of harnessing solar energy, she founded Sun and Co., a non-profit organization working on implementing 
+                        solar power in less accessible areas and making it ideal for people of all standings. She has now moved her findings 
+                        and research into the transportation sector, working with well known minds to create a more eco-friendly means of 
+                        transportation. Expanding her organization and solar power into the busy roads we travel on, she is already making huge advances! 
+                      
+                      </p>
+                    </div>
+
+               
+
+                    <div>
+                      <div class="img">
+                        <img src="https://images.unsplash.com/photo-1533781107041-b3b8441e1612?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80">
+                      </div>                       
+ <h2>Lakshmi K Abramson (Evening)
+</h2>
+                      <p>
+
+                         Ceo of Green Tech, one of the biggest up and coming businesses in India, at the age of 25 
+                        and making Forbes 30 under 30, Lakshmi has always had her mindset on one goal: creating technological 
+                        advancement without the expense of the world around us. An avid advocate for green energy, she's known 
+                        for her active role in bringing up more greener practices in India. Whether it is in the batteries you use 
+                        or the cars you drive, she has paved the way for a change in huge sectors such as transportation.
+                      </p>
+                </div>
+
+            </div>
+<!--         </div> -->
+    </section>
+
+    
+<script src="https://use.fontawesome.com/1744f3f671.js"></script>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+     
+
+
+     <div class="box4">
+    
+   
+   
+    <div class="container">
+      <!--image row start-->
+      <div class="row">
+        <!--image card start-->
+        
+        <!--image card end-->
+        <!--image card start-->
+        <div class="image">
+         
+          <div class="details">
+            <h4> </h4>
+             <h2> <span>The Virtual Aspect</span></h2>
+            <p>Join our virtual stations that are filled with virtual games and renderings where we 
+              teach you about three different aspects of transportation emissions.</p>
+            
+          </div>
+        </div>
+        <!--image card end-->
+        <!--image card start-->
+        <div class="image3">
+        
+          <img class="home__img" src="https://images.unsplash.com/photo-1616587226157-48e49175ee20?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80" alt="" class="image3" background-image="linear-gradient(to bottom, rgba(22, 22, 22, .6), rgba(0, 0, 0, .8))" background-size="cover">
+          <div class="details">
+            <h4> </h4>
+            
+            
+            <!---<h2> <span>project 1 pic</span></h2>
+            <p>When scheduling appointments, our system considers insurance, availability, type, location, age, history, and more. Our scheduling service utilizes advanced technology to make decisions easy and self-sufficient so patients can go through this process effortlessly. </p>
+            -->
+          </div>
+        </div>
+        <!--image card end-->
+      </div>
+      <!--image row end-->
+      <!--image row start-->
+      <div class="row">
+        <!--image card start-->
+        <div class="image3">
+         
+          <div class="details">
+            <img class="home__img" src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80" alt="" class="image3" background-image= "linear-gradient(to bottom, rgba(22, 22, 22, .6), rgba(0, 0, 0, .8))" background-size="cover">
+            <h4> </h4>
+            <!--<h2> <span>project 2 pic</span></h2>
+            <p>Our solution optimizes your appointments by allowing you and your patients to add notes and details, which are easily accessible in the calendar, in advance. Custom vitals give providers the ability to create baseline health data and monitor each patient’s data over time.</p>
+           -->
+          </div>
+        </div>
+        <!--image card end-->
+        <!--image card start-->
+        <div class="image">
+         
+          <div class="details">
+            <h2> <span> Deeper Learning</span></h2>
+            <h4> </h4>
+            
+            <p> Discuss what you’ve learned with everyone in your station to gain a deeper understanding of the content you’re learning.</p>
+          </div>
+        </div>
+        <!--image card end-->
+        <!--image row end-->
+      <!--image row start-->
+        <div class="row">
+        <!--image card start-->
+        <div class="image">
+         
+          <div class="details">
+            <h4> </h4>
+  <h2> <span>Station Leaders</span></h2>
+            <p>  Our station leaders are experts on the content they’re teaching so feel free to ask them any questions you have. 
+</p>
+            
+          </div>
+        </div>
+        <!--image card end-->
+        <!--image card start-->
+        <div class="image3">
+         
+          <div class="details">
+            <img class="home__img"src="https://images.unsplash.com/photo-1535119403-61b2d00d6c20?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80" alt="" class="image3" background-image= "linear-gradient(to bottom, rgba(22, 22, 22, .6), rgba(0, 0, 0, .8))" background-size="cover">
+            <h4> </h4>
+           <!-- <h2> <span>project 3 pic</span></h2>
+            <p>Make it easy for your patients to alter their appointments and modify their medical calendar with just one click. All the available dates and time slots are accessible without the need for constant staff assistance or to go through the entire process of booking another appointment.
+</p>-->
+            
+          </div>
+        </div>
+        <!--image card end-->
+        <!--image row end-->
+      <!--image row start-->
+        <div class="row">
+        <div class="image3">
+         <img class="home__img" src="https://images.unsplash.com/photo-1527871369852-eb58cb2b54e2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3131&q=80" alt="" class="image3" background-image= "linear-gradient(to bottom, rgba(22, 22, 22, .6), rgba(0, 0, 0, .8))" background-size="cover">
+          <div class="details">
+            <h4> </h4>
+         <!--   <h2> <span>project 4 pic</span></h2>
+            <p>Make it easy for your patients to alter their appointments and modify their medical calendar with just one click. All the available dates and time slots are accessible without the need for constant staff assistance or to go through the entire process of booking another appointment.
+</p>-->
+            
+          </div>
+        </div>
+        <!--image card end-->
+        <!--image card start-->
+        <div class="image">
+         
+          <div class="details">
+            <h4> </h4>
+<h2> <span>Prizes</span></h2>
+            <p> Take the quiz at the end of each station for a chance of being entered into a raffle for a cool, green prize. 
+</p>
+            
+          </div>
+        </div>
+        <!--image card end-->
+      </div>
+      <!--image row end-->
+    </div>
+    <!--image card layout end-->
+
+
+    
+     </div>
+   
+    </div>
+    </div>
+    
+    <div class="burr" style="background-color: #f0f0f0">
+      <div class="analytic">
+        <div class="row no-gutters" id="2col">
+          <div class="col-lg-5" id="lefttxt">
+            <h2 style="font-weight: 600">Virtual Presentation</h2>
+
+            <p>
+             Join our virtual presentation to learn about what individuals like you can do to reduce your vehicle emissions. 
+              We understand that not every method is convenient for everyone. So, we suggest numerous solutions because we believe 
+              that sustainable living should be for everyone. 
+            </p>
+           <!-- <a
+              class="test-btn"
+              href="https://www.unep.org/news-and-stories/story/16-ways-take-action-climate"
+              >More</a
+            >-->
+            <img src="https://cdn.glitch.com/fe9ee492-4350-4c23-91a3-7de989bb85f5%2FVideo%20Servicing%20Graphic-1.svg?v=1617503856361" alt="" class="home__img"> 
+            
+          </div>
+
+          <div class="col-lg-6" id="righttext">
+            <h2>Politician Panel</h2>
+
+            <p>
+              Another large part of tackling vehicle emissions is petitioning local and national politicians to 
+              pass electric vehicle friendly laws and improve public transportation. We give you the opportunity 
+              to do exactly that at our politician panel, where officials from various local, state, and federal 
+              departments in the US listen to your concerns and answer your questions.
+            </p>
+            <img src= "https://cdn.glitch.com/fe9ee492-4350-4c23-91a3-7de989bb85f5%2FAutomatic%20Messaging%20Graphic%20Main.svg?v=1617594995266" alt="" class="home__img">
+           <!-- <a class="test-btn" href="contact.html">More</a>-->
+          </div>
+        </div>
+      </div>
+    </div>
+    
+                          
+    <!---- Text Info  
+    
+    <div class="textinfo">
+      <div class="row">
+        <div class="col-lg-6" id="lefttext">
+          <h2>Ask Your Questions!</h2>
+          <p>
+            Interested in certain topics? Have specific concerns that you would like to have addressed? 
+            Or find yourself wanting to know more about our experts? Fill our form below to request questions beforehand! 
+          </p>
+           <div class="form2">
+                  <form>
+                    <input
+                      type="text"
+                      name="username"
+                      placeholder="Full Name"
+                    />
+                    <input type="text" name="username" placeholder="Question" />
+                    
+                    <button>Submit</button>
+                  </form>
+                </div>
+        </div>
+
+        <div class="col-lg-6" id="rightimage">
+          <img
+            src="https://cdn.glitch.com/fe9ee492-4350-4c23-91a3-7de989bb85f5%2FDirect%20Chat%20Line%20Graphic%20Light%20Bulb.svg?v=1617590823898"
+            alt=""
+            class="home__img1"
+          />
+        </div>
+      </div>
+    </div>--->
+
+    <!---- Text Info  
+  
+    <div class="textinfo" style="padding-top: 60px !important;">
+      <div class="row">
+        <div class="col-md-6 col-md-pull-6" id="rightimage">
+          <img
+            src="https://cdn.glitch.com/fe9ee492-4350-4c23-91a3-7de989bb85f5%2FVideo%20Servicing%20Graphic-1.svg?v=1617503856361"
+            alt=""
+            class="home__img1"
+            
+          />
+        </div>
+
+        <div class="col-md-6 col-md-push-6" id="lefttext">
+          <h2>Want to Sign Up?</h2>
+          <p>
+            Sign up below to experience this once-in-a-lifetime opportunity. Listen to our experts 
+            talk about the current issues with climate change, the reasons behind everything, and what you can 
+            do to help, with their experience and knowledge in various fields.  Feel free to sign up for more than 
+            one or even stick to the one you like.  With limited space for each session, sign up as soon as you possibly can! 
+          </p>
+           <div class="form">
+                  <form>
+                    
+                    <button>Register Now</button>
+                  </form>
+                </div>
+        </div>
+      </div>
+    </div>  --->
+    
+    
+
+  
+    
+    <!-- footer -->
+    <div class="bottomfooter">
+      
+      <div class="custom-shape-divider-top-1644035655">
+    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M1200 0L0 0 598.97 114.72 1200 0z" class="shape-fill"></path>
+    </svg>
+</div>
+      
+      
+   <footer class="footer">
+  	 <div class="container">
+  	 	<div class="row">
+  	 		<div class="footer-col">
+  	 			<h4>CC22 Summit</h4>
+  	 			<ul>
+  	 				<li><a href="index.html">home</a></li>
+  	 				<li><a href="about.html">about us</a></li>
+  	 				<li><a href="blog.html">news updates</a></li>
+  	 			</ul>
+  	 		</div>
+  	 		<div class="footer-col">
+  	 			<h4>Themes</h4>
+  	 			<ul>
+  	 				<li><a href="reforestation.html">Reforestation</a></li>
+  	 				<li><a href="pollution.html">Physical Pollution</a></li>
+  	 				<li><a href="transportation.html">Transportation</a></li>
+  	 				<li><a href="plant.html">Sustainable Agriculture</a></li>
+  	 			</ul>
+  	 		</div>
+  	 		<div class="footer-col">
+  	 			<h4>event details</h4>
+  	 			<ul>
+              <li><a href="schedule.html">Schedule</a></li>
+  	 				 <li><a href="contact.html">contact us</a></li>
+
+  	 			</ul>
+  	 		</div>
+  	 		<div class="footer-col">
+  	 			<h4>More</h4>
+  	 			<ul>
+            <li><a href="donation.html">Take Action</a></li>
+  	 				<li><a href="about.html">citations</a></li>
+            
+  	 			</ul>
+          
+  	 		</div>
+  	 	</div>
+  	 </div>
+  
+  </footer>
+      
+      
+      
+            
+    </div>
+    
+    
+
+
+ <script>
+      // vars
+'use strict'
+var	testim = document.getElementById("testim"),
+		testimDots = Array.prototype.slice.call(document.getElementById("testim-dots").children),
+    testimContent = Array.prototype.slice.call(document.getElementById("testim-content").children),
+    testimLeftArrow = document.getElementById("left-arrow"),
+    testimRightArrow = document.getElementById("right-arrow"),
+    currentSlide = 0,
+    currentActive = 0,
+		touchStartPos,
+		touchEndPos,
+		touchPosDiff,
+		ignoreTouch = 30;
+;
+
+window.onload = function() {
+
+    // Testim Script
+    function playSlide(slide) {
+        for (var k = 0; k < testimDots.length; k++) {
+            testimContent[k].classList.remove("active");
+            testimContent[k].classList.remove("inactive");
+            testimDots[k].classList.remove("active");
+        }
+
+        if (slide < 0) {
+            slide = currentSlide = testimContent.length-1;
+        }
+
+        if (slide > testimContent.length - 1) {
+            slide = currentSlide = 0;
+        }
+
+        if (currentActive != currentSlide) {
+            testimContent[currentActive].classList.add("inactive");            
+        }
+        testimContent[slide].classList.add("active");
+        testimDots[slide].classList.add("active");
+
+        currentActive = currentSlide;
+    
+       
+    }
+
+    testimLeftArrow.addEventListener("click", function() {
+        playSlide(currentSlide -= 1);
+    })
+
+    testimRightArrow.addEventListener("click", function() {
+        playSlide(currentSlide += 1);
+    })    
+
+    for (var l = 0; l < testimDots.length; l++) {
+        testimDots[l].addEventListener("click", function() {
+            playSlide(currentSlide = testimDots.indexOf(this));
+        })
+    }
+
+    playSlide(currentSlide);
+
+    // keyboard shortcuts
+    document.addEventListener("keyup", function(e) {
+        switch (e.keyCode) {
+            case 37:
+                testimLeftArrow.click();
+                break;
+                
+            case 39:
+                testimRightArrow.click();
+                break;
+
+            case 39:
+                testimRightArrow.click();
+                break;
+
+            default:
+                break;
+        }
+    })
+		
+		testim.addEventListener("touchstart", function(e) {
+				touchStartPos = e.changedTouches[0].clientX;
+		})
+	
+		testim.addEventListener("touchend", function(e) {
+				touchEndPos = e.changedTouches[0].clientX;
+			
+				touchPosDiff = touchStartPos - touchEndPos;
+			
+				console.log(touchPosDiff);
+				console.log(touchStartPos);	
+				console.log(touchEndPos);	
+
+			
+				if (touchPosDiff > 0 + ignoreTouch) {
+						testimLeftArrow.click();
+				} else if (touchPosDiff < 0 - ignoreTouch) {
+						testimRightArrow.click();
+				} else {
+					return;
+				}
+			
+		})
+}
+  </script>
+    <!--========== SCROLL REVEAL ==========-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!--========== MAIN JS ==========-->
+    <script src="main.js"></script>
+  </body>
+</html>

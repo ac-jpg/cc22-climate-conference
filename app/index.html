@@ -1,0 +1,1408 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="stylesheet" href="index.css" />
+
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
+
+    <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css" />
+    <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css" />
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <nav>
+      <div class="topnav" id="myTopnav">
+        <a style="color: #32b3a3" href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="schedule.html">Schedule</a>
+        <div class="dropdown">
+          <button class="dropbtn">
+            Themes
+            <i class="fa fa-caret-down"></i>
+          </button>
+
+          <div class="dropdown-content">
+            <a href="reforestation.html">Reforestation</a>
+            <a href="pollution.html">Physical Pollution</a>
+            <a href="transportation.html">Transportation</a>
+          <!--  <a href="cursorexperiment.html">test</a>-->
+            <a href="plant.html" style="padding-bottom: 20px"
+              >Sustainable Agriculture</a
+            >
+          </div>
+        </div>
+        <a href="blog.html">News Updates</a>
+        <a href="donation.html">Take Action</a>
+        <a href="contact.html">Contact</a>
+
+        <div class="loginstuff">
+
+          <button id="modal-btn" class="butt">Register Now &#8594;</button>
+          
+          
+          
+          
+
+          <div id="my-modal" class="modal">
+            
+            
+            
+            <div class="modal-content">
+              <div class="modal-header">
+                <span class="close"
+                  ><i class="fa fa-times-circle" aria-hidden="true"></i
+                ></span>
+              </div>
+
+              <div class="modal-body">
+                <h2>Register</h2>
+                
+                 <div id="thanks" style="display: none;">
+            <p style="font-size: 20px;">
+             Thanks for registering! See you soon!
+            </p>
+          </div>
+                
+                <div id="hide">
+                  
+              
+                <p>Please complete the form to register for our event.</p>
+                <div class="form" >
+                  <form>
+                    <input
+                      type="text"
+                      name="username"
+                      placeholder="Full Name"
+                    />
+                    <input type="text" name="username" placeholder="Email" />
+                    <input
+                      type="text"
+                      name="username"
+                      placeholder="Phone Number"
+                    />
+                    <button type='button' onclick="showDiv()">Submit</button>
+                  </form>
+                </div>
+                    </div>
+              </div>
+            </div>
+          </div>
+
+          <script>
+            
+            
+          function showDiv() {
+            document.getElementById('thanks').style.display = "block";
+            document.getElementById('hide').style.display = "none";
+          }
+         
+            
+            // Get DOM Elements
+            const modal = document.querySelector("#my-modal");
+            const modalBtn = document.querySelector("#modal-btn");
+            const closeBtn = document.querySelector(".close");
+
+            // Events
+            modalBtn.addEventListener("click", openModal);
+            closeBtn.addEventListener("click", closeModal);
+            window.addEventListener("click", outsideClick);
+
+            // Open
+            function openModal() {
+              modal.style.display = "block";
+            }
+
+            // Close
+            function closeModal() {
+              modal.style.display = "none";
+            }
+
+            // Close If Outside Click
+            function outsideClick(e) {
+              if (e.target == modal) {
+                modal.style.display = "none";
+              }
+            }
+          </script>
+        </div>
+
+        <a
+          href="javascript:void(0);"
+          style="font-size: 20px; padding-right: 20px"
+          class="icon"
+          onclick="myFunction()"
+          >&#9776;</a
+        >
+      </div>
+    </nav>
+
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+    </script>
+
+    <!--
+    <div class="header">
+      <div class="row">
+        <div class="col-lg-6" id="leftheader">
+          <h3>May 6th, 2022</h3>
+          <h2>Green Awakening</h2>
+          <p>
+            Stand up for what we stand on.
+          </p>
+          <a class="headbtn" href="about.html">Learn More</a>
+        </div>
+        <div class="col-lg-6" id="rightheader">
+          <img
+            src="https://cdn.glitch.global/a3e1e2df-01b9-4a3f-ba7e-87785f32b8ed/color-space-landscape-background-with-view-earth-vector-16927764-removebg-preview.png"
+            alt=""
+            class="home__img"
+          />
+        </div>
+      </div>
+
+      <a
+        class="downbtn"
+        type="button"
+        onClick="document.getElementById('scroll').scrollIntoView();"
+      >
+        <i class="fa fa-angle-down"> </i>
+      </a>
+    </div> -->
+
+    <div class="header">
+      <div class="row">
+        <div class="col-lg-6" id="leftheader">
+          <h1 style="color: #8cdc73">21 APR - 24 APR 2022</h1>
+          <h1 style="color: white">CLIMATE CONFERENCE</h1>
+          <h1 style="color: white" id="big">
+            CC<span style="color: #8cdc73">22</span>
+          </h1>
+          
+          <h1 style="color: #8cdc73">SUMMIT</h1>
+           <h1 style="color: white;" id="demo"></h1>
+        </div>
+
+        <div class="col-lg-6"></div>
+      </div>
+    </div>
+    
+  <!--  <div class="burr" style="background-color: #ffffff">
+      <div class="analytic">
+   <div class="row no-gutters" id="2col">
+          
+          <table class = "tableclass">
+<tr class=" info">
+  <td colspan="4" style = "font-weight: bold;" >Conference Countdown</td>
+</tr>
+<tr class="info">
+  <td id="days">120</td>
+  <td id="hours">4</td>
+  <td id="minutes">12</td>
+  <td id="seconds">22</td>
+  </tr>
+  <tr>
+    <td>Days</td>
+  <td>Hours</td>
+  <td>Minutes</td>
+  <td>Seconds</td>
+
+  </tr>
+  </table>
+          
+
+      
+        </div>
+      </div>
+    </div>-->
+    <div class="textinfo" id="scroll">
+      <div class="row">
+        <div class="col-lg-6" id="lefttext">
+          <h2 style="margin-left: 20% !important;">Climate Conference</h2>
+          <p style="margin-left: 20% !important;">
+            CC22 Summit is a climate conference dedicated to teaching others
+            about the devastating effects of climate change and what we can do
+            to combat it. Our mission is to ensure that our planet will be
+            habitable for our future generations. All the events at our
+            conference align with this goal and we hope that you walk away from
+            your computer with the initiative to save our planet. So join us for this four-day conference,
+            where each day is a different theme that'll teach you about different aspects of global warming.
+          </p>
+        </div>
+        <div class="col-lg-6" id="rightimage">
+          <img
+            src="https://cdn.glitch.global/a3e1e2df-01b9-4a3f-ba7e-87785f32b8ed/Untitled%2080.png?v=1642907590678"
+            alt=""
+            class="home__img"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- ======= Services Section ======= -->
+    <section class="services">
+      <div class="box4">
+        <div class="container">
+          <!--image row start-->
+          <div class="row">
+            <!--image card start-->
+
+            <!--image card end-->
+            <!--image card start-->
+            <div class="image">
+              <img alt="" width="100%" height="100%" />
+              <div class="details">
+                <h4></h4>
+                <h2><span>Reforestation</span></h2>
+                <p>
+                  The theme for Day 1 in our 4-day event is reforestation. All our
+                  activities and events will revolve around this very important
+                  topic. We welcome you to a great day filled with guest
+                  speakers, virtual tours, and more!
+                </p>
+                <a class="test-btn-box" href="reforestation.html">More</a>
+              </div>
+            </div>
+            <!--image card end-->
+            <!--image card start-->
+            <div class="image2">
+              <img alt="" width="100%" height="100%" />
+              <div class="details">
+                <h4></h4>
+                <h2><span>Physical Pollution</span></h2>
+                <p>
+                  Day 2 in our 4-day virtual event has the theme of physical
+                  pollution. Explore this day via our talented guest speakers, 
+                  fun activities such as our recycling
+                  competition, and a whole lot more!
+                </p>
+                <a class="test-btn-box" href="pollution.html">More</a>
+              </div>
+            </div>
+            <!--image card end-->
+          </div>
+          <!--image row end-->
+          <!--image row start-->
+          <div class="row">
+            <!--image card start-->
+            <div class="image3">
+              <img alt="" />
+              <div class="details">
+                <h4></h4>
+                <h2><span>Transportation</span></h2>
+                <p>
+                  Day 3 in our 4-day event is all about
+                  transportation. Packed with more guest speakers and
+                  topic-related games, we welcome you to a fun-filled day!
+                </p>
+                <a class="test-btn-box" href="transportation.html">More</a>
+              </div>
+            </div>
+            <!--image card end-->
+            <!--image card start-->
+            <div class="image4">
+              <img alt="" width="100%" height="100%" />
+              <div class="details">
+                <h4></h4>
+                <h2><span>Sustainable Agriculture</span></h2>
+                <p>
+                  Last but not least is day 4, centered around sustainable
+                  agriculture. We invite you to the last day of our event for
+                  this year and hope you leave with an educational and
+                  enlightening experience and everything you need to know to
+                  live a better life!
+                </p>
+                <a class="test-btn-box" href="plant.html">More</a>
+              </div>
+            </div>
+            <!--image card end-->
+          </div>
+          <!--image row end-->
+        </div>
+        <!--image card layout end-->
+      </div>
+    </section>
+    
+  
+
+
+
+    <!---
+         <div class="demo">
+      
+         <div class="test2-heading" id="services">
+    
+	  <h1>Demo</h1>
+  
+       <p > Want to see how our services work? Or want to test how compatible and useful they'll be to your online platform without having to purchase anything first? Explore our demo to get a first-hand preview of how all our services function and work together to make sure you get the best of everything we can offer.  </p>
+      
+    
+    <a class="test2-btn" href="video.html">More</a>
+
+    </div>
+       
+          <iframe src="https://marvelapp.com/prototype/c190906?emb=1&iosapp=false&frameless=false" width="320" height="720" allowtransparency="false" style="-webkit-clip-path: inset(2px 2px); clip-path: inset(2px 2px);"></iframe>
+
+
+    </div>-->
+
+    <!--- number bar things 
+    
+     <section class="skills" id="skills">
+      <div class="title reveal">
+      </div>
+      <div class="content">
+        <div class="column col-left reveal">
+          <h2 class="content-title">Title with stuff</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+        
+        
+            <div class="column col-right reveal" id="skill">
+	<h2>Value</h2>
+	<div class="skill_row">
+		<div class="skill_view" style="background: #e45126;">
+			<span class="skill_value">90%</span>
+		</div>
+	</div>
+	<br>
+	
+
+	<h2>Value</h2>
+	<div class="skill_row">
+		<div class="skill_view" style="background: #e3a324;">
+			<span class="skill_value">60%</span>
+		</div>
+	</div>
+	<br>
+	
+	<h2>Value</h2>
+	<div class="skill_row">
+		<div class="skill_view" style="background: #6d7eb8;">
+			<span class="skill_value">70%</span>
+		</div>
+	</div>
+
+
+</div>
+        
+      </div>
+    </section>
+--->
+
+    <!---- Chat Bot ----->
+
+    <div class="container-fluid" id="videoinfo1">
+      <div class="row">
+        <div class="col-sm-6">
+          <h2>Interact With Others</h2>
+          <p>
+            Climate change is a global issue that affects us all, so it’s
+            imperative that we discuss this issue with each other. Before and
+            during the event, we provide an open forum where everyone can
+            discuss facts about climate change and share the actions they take
+            to combat it.
+          </p>
+          <p style="font-size: 17px;"></p>
+          <a
+            class="cht-btn"
+            href="chat2.html"
+            target="_blank"
+             style= "height: 100px;"
+            onclick="window.open(this.href,'targetWindow',
+                                   `toolbar=no,
+                                    location=no,
+                                    status=no,
+                                    menubar=no,
+                                    scrollbars=yes,
+                                    resizable=yes,
+                                    width=1500,
+                                    height=900`);
+ return false;"
+            >Try Out Our Interactive Demo!</a
+          >
+        </div>
+        <div class="col-md-6 col-md-pull-6" id="rightimage">
+          <img
+            src="https://cdn.glitch.com/fe9ee492-4350-4c23-91a3-7de989bb85f5%2FDirect%20Chat%20Line%20Graphic%20Light%20Bulb.svg?v=1617590823898"
+            alt=""
+            class="home__img"
+          />
+        </div>
+        <div class="col-sm-6">
+          <!----  <a class="cht-btn" target="_blank" href="pricing.html"> View Prices </a>---->
+        </div>
+      </div>
+    </div>
+     <div class="textinfo" style="padding-top: 120px !important;">
+      <div class="row">
+        <div class="col-md-6 col-md-pull-6" id="rightimage">
+          <img
+            src="https://cdn.glitch.com/fe9ee492-4350-4c23-91a3-7de989bb85f5%2FDirect%20Chat%20Line%20Graphic%20Main.svg?v=1617590685625"
+            alt=""
+            class="home__img1"
+            
+          />
+        </div>
+
+        <div class="col-md-6 col-md-push-6" id="lefttext">
+          <h2>Ask Your Questions!</h2>
+          <p>
+            Interested in certain topics? Have specific concerns that you would like to have addressed? 
+            Or find yourself wanting to know more about our experts? Fill our form below to request questions from our speakers beforehand! 
+          </p>
+           <div class="form">
+                  <form>
+                    <input
+                      type="text"
+                      name="username"
+                      placeholder="Full Name"
+                    />
+                    <input type="text" name="speaker" placeholder="Speaker" />
+                    <input type="text" name="username" placeholder="Question" />
+                    
+                    <button>Submit</button>
+                  </form>
+                </div>
+        </div>
+      </div>
+    </div>  
+    
+       <div class="textinfo" style="padding-bottom: 20px !important; margin-top:-50px;">
+      <div class="row">
+        <div class="col-md-6 col-md-push-6" id="lefttext">
+          <h2>Download The App</h2>
+          <p>
+          Download the conference app for up to date information about events. Find a detailed schedule of events and prepare your own personalized schedule based
+            on events you plan to attend. Allow notifications for reminders on when events will take place.
+          </p>
+        </div>
+
+        <div class="col-md-6 col-md-pull-6" id="rightimage">
+        <img
+            src="https://cdn.glitch.global/a3e1e2df-01b9-4a3f-ba7e-87785f32b8ed/Untitled%20138%20copy.png?v=1652674461117"
+            alt=""
+            class="home__img"
+          />
+                </div>
+        </div>
+      </div>
+    
+
+    <!--News Updates---------->
+
+    <div class="test2-heading">
+      <h1>Our Latest News and Updates</h1>
+    </div>
+<div id="blogs">
+      <div class="container">
+        <div class="card">
+          <div class="card__header">
+            <img
+              src="https://images.unsplash.com/photo-1482192596544-9eb780fc7f66?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
+              alt="card__image"
+              class="card__image"
+              width="600"
+            />
+          </div>
+          <div class="card__body">
+            <span class="tag tag-brown">News</span>
+            <h4>Wildfires, Sea levels, and The Ozone.</h4>
+            <p>
+              From rising sea levels to holes in the sky to another fire
+              somewhere in California, detrimental natural disasters have become
+              scarily more common in the past few decades. But why? Is it us, or
+              is just nature responding to an ever-evolving world? Read more to
+              find out…
+            </p>
+            <a class="blog-description" id="morelink" href="blogpage1.html">
+              Read More</a
+            >
+          </div>
+          <div class="card__footer">
+            <div class="user">
+              <img
+                src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1364&q=80"
+                alt="user__image"
+                class="user__image"
+              />
+              <div class="user__info">
+                <h5>Jane Doe</h5>
+                <small>04 March 2022</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card__header">
+            <img
+              src="https://images.unsplash.com/photo-1535438414045-70dbc0464d5a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
+              alt="card__image"
+              class="card__image"
+              width="600"
+            />
+          </div>
+          <div class="card__body">
+            <span class="tag tag-brown">News</span>
+            <h4>Why Plants Can Save The World.</h4>
+            <p>
+              The power to save the world is just at your fingertips, ok, maybe,
+              more in the house plants you raise. But what matters is you invest
+              your time in making the world a better place, one plant at a time…
+            </p>
+            <a class="blog-description" id="morelink" href="blogpage3.html">
+              Read More</a
+            >
+          </div>
+          <div class="card__footer">
+            <div class="user">
+              <img
+                src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80"
+                alt="user__image"
+                class="user__image"
+              />
+              <div class="user__info">
+                <h5>Jony Doe</h5>
+                <small>04 April 2022</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card__header">
+            <img
+              src="https://images.unsplash.com/photo-1437964706703-40b90bdf563b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80"
+              alt="card__image"
+              class="card__image"
+              width="600"
+            />
+          </div>
+          <div class="card__body">
+            <span class="tag tag-blue">Blog</span>
+            <h4>One Tree At A Time.</h4>
+            <p>
+              One of the main goals of this organization is to raise awareness
+              about deforestation, its effect on the environment, and climate
+              change. Through our hands-on approach to planting trees, we've
+              helped make a difference in what seems like an unsolvable issue.
+              Read to find out more…
+            </p>
+            <a class="blog-description" id="morelink" href="blogpage5.html">
+              Read More</a
+            >
+          </div>
+          <div class="card__footer">
+            <div class="user">
+              <img
+                src="https://images.unsplash.com/photo-1501196354995-cbb51c65aaea?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2071&q=80"
+                alt="user__image"
+                class="user__image"
+              />
+              <div class="user__info">
+                <h5>John Doe</h5>
+                <small>2d ago</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--
+    <div class="back">
+      <div class="container">
+        <div class="row">
+          <div id="carousel" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="d-none d-lg-block">
+                  <div class="slide-box">
+                    <div class="card">
+                      <div class="card-banner">
+                        <p class="tag news">News</p>
+                      </div>
+                      <div class="card-body">
+                        <p class="hashtag">01 Jan 2022</p>
+                        <h2 class="blog-title">One Tree At A Time.</h2>
+
+                        <p class="blog-description">
+                          One of the main goals of this organization is to raise
+                          awareness about deforestation, its effect on the
+                          environment, and climate change. Through our hands-on
+                          approach of planting trees, we've helped make a
+                          difference in what seems like an unsolvable issue. But
+                          why is this worth the attention and why is it so
+                          important for us and the people working with the
+                          organization? Read to find out more…
+                        </p>
+                        <a
+                          class="blog-description"
+                          id="morelink"
+                          href="blogpage5.html"
+                        >
+                          Read More</a
+                        >
+                      </div>
+                    </div>
+
+                    <div class="card">
+                      <div class="card-banner">
+                        <p class="tag blog">Blog</p>
+                      </div>
+                      <div class="card-body">
+                        <p class="hashtag">04 March 2022</p>
+                        <h2 class="blog-title">
+                          Wildfires, Sea levels, and The Ozone.
+                        </h2>
+                        <p class="blog-description">
+                          From rising sea levels to holes in the sky to another
+                          fire somewhere in California, detrimental natural
+                          disasters have become scarily more common in the past
+                          few decades. But why? Is it us, or is just nature
+                          responding to an ever-evolving world? Read more to
+                          find out…
+                        </p>
+                        <a
+                          class="blog-description"
+                          id="morelink"
+                          href="blogpage1.html"
+                        >
+                          Read More</a
+                        >
+                      </div>
+                    </div>
+
+                    <div class="card">
+                      <div class="card-banner">
+                        <p class="tag news">News</p>
+                      </div>
+                      <div class="card-body">
+                        <p class="hashtag">04 April 2022</p>
+                        <h2 class="blog-title">
+                          Why Plants Can Save The World.
+                        </h2>
+                        <p class="blog-description">
+                          The power to save the world is just at your
+                          fingertips, ok, maybe, more in the house plants you
+                          raise. But what matters is you invest your time in
+                          making the world a better place, one plant at a time…
+                        </p>
+                        <a
+                          class="blog-description"
+                          id="morelink"
+                          href="blogpage3.html"
+                        >
+                          Read More</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!---
+
+                /<div class="d-none d-md-block d-lg-none">
+                  <div class="slide-box">
+                    <div class="card">
+                      <div class="card-banner">
+                        <p class="tag news">News</p>
+                      </div>
+                      <div class="card-body">
+                        <p class="hashtag">01 Jan 2021/p></p>
+                        <h2 class="blog-title">
+                          Live Updates on Vaccinations and Their Avalibility
+                        </h2>
+                        <p class="blog-description">
+                          Pfizer, Moderna, and Johnson and Johnson- What are the
+                          diffrences? How effective are they?...
+                        </p>
+                        <a
+                          class="blog-description"
+                          id="morelink"
+                          href="blogpage1.html"
+                        >
+                          Read More</a
+                        >
+                      </div>
+                    </div>
+
+                    <div class="card">
+                      <div class="card-banner">
+                        <p class="tag blog">Blog</p>
+                      </div>
+                      <div class="card-body">
+                        <p class="hashtag">#safety #coronalifestyle</p>
+                        <h2 class="blog-title">
+                          How To Celebrate The Holidays Safely
+                        </h2>
+                        <p class="blog-description">
+                          Life has changed since the COVID-19 outbreak but you
+                          should still follow safe practices when celebrating
+                          this holiday season....
+                        </p>
+                        <a
+                          class="blog-description"
+                          id="morelink"
+                          href="blogpage5.html"
+                        >
+                          Read More</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="d-none d-sm-block d-md-none">
+                  <div class="slide-box">
+                    <div class="card">
+                      <div class="card-banner">
+                        <p class="tag news">News</p>
+                      </div>
+                      <div class="card-body">
+                        <p class="hashtag">#vaccinetypes #corona</p>
+                        <h2 class="blog-title">
+                          Live Updates on Vaccinations and Their Avalibility
+                        </h2>
+                        <p class="blog-description">
+                          Pfizer, Moderna, and Johnson and Johnson- What are the
+                          diffrences? How effective are they?...
+                        </p>
+                        <a
+                          class="blog-description"
+                          id="morelink"
+                          href="blogpage1.html"
+                        >
+                          Read More</a
+                        >
+                      </div>
+                    </div>
+
+                    <div class="card">
+                      <div class="card-banner">
+                        <p class="tag blog">Blog</p>
+                      </div>
+                      <div class="card-body">
+                        <p class="hashtag">#safety #coronalifestyle</p>
+                        <h2 class="blog-title">
+                          How To Celebrate The Holidays Safely
+                        </h2>
+                        <p class="blog-description">
+                          Life has changed since the COVID-19 outbreak but you
+                          should still follow safe practices when celebrating
+                          this holiday season....
+                        </p>
+                        <a
+                          class="blog-description"
+                          id="morelink"
+                          href="blogpage5.html"
+                        >
+                          Read More</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="d-block d-sm-none">
+                  <div class="card" style="margin: 0 auto">
+                    <div class="card-banner">
+                      <p class="tag news">News</p>
+                    </div>
+                    <div class="card-body">
+                      <p class="hashtag">#vaccinetypes #corona</p>
+                      <h2 class="blog-title">
+                        Live Updates on Vaccinations and Their Avalibility
+                      </h2>
+                      <p class="blog-description">
+                        Pfizer, Moderna, and Johnson and Johnson- What are the
+                        diffrences? How effective are they?...
+                      </p>
+                      <a
+                        class="blog-description"
+                        id="morelink"
+                        href="blogpage1.html"
+                      >
+                        Read More</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <div class="d-none d-lg-block">
+                  <div class="slide-box">
+                    <div class="card">
+                      <div class="card-banner">
+                        <p class="tag blog">Blog</p>
+                      </div>
+                      <div class="card-body">
+                        <p class="hashtag">02 Jan 2021</p>
+                        <h2 class="blog-title">
+                          New Tools For Electronics Visits
+                        </h2>
+                        <p class="blog-description">
+                          Along with the rest of us, medical offices, hospitals,
+                          and clinics must also adapt to the circumstances
+                          COVID-19 has put us in...
+                        </p>
+                        <a
+                          class="blog-description"
+                          id="morelink"
+                          href="blogpage4.html"
+                        >
+                          Read More</a
+                        >
+                      </div>
+                    </div>
+
+                    <div class="card">
+                      <div class="card-banner">
+                        <p class="tag news">News</p>
+                      </div>
+                      <div class="card-body">
+                        <p class="hashtag">07 Jan 2021</p>
+                        <h2 class="blog-title">
+                          New Variants of the Coronavirus
+                        </h2>
+                        <p class="blog-description">
+                          The coronavirus has thousands of strands that have
+                          been identified, and several of them found in the U.K.
+                          and Africa are highly transmissible...
+                        </p>
+                        <a
+                          class="blog-description"
+                          id="morelink"
+                          href="blogpage2.html"
+                        >
+                          Read More</a
+                        >
+                      </div>
+                    </div>
+
+                    <div class="card">
+                      <div class="card-banner">
+                        <p class="tag blog">Blog</p>
+                      </div>
+                      <div class="card-body">
+                        <p class="hashtag">19 March 2021</p>
+                        <h2 class="blog-title">
+                          New Breakthrough In COVID Vaccine!
+                        </h2>
+                        <p class="blog-description">
+                          Now that there has been an authorized and recommended
+                          vaccine for COVID-19 here in the US, it is vital that
+                          you have accurate information about it...
+                        </p>
+                        <a
+                          class="blog-description"
+                          id="morelink"
+                          href="blogpage6.html"
+                        >
+                          Read More</a
+                        >
+                        
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- <div class="d-none d-md-block d-lg-none">
+                  <div class="slide-box">
+                    <div class="card">
+                      <div class="card-banner">
+                        <p class="tag blog">Blog</p>
+                      </div>
+                      <div class="card-body">
+                        <p class="hashtag">#medicaltech #coronaprogress</p>
+                        <h2 class="blog-title">
+                          New Tools For Electronics Visits
+                        </h2>
+                        <p class="blog-description">
+                          Along with the rest of us, medical offices, hospitals,
+                          and clinics must also adapt to the circumstances
+                          COVID-19 has put us in...
+                        </p>
+                        <a
+                          class="blog-description"
+                          id="morelink"
+                          href="blogpage4.html"
+                        >
+                          Read More</a
+                        >
+                      </div>
+                    </div>
+
+                    <div class="card">
+                      <div class="card-banner">
+                        <p class="tag news">News</p>
+                      </div>
+                      <div class="card-body">
+                        <p class="hashtag">#varriants #updates</p>
+                        <h2 class="blog-title">
+                          New Variants of the Coronavirus
+                        </h2>
+                        <p class="blog-description">
+                          The coronavirus has thousands of strands that have
+                          been identified, and several of them first found in
+                          the U.K. and places such as Africa are highly
+                          transmissible...
+                        </p>
+                        <a
+                          class="blog-description"
+                          id="morelink"
+                          href="blogpage2.html"
+                        >
+                          Read More</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>-->
+    <!-- <div class="d-none d-sm-block d-md-none">
+                  <div class="slide-box">
+                    <div class="card">
+                      <div class="card-banner">
+                        <p class="tag blog">Blog</p>
+                      </div>
+                      <div class="card-body">
+                        <p class="hashtag">#medicaltech #coronaprogress</p>
+                        <h2 class="blog-title">
+                          New Tools For Electronics Visits
+                        </h2>
+                        <p class="blog-description">
+                          Along with the rest of us, medical offices, hospitals,
+                          and clinics must also adapt to the circumstances
+                          COVID-19 has put us in...
+                        </p>
+                        <a
+                          class="blog-description"
+                          id="morelink"
+                          href="blogpage4.html"
+                        >
+                          Read More</a
+                        >
+                      </div>
+                    </div>
+
+                    <!--<div class="card">
+                      <div class="card-banner">
+                        <p class="tag news">News</p>
+                      </div>
+                      <div class="card-body">
+                        <p class="hashtag">#varriants #updates</p>
+                        <h2 class="blog-title">
+                          New Variants of the Coronavirus
+                        </h2>
+                        <p class="blog-description">
+                          The coronavirus has thousands of strands that have
+                          been identified, and several of them first found in
+                          the U.K. and places such as Africa are highly
+                          transmissible...
+                        </p>
+                        <a
+                          class="blog-description"
+                          id="morelink"
+                          href="blogpage2.html"
+                        >
+                          Read More</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>-->
+    <!--- <div class="d-block d-sm-none">
+                  <div class="card" style="margin: 0 auto">
+                    <div class="card-banner">
+                      <p class="tag blog">Blog</p>
+                    </div>
+                    <div class="card-body">
+                      <p class="hashtag">#medicaltech #coronaprogress</p>
+                      <h2 class="blog-title">
+                        New Tools For Electronics Visits
+                      </h2>
+                      <p class="blog-description">
+                        Along with the rest of us, medical offices, hospitals,
+                        and clinics must also adapt to the circumstances
+                        COVID-19 has put us in...
+                      </p>
+                      <a
+                        class="blog-description"
+                        id="morelink"
+                        href="blogpage4.html"
+                      >
+                        Read More</a
+                      >
+                    </div>
+                  </div>
+                </div>
+      </div>
+    </div>
+    <!--<a
+              class="carousel-control-prev"
+              href="#carousel"
+              role="button"
+              data-slide="prev"
+            >
+              <!-- <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a
+              class="carousel-control-next"
+              href="#carousel"
+              role="button"
+              data-slide="next"
+            >
+              <!--<span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>-->
+    <!--</div>
+        </div>
+      </div>
+    </div>-->
+    <!---
+  <div class="blogs">
+<div class="blog-card">
+      <input type="radio" name="select" id="tap-1" checked>
+      <input type="radio" name="select" id="tap-2">
+      <input type="radio" name="select" id="tap-3">
+      <input type="checkbox" id="imgTap">
+      <div class="sliders">
+        <label for="tap-1" class="tap tap-1"></label>
+        <label for="tap-2" class="tap tap-2"></label>
+        <label for="tap-3" class="tap tap-3"></label>
+      </div>
+  
+  
+  
+  <div class="inner-part">
+       
+        <div class="content content-1">
+          <span>January 1, 2021 </span>
+          <div class="title">
+Live Updates on Vaccinations </div>
+<div class="text">
+Pfizer, Moderna, and Johnson and Johnson - What are the differences? Are two shots more ideal than one-dose vaccines?</div>
+          <a href="blogpage1.html"> Read More</a>
+        </div>
+</div>
+  
+ <div class="inner-part">
+       
+        <div class="content content-2">
+          <span>
+            January 7, 2021</span>
+          <div class="title">
+New Variants of the Coronavirus</div>
+<div class="text">
+The coronavirus has thousands of strands that have been identified, and several of them were discovered in...</div>
+ <a href="blogpage2.html" >Read More</a>
+        </div>
+</div>
+  
+<div class="inner-part">
+      
+        <div class="content content-3">
+          <span>January 15, 2021</span>
+          <div class="title">
+Variants vs. Vaccines</div>
+<div class="text">
+The scattering availability of emerging vaccines and problems concerning safety are 
+  prompting a dicussion on how distribution should work...</div>
+<a href="blogpage3.html" >Read More</a>
+        </div>
+</div>
+</div> 
+</div>
+    -->
+
+    <div class="test3-heading" style="background-color: #f0f0f0"></div>
+
+    <div class="burr" style="background-color: #f0f0f0">
+      <div class="analytic">
+        <div class="row no-gutters" id="2col">
+          <div class="col-lg-5" id="lefttxt">
+            <h2 style="font-weight: 600">Take Action</h2>
+
+            <p>
+              Climate change is a pressing issue that needs our attention now.
+              We can all do our part to mitigate global warming, whether that’s
+              changing our own personal habits or writing to our representatives
+              to encourage legislative change. Start here by taking a Carbon Footprint quiz to learn about your personal impact on the environment.
+            </p>
+            <a
+              class="test-btn"
+              href="quiz.html"
+               onclick="window.open(this.href,'targetWindow',
+                                   `toolbar=no,
+                                    location=no,
+                                    status=no,
+                                    menubar=no,
+                                    scrollbars=yes,
+                                    resizable=yes,
+                                    width=1000,
+                                    height=900`);
+ return false;"
+              >Calculate Your Carbon Footprint</a
+            >
+          </div>
+
+          <div class="col-lg-5" id="lefttxt">
+            <h2 style="font-weight: 600">Contact Us</h2>
+
+            <p>
+              Have any questions about climate change and global warming?
+              Wondering about the best actions to take to combat it in your
+              daily life? Curious about the projects our organization has done
+              to help our planet? Or just want to know more about the convention
+              itself? Click here to contact us.
+            </p>
+            <a class="test-btn" href="contact.html">More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <div class="bottomfooter">
+      <div class="custom-shape-divider-top-1644035655">
+        <svg
+          data-name="Layer 1"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1200 120"
+          preserveAspectRatio="none"
+        >
+          <path d="M1200 0L0 0 598.97 114.72 1200 0z" class="shape-fill"></path>
+        </svg>
+      </div>
+
+      <footer class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="footer-col">
+              <h4>CC22 Summit</h4>
+              <ul>
+                <li><a href="index.html">home</a></li>
+                <li><a href="about.html">about us</a></li>
+                <li><a href="blog.html">news updates</a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4>Themes</h4>
+              <ul>
+                <li><a href="reforestation.html">Reforestation</a></li>
+                <li><a href="pollution.html">Physical Pollution</a></li>
+                <li><a href="transportation.html">Transportation</a></li>
+                <li><a href="plant.html">Sustainable Agriculture</a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4>event details</h4>
+              <ul>
+                <li><a href="schedule.html">Schedule</a></li>
+                <li><a href="contact.html">contact us</a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4>More</h4>
+              <ul>
+                <li><a href="donation.html">Take Action</a></li>
+                <li><a href="about.html">citations</a></li>
+              </ul>
+            </div>
+          </div>
+          
+        </div>
+      </footer>
+    </div>
+
+    <!--   <footer class="footer">
+      <div class="l-footer">
+        <h1>Green Awakening</h1>
+        <p>
+          Green Awakening is a climate conference dedicated to teaching others
+          about the devastating effects of climate change and what we can do to
+          combat it. Our mission is to ensure that our planet will be habitable
+          for our future generations.
+        </p>
+      </div>
+      <ul class="r-footer">
+        <li>
+          <h2>Conference</h2>
+          <ul class="box">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="calendar.html">Calendar</a></li>
+          </ul>
+        </li>
+
+        <li>
+          <h2>Events</h2>
+          <ul class="box">
+            <li><a href="plant.html">Plant-A-Tree</a></li>
+            <li><a href="recycling.html">Recycling Competition</a></li>
+            <li><a href="speakers.html">Speakers</a></li>
+            <li><a href="projects.html">Projects</a></li>
+          </ul>
+        </li>
+
+        <li>
+          <h2>More</h2>
+          <ul class="box">
+            <li><a href="blog.html">News Updates</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </li>
+      </ul>
+    </footer> -->
+    
+    
+    
+    
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("August 30, 2022 17:00:00").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+    
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+    
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+  // Output the result in an element with id="demo"
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+    
+  // If the count down is over, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
+    
+    
+
+    <script>
+      const accordionItemHeaders = document.querySelectorAll(".accordion-head");
+
+      accordionItemHeaders.forEach((accordionItemHeader) => {
+        accordionItemHeader.addEventListener("click", (event) => {
+          accordionItemHeader.classList.toggle("active");
+          const accordionItemBody = accordionItemHeader.nextElementSibling;
+          if (accordionItemHeader.classList.contains("active")) {
+            accordionItemBody.style.maxHeight =
+              accordionItemBody.scrollHeight + "px";
+          } else {
+            accordionItemBody.style.maxHeight = 0;
+          }
+        });
+      });
+
+      const left = document.querySelector(".left");
+      const right = document.querySelector(".right");
+
+      const slider = document.querySelector(".slider");
+
+      const indicatorParent = document.querySelector(".control ul");
+      const indicators = document.querySelectorAll(".control li");
+      index = 0;
+
+      indicators.forEach((indicator, i) => {
+        indicator.addEventListener("click", () => {
+          document
+            .querySelector(".control .selected")
+            .classList.remove("selected");
+          indicator.classList.add("selected");
+          slider.style.transform = "translateX(" + i * -25 + "%)";
+          index = i;
+        });
+      });
+
+      left.addEventListener("click", function () {
+        index = index > 0 ? index - 1 : 0;
+        document
+          .querySelector(".control .selected")
+          .classList.remove("selected");
+        indicatorParent.children[index].classList.add("selected");
+        slider.style.transform = "translateX(" + index * -25 + "%)";
+      });
+
+      right.addEventListener("click", function () {
+        index = index < 4 - 1 ? index + 1 : 3;
+        document
+          .querySelector(".control .selected")
+          .classList.remove("selected");
+        indicatorParent.children[index].classList.add("selected");
+        slider.style.transform = "translateX(" + index * -25 + "%)";
+      });
+    </script>
+
+    <!--========== SCROLL REVEAL ==========-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!--========== MAIN JS ==========-->
+    <script src="main.js"></script>
+  </body>
+</html>

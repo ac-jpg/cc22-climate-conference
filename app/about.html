@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="stylesheet" href="about.css" />
+
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <nav>
+      <div class="topnav" id="myTopnav">
+        <a href="index.html">Home</a>
+        <a style="color: #32b3a3" href="about.html">About</a>
+        <a href="schedule.html">Schedule</a>
+        <div class="dropdown">
+          <button class="dropbtn">
+            Themes
+            <i class="fa fa-caret-down"></i>
+          </button>
+
+          <div class="dropdown-content">
+            <a href="reforestation.html">Reforestation</a>
+            <a href="pollution.html">Physical Pollution</a>
+            <a href="transportation.html">Transportation</a>
+            <a href="plant.html" style="padding-bottom: 20px">Sustainable Agriculture</a>
+          </div>
+        </div>
+        <a href="blog.html">News Updates</a>
+                <a href="donation.html">Take Action</a>
+
+        <a href="contact.html">Contact</a>
+
+   <div class="loginstuff">
+
+          <button id="modal-btn" class="butt">Register Now &#8594;</button>
+          
+          
+          
+          
+
+          <div id="my-modal" class="modal">
+            
+            
+            
+            <div class="modal-content">
+              <div class="modal-header">
+                <span class="close"
+                  ><i class="fa fa-times-circle" aria-hidden="true"></i
+                ></span>
+              </div>
+
+              <div class="modal-body">
+                <h2>Register</h2>
+                
+                 <div id="thanks" style="display: none;">
+            <p style="font-size: 20px;">
+             Thanks for registering! See you soon!
+            </p>
+          </div>
+                
+                <div id="hide">
+                  
+              
+                <p>Please complete the form to register for our event.</p>
+                <div class="form" >
+                  <form>
+                    <input
+                      type="text"
+                      name="username"
+                      placeholder="Full Name"
+                    />
+                    <input type="text" name="username" placeholder="Email" />
+                    <input
+                      type="text"
+                      name="username"
+                      placeholder="Phone Number"
+                    />
+                    <button type='button' onclick="showDiv()">Submit</button>
+                  </form>
+                </div>
+                    </div>
+              </div>
+            </div>
+          </div>
+
+          <script>
+            
+            
+          function showDiv() {
+            document.getElementById('thanks').style.display = "block";
+            document.getElementById('hide').style.display = "none";
+          }
+         
+            
+            // Get DOM Elements
+            const modal = document.querySelector("#my-modal");
+            const modalBtn = document.querySelector("#modal-btn");
+            const closeBtn = document.querySelector(".close");
+
+            // Events
+            modalBtn.addEventListener("click", openModal);
+            closeBtn.addEventListener("click", closeModal);
+            window.addEventListener("click", outsideClick);
+
+            // Open
+            function openModal() {
+              modal.style.display = "block";
+            }
+
+            // Close
+            function closeModal() {
+              modal.style.display = "none";
+            }
+
+            // Close If Outside Click
+            function outsideClick(e) {
+              if (e.target == modal) {
+                modal.style.display = "none";
+              }
+            }
+          </script>
+        </div>
+
+        <a
+          href="javascript:void(0);"
+          style="font-size: 20px; padding-right: 20px"
+          class="icon"
+          onclick="myFunction()"
+          >&#9776;</a
+        >
+      </div>
+    </nav>
+
+
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+    </script>
+
+
+
+    <!-- End Header -->
+
+    <!-- ======= Hero Section ======= -->
+
+    <div class="test2-heading">
+      <div class="smallblurb1">
+ 
+      </div>
+      <h1>About Our Conference</h1>
+    </div>
+    
+    
+    <p id="demo"></p>
+
+    <!---- Text Info --->
+    <div class="textinfo">
+      <div class="row">
+        <div class="col-lg-6" id="lefttext">
+          <h2>Why We Do What We Do</h2>
+          <p>
+            Climate change is the greatest problem of our time, and if we don’t take serious action 
+            against it soon, our planet may not be habitable for future generations. Scientists urge 
+            the world to limit warming to 1.5 C above pre-industrial levels to avoid extreme weather 
+            events that would harm human health. The average global temperature has already risen by 
+            1.18 C, illustrating how pressing this issue is. It is up to all of us to work together to 
+            mitigate climate change before it’s too late.
+
+          </p>
+        </div>
+
+        <div class="col-lg-6" id="rightimage">
+          <img
+            src="https://cdn.glitch.global/a3e1e2df-01b9-4a3f-ba7e-87785f32b8ed/Untitled%20107.png?v=1644158989944"
+            alt=""
+            class="home__img"
+          />
+        </div>
+      </div>
+    </div>
+    
+    
+   
+    <div class="box4">
+      <div class="container">
+        <!--image row start-->
+        <div class="row">
+          <!--image card start-->
+
+          <!--image card end-->
+          <!--image card start-->
+          <div class="image">
+            <img alt="" width="100%" height="100%" />
+            <div class="details">
+              <h4></h4>
+              <h2><span>Is it Real?</span></h2>
+              <p>
+                The last 7 years have been the warmest on record and the planet’s average 
+                surface temperature has risen by 2.12 degrees F (1.18 C) since 1880. Antarctica 
+                lost around 148 billion tons of ice per year between 1993 and 2019 and global sea 
+                level increased by 8 inches in the last century. So yes, climate change is very real. 
+              </p>
+            </div>
+          </div>
+          <!--image card end-->
+          <!--image card start-->
+          <div class="image2">
+            <img alt="" width="100%" height="100%" />
+            <div class="details">
+              <h4></h4>
+              <h2><span>Causes</span></h2>
+              <p>
+                The primary cause of climate change is human activity, especially the burning 
+                of fossil fuels, which currently contribute to 60.6% of US’s electricity. Burning 
+                fossil fuels releases greenhouse gasses like carbon dioxide. These gasses keep heat 
+                from escaping the atmosphere, leading to the warming of the planet and all the devastating 
+                issues associated with climate change.
+              </p>
+            </div>
+          </div>
+          <!--image card end-->
+        </div>
+        <!--image row end-->
+        <!--image row start-->
+        <div class="row">
+          <!--image card start-->
+          <div class="image3">
+            <img alt="" />
+            <div class="details">
+              <h4></h4>
+              <h2><span>Effects</span></h2>
+              <p>
+                Climate change has already affected our planet in a myriad of ways that 
+                include but aren’t limited to: rising sea levels, shrinking ice, intense 
+                heat waves, and extreme weather. These events have caused destruction to 
+                homes and have displaced a lot of coastal communities, especially in the 
+                developing world. But it doesn’t stop there, as animals have also lost their 
+                habitats and have been forced to migrate.
+              </p>
+            </div>
+          </div>
+          <!--image card end-->
+          <!--image card start-->
+          <div class="image4">
+            <img alt="" width="100%" height="100%" />
+            <div class="details">
+              <h4></h4>
+              <h2><span>What Can We Do?</span></h2>
+              <p>
+                Combating climate change will require governmental action, but individuals can 
+                also make an impact. People can pledge to use more renewable energy, eat less meat, 
+                and carpool more. They can also contact their representatives and urge them to tackle 
+                the problem of climate change. Though the situation may seem bleak, we are not powerless. 
+              </p>
+            </div>
+          </div>
+          <!--image card end-->
+        </div>
+        <!--image row end-->
+      </div>
+      <!--image card layout end-->
+    </div>
+<!--- number bar things -->
+    
+    
+    <div class="test3-heading" style="background-color: #ffffff"></div>
+
+    <div class="burr" style="background-color: #f0f0f0">
+      <div class="analytic">
+        <div class="row no-gutters" id="2col">
+           <div class="col-lg-5" id="righttext">
+            <h2 style="font-weight: 600">The Impacts of Climate Change on Humans</h2>
+             <p>
+               Most people think that climate change is an issue that only affects plants and animals. However, that couldn't be 
+               further from the truth. Here are some statistics that show how climate change has had devastating effects on humans.
+             </p>
+
+           
+           
+          </div>
+           <div class="column col-right reveal" id="skill">
+	<h2>42.6% of Americans have experienced warmer temperatures than before. </h2>
+	<div class="skill_row">
+		<div class="skill_view" style="background: #689689;">
+			<span class="skill_value">42.6%</span>
+		</div>
+	</div>
+	<br>
+	
+
+	<h2>85% of humans have already seen the effects of anthropogenic climate change.</h2>
+	<div class="skill_row">
+		<div class="skill_view" style="background: #b2e6d4;">
+			<span class="skill_value">85%</span>
+		</div>
+	</div>
+	<br>
+	
+	<h2>91% of deaths from climate related hazards occured in developing countries. </h2>
+	<div class="skill_row">
+		<div class="skill_view" style="background: #83e8ba;">
+			<span class="skill_value">91%</span>
+		</div>
+	</div>
+
+
+</div>
+        
+      </div>
+         
+
+      
+        </div>
+      </div>
+    
+   
+    <!---
+     <section class="skills" id="skills">
+      <div class="title reveal">
+      </div>
+      <div class="content">
+        <div class="col-lg-6" id="lefttext" style="padding-bottom: 300px;  padding-right:100px;">
+          <h2 style="color:black; ">The Impacts of Climate Change on Humans</h2>
+          <p>
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+             &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+             &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+             &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+             &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+             &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+             &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+          </p>
+            </div>
+        
+        
+            <div class="column col-right reveal" id="skill">
+	<h2>42.6% of Americans have experienced warmer temperatures than before. </h2>
+	<div class="skill_row">
+		<div class="skill_view" style="background: #e45126;">
+			<span class="skill_value">42.6%</span>
+		</div>
+	</div>
+	<br>
+	
+
+	<h2>85% of humans have already seen the effects of anthropogenic climate change.</h2>
+	<div class="skill_row">
+		<div class="skill_view" style="background: #e3a324;">
+			<span class="skill_value">85%</span>
+		</div>
+	</div>
+	<br>
+	
+	<h2>91% of deaths from climate related hazards occured in developing countries. </h2>
+	<div class="skill_row">
+		<div class="skill_view" style="background: #6d7eb8;">
+			<span class="skill_value">91%</span>
+		</div>
+	</div>
+
+
+</div>
+        
+      </div>
+    </section>
+-->
+    
+    <!--citations-------->
+
+    <div class="wrap" id="midtext">
+      <h2>Citations</h2>
+    </div>
+    <!--<div class="textinfo7">
+      <div class="s-box">
+        <!--top-bar--------
+        <div class="bar"></div>
+        <!--img----------
+
+        <!--servies-name----------
+        <h1><b>For Design:</b></h1>
+        <!--details------
+        <p>
+          1: “Telecommunications in Healthcare: Importance for Medicine.”
+          EVisit, 1 Oct. 2020, evisit.com/resources/future-of-telehealth/.
+          <br />2: “PatientPop " The Proven Practice Growth Platform.”
+          PatientPop, 20 Jan. 2021, www.patientpop.com/. <br />3: “Telemedicine
+          Powered by Partnership.” SOC Telemed, 27 Jan. 2021,
+          www.soctelemed.com/. <br />4: “Future Home of Something Quite Cool.”
+          Coming Soon, www.mdinterconnect.com/. <br />
+          5: “Our Services.” Doctor in Denver, CO,
+          www.medteleco.com/services.html. rough the chat, incase of any
+          emergencies or issues that might come up when trying to contact a
+          patient or vice versa.
+        </p>
+
+        <!--btn----------
+      </div>
+    </div>-->
+
+    <div class="textinfo7">
+      <div class="s-box">
+        <!--top-bar-------->
+        <div class="bar"></div>
+        <!--img---------->
+
+        <!--servies-name---------->
+        <h1><b>For Content:</b></h1>
+        <!--details------>
+        <p>
+          1: &nbsp;“Climate Change: Vital Signs of the Planet.” Climate Change: Vital Signs of the Planet, 2021, climate.nasa.gov/. Accessed 21 Jan. 2022.
+
+          <br />2: &nbsp;“74 Recycling Facts & Statistics for 2021 | RTS.” Recycle Track Systems, 2021, www.rts.com/blog/recycling-facts-statistics/. Accessed 21 Jan. 2022.
+
+          <br />3:&nbsp;“11 Facts about Recycling.” DoSomething.org, 2015, www.dosomething.org/us/facts/11-facts-about-recycling. Accessed 21 Jan. 2022.
+          <br />4: &nbsp;“Growing Plants That Help the Environment | Blog |Shedstore.” Shedstore.co.uk, 2015, www.shedstore.co.uk/blog/post/growing-plants-that-help-the-environment. Accessed 21 Jan. 2022.
+
+          <br />                                                       
+          5: &nbsp;“Bee-Friendly Plants and Pest Management Strategies – Part 1.” MSU Extension, 16 Apr. 2015, www.canr.msu.edu/news/bee_friendly_plants_and_pest_management_strategies_part_1. Accessed 21 Jan. 2022.
+
+       <br /> 6: &nbsp;“Plants to Grow in Your Garden or Yard That Will Help the Environment - Natran Green Pest Control | Botanical Texas Pest Control.” Natran Green Pest Control | Botanical Texas Pest Control, 16 July 2019, natran.com/blog/plants-to-grow-in-your-garden-or-yard-that-will-help-the-environment/. Accessed 21 Jan. 2022.
+        <br /> 7: &nbsp;“10 Top Gardening Tips for Beginners.” Miraclegro.com, 20 Jan. 2022, www.miraclegro.com/en-us/library/gardening-basics/10-top-gardening-tips-beginners. Accessed 21 Jan. 2022.
+<br /> 8: &nbsp;Taylor, Glenda. “The Dos and Don’ts of Watering Plants.” Bob Vila, BobVila.com, 15 Sept. 2017, www.bobvila.com/articles/watering-plants/. Accessed 21 Jan. 2022.
+<br /> 9: &nbsp;“Wildfires and Climate Change | Center for Climate and Energy Solutions.” Center for Climate and Energy Solutions, 22 July 2021, www.c2es.org/content/wildfires-and-climate-change/. Accessed 21 Jan. 2022.
+        <br /> 10: &nbsp;“Climate Change: Global Sea Level | NOAA Climate.gov.” Climate.gov, 2020, www.climate.gov/news-features/understanding-climate/climate-change-global-sea-level. Accessed 21 Jan. 2022.
+<br /> 11: &nbsp;“NASA GISS: Research Features: Ozone and Climate Change.” Nasa.gov, 2020, www.giss.nasa.gov/research/features/200402_tango/. Accessed 21 Jan. 2022.
+<br /> 12: &nbsp;“Find Your Representative | House.gov.” House.gov, 2022, www.house.gov/representatives/find-your-representative. Accessed 21 Jan. 2022.
+<br /> 13:&nbsp; How. “How to Call Your Member of Congress.” Https://Www.apa.org, 2017, www.apa.org/advocacy/guide/phone-call. Accessed 21 Jan. 2022.
+<br /> 14: &nbsp;“The Great Global Cleanup | Join a Cleanup.” Earth Day, 18 Jan. 2022, www.earthday.org/campaign/cleanup/. Accessed 21 Jan. 2022.
+<br /> 15: &nbsp;“How Do Plants Help the Environment? | Environment Buddy.” Environmentbuddy.com, 2020, www.environmentbuddy.com/environment/how-do-plants-help-the-environment/. Accessed 21 Jan. 2022.
+ <br /> 16: &nbsp;“Effects of Deforestation | the Pachamama Alliance.” Pachamama.org, 2021, www.pachamama.org/effects-of-deforestation#:~:text=The%20loss%20of%20trees%20and,of%20problems%20for%20indigenous%20people. Accessed 21 Jan. 2022.
+<br /> 17: &nbsp;“Text - H.R.2310 - 117th Congress (2021-2022): Climate Change Education Act.” Congress.gov, 2021, www.congress.gov/bill/117th-congress/house-bill/2310/text. Accessed 21 Jan. 2022.
+          <br /> 18:&nbsp;“Text - H.R.2826 - 117th Congress (2021-2022): To Establish a Global Climate Change Resilience Strategy, to Authorize the Admission of Climate-Displaced Persons, and for Other Purposes.” Congress.gov, 2021, www.congress.gov/bill/117th-congress/house-bill/2826/text. Accessed 21 Jan. 2022.
+<br /> 19: &nbsp;“Text - S.1956 - 117th Congress (2021-2022): Manufacturing Clean Energy and Energy Efficiency Act of 2021.” Congress.gov, 2021, www.congress.gov/bill/117th-congress/senate-bill/1956/text?r=59&s=1. Accessed 21 Jan. 2022.
+<br /> 20: &nbsp;How. “How to Call Your Member of Congress.” Https://Www.apa.org, 2017, www.apa.org/advocacy/guide/phone-call. Accessed 21 Jan. 2022.
+
+
+        </p>
+
+        <!--btn---------->
+      </div>
+    </div>
+
+    <div class="textinfo7" style="padding-bottom: 80px;">
+      <div class="s-box">
+        <!--top-bar-------->
+        <div class="bar"></div>
+        <!--img---------->
+
+        <!--servies-name---------->
+        <h1><b>Other:</b></h1>
+        <!--details------>
+        <p>
+          <b>Frameworks used:</b> 
+          *The template/theme used on the framework was completely built by the
+          team* <br />
+          <b>Copyright:</b>
+          <a href="https://drive.google.com/file/d/1Gjje3bmVL_UxUnQAbsVaC19E7KWiABsL/view?usp=sharing"> https://drive.google.com/file/d/1Gjje3bmVL_UxUnQAbsVaC19E7KWiABsL/view?usp=sharing </a>
+          <br />
+          <b>Plan of Work Log: </b
+            > <a href =" https://drive.google.com/file/d/1FgIGpeFiVuZqzEMDqhYb5KW33CcSvYn2/view?usp=sharing"> https://drive.google.com/file/d/1FgIGpeFiVuZqzEMDqhYb5KW33CcSvYn2/view?usp=sharing</a>
+          <br />
+          <b>Pictures: </b>All pictures came from Pexels and Unsplash and are free to use.
+        </p>
+
+        <!--btn---------->
+      </div>
+    </div>
+
+    <!---- our team stuff
+<div class="wrapper">
+    <h1>Our Team</h1>
+    <div class="our_team">
+        <div class="team_member">
+          <div class="member_img">
+             <img src="https://cdn.glitch.com/fe9ee492-4350-4c23-91a3-7de989bb85f5%2FUntitled%2030.png?v=1613249630829" alt="our_team">
+           
+          </div>
+          <h3>chief Design Officer</h3>
+          <span>FOUNDER</span>
+          <p>Designed and drew icons/graphics for wesbite. Created demo. Worked on linking buttons. Added images to website. Worked on content. Managed submission components. Secondary code editing.</p>
+        </div>
+        <div class="team_member">
+           <div class="member_img">
+             <img src="https://cdn.glitch.com/fe9ee492-4350-4c23-91a3-7de989bb85f5%2FUntitled%2030.png?v=1613249630829" alt="our_team">
+            
+          </div>
+          <h3>Chief Technology Officer</h3>
+          <span>FOUNDER</span>
+          <p>Coded layouts. Worked on content. Coded cart tool used on pricing page. In charge of hosting website. Worked on website responsivity. Managed submission components.</p>
+      </div>
+        <div class="team_member">
+           <div class="member_img">
+             <img src="https://cdn.glitch.com/fe9ee492-4350-4c23-91a3-7de989bb85f5%2FUntitled%2030.png?v=1613249630829" alt="our_team">
+            
+          </div>
+          <h3>chief administrative officer</h3>
+          <span>FOUNDER</span>
+          <p>Worked on website responsivity. Worked on content. In charge of editing content. Assisted Tech Chief. In charge of communication with advisors. Checked guidelines for submission. In charge of copyright guidelines. </p>
+      </div>
+        <div class="team_member">
+           <div class="member_img">
+             <img src="https://cdn.glitch.com/fe9ee492-4350-4c23-91a3-7de989bb85f5%2FUntitled%2030.png?v=1613249630829" alt="our_team">
+            
+          </div>
+          <h3>chief marketing officer</h3>
+          <span>FOUNDER</span>
+          <p>Wrote blog posts. Added content to wesbite. Worked on content. Helped with website responsivity. Created content to fill blank spaces. </p>
+      </div>  
+    </div>
+</div>
+    
+    
+    
+    --->
+
+    <!---- Text Info 
+    
+
+    
+       <div class="wrap">
+         
+   
+      <div id="midtext">
+         <h2> Citations </h2>  
+        <p> <b>Frameworks used:</b> Bootstrap, Django (Pricing Page Functionality) <br> *The template/theme used on the framework was completely built by the team* <br> <b>Student Copyright Checklist:</b> https://drive.google.com/file/d/1Z3gyvsPdlmduZwAhCd3nz3zoG725Y8c7/view?usp=sharing can someone actually link this lol 
+        <br> <b>Plan of Work Log: </b>link here
+          <br> <b>For Design:</b><br>1: “Telecommunications in Healthcare: Importance for Medicine.” EVisit, 1 Oct. 2020, evisit.com/resources/future-of-telehealth/.
+<br>2: “PatientPop " The Proven Practice Growth Platform.” PatientPop, 20 Jan. 2021, www.patientpop.com/. 
+ <br>3: “Telemedicine Powered by Partnership.” SOC Telemed, 27 Jan. 2021, www.soctelemed.com/.  <br>4: “Future Home of Something Quite Cool.” Coming Soon, www.mdinterconnect.com/. 
+          <br> 5: “Our Services.” Doctor in Denver, CO, www.medteleco.com/services.html. 
+          
+          <br><b>For Content:</b>
+           <br>1: Marisa Iati, Angela Fritz. “What You Need to Know about the Coronavirus Variants.” The Washington Post, WP Company, 9 Feb. 2021, www.washingtonpost.com/health/interactive/2021/01/25/covid-variants/. 
+           <br>2: “Medical.” Dribbble, dribbble.com/search/shots/popular/web-design?q=medical. 
+           <br>3: Helen Branswell Feb., et al. “Comparing Three Covid-19 Vaccines: Pfizer, Moderna, J&J.” STAT, 4 Feb. 2021, www.statnews.com/2021/02/02/comparing-the-covid-19-vaccines-developed-by-pfizer-moderna-and-johnson-johnson/.
+          
+          <br><b>For Pictures:</b>
+           <br>1: Picjumbo.com. “Person Using Laptop.” Pexels, 5 July 2017, www.pexels.com/photo/person-using-laptop-461077/. 
+           <br>2: Kaboompics .com. “Man Drinking Coffee and Using Digital Tablet.” Pexels, 17 May 2015, www.pexels.com/photo/man-drinking-coffee-and-using-digital-tablet-6362/.
+          <br>3: Lukas. “Chart Close Up Data Desk.” Pexels, www.pexels.com/photo/chart-close-up-data-desk-590022/. 
+           <br>4: Fauxels. “Photo of People Doing Handshakes.” Pexels, images.pexels.com/photos/3183197/pexels-photo-3183197.jpeg?cs=srgb&dl=pexels-fauxels-3183197.jpg&fm=jpg. 
+           <br>5: Cottonbro. “Person Holding Syringe and Vaccine Bottle.” Pexels, 17 Mar. 2020, www.pexels.com/photo/person-holding-syringe-and-vaccine-bottle-3952241/. 
+          <br>6: Shvets, Anna. “People on a Video Call.” Pexels, 23 Apr. 2020, www.pexels.com/photo/people-on-a-video-call-4226140/.  
+           <br>7: Vaitkevich, Nataliya. “Vaccines.” Pexels, https://images.pexels.com/photos/5863313/pexels-photo-5863313.jpeg?cs=srgb&dl=pexels-nataliya-vaitkevich-5863313.jpg&fm=jpg. 
+           <br>8: Shvets, Anna. “Petri Dish.” Pexels, images.pexels.com/photos/3786247/pexels-photo-3786247.jpeg?cs=srgb&dl=pexels-anna-shvets-3786247.jpg&fm=jpg. 
+          <br>9: Cottonbro. “People Wearing Masks.” Pexels, images.pexels.com/photos/3957986/pexels-photo-3957986.jpeg?cs=srgb&dl=pexels-cottonbro-3957986.jpg&fm=jpg. 
+           <br>10: “Person on Laptop.” Glitch, cdn.glitch.com/fe9ee492-4350-4c23-91a3-7de989bb85f5%2Fdownload.jpeg?v=1611353165775. 
+           
+
+          
+
+
+        </p>
+    
+       
+ </div>
+
+      
+     
+   
+    </div>
+    
+    --->
+
+   <!-- footer -->
+    <div class="bottomfooter">
+      
+      <div class="custom-shape-divider-top-1644035655">
+    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M1200 0L0 0 598.97 114.72 1200 0z" class="shape-fill"></path>
+    </svg>
+</div>
+      
+      
+   <footer class="footer">
+  	 <div class="container">
+  	 	<div class="row">
+  	 		<div class="footer-col">
+  	 			<h4>CC22</h4>
+  	 			<ul>
+  	 				<li><a href="index.html">home</a></li>
+  	 				<li><a href="about.html">about us</a></li>
+  	 				<li><a href="blog.html">news updates</a></li>
+  	 			</ul>
+  	 		</div>
+  	 		<div class="footer-col">
+  	 			<h4>Themes</h4>
+  	 			<ul>
+  	 				<li><a href="reforestation.html">Reforestation</a></li>
+  	 				<li><a href="pollution.html">Physical Pollution</a></li>
+  	 				<li><a href="transportation.html">Transportation</a></li>
+  	 				<li><a href="plant.html">Sustainable Agriculture</a></li>
+  	 			</ul>
+  	 		</div>
+  	 		<div class="footer-col">
+  	 			<h4>event details</h4>
+  	 			<ul>
+              <li><a href="schedule.html">Schedule</a></li>
+  	 				 <li><a href="contact.html">contact us</a></li>
+
+  	 			</ul>
+  	 		</div>
+  	 		<div class="footer-col">
+  	 			<h4>More</h4>
+  	 			<ul>
+            <li><a href="donation.html">Take Action</a></li>
+  	 				<li><a href="about.html">citations</a></li>
+            
+  	 			</ul>
+          
+  	 		</div>
+  	 	</div>
+  	 </div>
+  
+  </footer>
+      
+      
+      
+            
+    </div>
+    
+    
+     
+     
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
+    <script src="js/custom.js"></script>
+    <script>
+      $(window).on("load", function () {
+        $(".skill_value").each(function (index, el) {
+          thisVal = $(this).text();
+          $(this).parent(".skill_view").animate({ width: thisVal }, 2000);
+        });
+      });
+    </script>
+
+    
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("June 30, 2022 17:00:00").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+    
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+    
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+  // Output the result in an element with id="demo"
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+    
+  // If the count down is over, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
+
+    
+
+    <!--========== SCROLL REVEAL ==========-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!--========== MAIN JS ==========-->
+    <script src="main.js"></script>
+  </body>
+</html>

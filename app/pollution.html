@@ -1,0 +1,889 @@
+
+
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet" href="pollution.css">
+   
+
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://unpkg.com/botui@0.3.9/build/botui.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/botui@0.3.9/build/botui-theme-default.css" />
+    
+     <style>
+      
+    </style>
+    
+    
+  </head>
+  
+  
+
+ 
+
+
+  
+  <body>
+   
+<nav>
+      <div class="topnav" id="myTopnav">
+        <a href="index.html">Home</a>
+        <a href="schedule.html">Schedule</a>
+        <a href="about.html">About</a>
+        <div class="dropdown">
+          <button class="dropbtn">
+            Themes
+            <i class="fa fa-caret-down"></i>
+          </button>
+
+          <div class="dropdown-content">
+            <a href="reforestation.html">Reforestation</a>
+            <a style="color: #32b3a3" href="pollution.html">Physical Pollution</a>
+            <a href="transportation.html">Transportation</a>
+            <a href="plant.html" style="padding-bottom: 20px">Sustainable Agriculture</a>
+          </div>
+        </div>
+        <a href="blog.html">News Updates</a>
+                <a href="donation.html">Take Action</a>
+
+        <a href="contact.html">Contact</a>
+
+        <div class="loginstuff">
+
+          <button id="modal-btn" class="butt">Register Now &#8594;</button>
+          
+          
+          
+          
+
+          <div id="my-modal" class="modal">
+            
+            
+            
+            <div class="modal-content">
+              <div class="modal-header">
+                <span class="close"
+                  ><i class="fa fa-times-circle" aria-hidden="true"></i
+                ></span>
+              </div>
+
+              <div class="modal-body">
+                <h2>Register</h2>
+                
+                 <div id="thanks" style="display: none;">
+            <p style="font-size: 20px;">
+             Thanks for registering! See you soon!
+            </p>
+          </div>
+                
+                <div id="hide">
+                  
+              
+                <p>Please complete the form to register for our event.</p>
+                <div class="form" >
+                  <form>
+                    <input
+                      type="text"
+                      name="username"
+                      placeholder="Full Name"
+                    />
+                    <input type="text" name="username" placeholder="Email" />
+                    <input
+                      type="text"
+                      name="username"
+                      placeholder="Phone Number"
+                    />
+                    <button type='button' onclick="showDiv()">Submit</button>
+                  </form>
+                </div>
+                    </div>
+              </div>
+            </div>
+          </div>
+
+          <script>
+            
+            
+          function showDiv() {
+            document.getElementById('thanks').style.display = "block";
+            document.getElementById('hide').style.display = "none";
+          }
+         
+            
+            // Get DOM Elements
+            const modal = document.querySelector("#my-modal");
+            const modalBtn = document.querySelector("#modal-btn");
+            const closeBtn = document.querySelector(".close");
+
+            // Events
+            modalBtn.addEventListener("click", openModal);
+            closeBtn.addEventListener("click", closeModal);
+            window.addEventListener("click", outsideClick);
+
+            // Open
+            function openModal() {
+              modal.style.display = "block";
+            }
+
+            // Close
+            function closeModal() {
+              modal.style.display = "none";
+            }
+
+            // Close If Outside Click
+            function outsideClick(e) {
+              if (e.target == modal) {
+                modal.style.display = "none";
+              }
+            }
+          </script>
+        </div>
+
+        <a
+          href="javascript:void(0);"
+          style="font-size: 20px; padding-right: 20px"
+          class="icon"
+          onclick="myFunction()"
+          >&#9776;</a
+        >
+      </div>
+    </nav>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+   
+    
+    
+
+
+
+<!-- End Header -->
+  
+    
+    
+       <!-- ======= Hero Section ======= -->
+
+     
+     
+<!--========== HOME ==========-->
+      
+     <!--
+            <section  class="home" id="home">
+                <div class="home__container bd-container bd-grid">
+                    <div class="home__data">
+                        <!--<h1 class="home_title">Recycling Competition</h1>
+                            <h2 class="home__subtitle">  One's trash is another's treasure.
+
+</h2>
+                        <a href="pricing.html" class="button">View Prices</a>
+                    </div>
+-->
+    <!-- ======= Hero Section ======= -->
+  <!-- <section id="hero" class="d-flex align-items-center">
+    <!-- <div class="custom-shape-divider-bottom-1609721473">
+    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+         <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill"></path>
+         <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" class="shape-fill"></path>
+         <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
+     </svg>
+ </div> -->
+
+   <!--- <div id="maintitle" class="container text-center position-relative">
+      <h1>One's <span>trash</span> is another's <span>treasure</span>.</h1>
+    </div>
+  </section><!-- End Hero -->
+    
+  <!--     <div class="header">
+      <h1 class="fade">RECYCLING COMPETITION</h1>
+      <p class="fade">
+        Listen to our experts talk about and further your knowledge on climate change.
+      </p>
+
+ 
+    </div> -->
+    
+       
+    
+    <div class="header">
+      
+      <h1 class="fade">
+         Physical Pollution<br> 
+        
+       
+    </h1>
+   <a
+        class="downbtn"
+        type="button"
+        onclick="document.getElementById('scroll').scrollIntoView();"
+      > <i class="fa fa-angle-down"></i>
+      </a> 
+   
+        </div>
+    
+   
+     
+ <div class="textinfo" id="scroll">
+      <div class="row">
+        <div class="col-lg-6" id="lefttext" >
+          <h2>About the Theme</h2>
+          <p>
+           There's trash in the seas, trash in the forests, trash that has polluted the world we live in. 
+            75% of this trash is made of paper, plastic, and glass, which are all recyclable. Yet only 9% 
+            of these materials actually do get recycled. Numerous factors contribute to these low numbers, 
+            from how we manage our waste systems to the unavailability of recycling in many regions. This 
+            has to change, as pollution of the environment hurts not only the animals that live there, but 
+            also humanity.  Tune in for Day 2 of our conference to learn more about this topic!
+
+
+          </p>
+          
+        </div>
+
+        <div class="col-lg-6" id="rightimage1">
+          <img
+            src="https://cdn.glitch.global/a3e1e2df-01b9-4a3f-ba7e-87785f32b8ed/Untitled%2094.png?v=1644034819890"
+            alt=""
+            class="home__img"
+          />
+        </div>
+      </div>
+    </div>
+    
+   
+    
+    
+    
+    
+    
+    
+    
+       
+<div>
+        <div id="lefttext">
+          <h3>Events</h3>
+          
+      </div>
+    </div>
+    
+    
+    <div class="svgback">
+      
+   
+  <div class="custom-shape-divider-top-1644096856">
+    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M741,116.23C291,117.43,0,27.57,0,6V120H1200V6C1200,27.93,1186.4,119.83,741,116.23Z" class="shape-fill"></path>
+    </svg>
+</div>
+      
+       </div>
+    
+    
+
+      <div class="textinfo1">
+      <div class="row">
+        <div class="col-lg-6" id="lefttext3">
+          <h3>Meet Our Speakers</h3>
+          
+          
+        </div>
+
+        
+      </div>
+    </div>
+
+    
+
+<section id="testim" class="testim">
+<!--         <div class="testim-cover"> -->
+            <div class="wrap">
+
+              
+                <span id="right-arrow" ></span>
+                <span id="left-arrow"></span>
+                <ul id="testim-dots" class="dots">
+                    <li class="dot active"></li><!--
+                    --><li class="dot"></li>
+                    
+                </ul>
+                <div id="testim-content" class="cont">
+                    
+                    <div class="active">
+                      <div class="img">
+                        <img src="https://images.unsplash.com/photo-1557862921-37829c790f19?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2071&q=80">
+                      </div>
+                        <h2>Ioan M Magee (Morning)</h2>
+                      <p>
+                         Born in Bulgaria, Ioan has been passionate about the effects of climate change from a young age. 
+                        Ioan is the founder of Bulgaria For Change, a now nationally known n
+                        on-profit organization seeking to increase awareness of physicsal pollution in his country and the world. 
+                        Known for helping youths in lesser-known communities organize large-scale projects on trash pickup, 
+                        water cleanup, and more locally centered restoration, this organization has helped thousands around the world. 
+                        He has been a great voice in this fight for sustainability and advocating for green policies. 
+
+                      </p>
+                    </div>
+
+               
+
+                    <div>
+                      <div class="img">
+                        <img src="https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1480&q=80">
+                      </div>                       
+ <h2>Osbeorn I Howard (Evening) </h2>
+                      <p>
+Originally from Greater Manchester, England, Osbeorn comes from a long generation of people fighting against climate change, 
+                        more specifically land pollution and its effects on the ecosystem. Specializing in the field of ecology, 
+                        Howard has made significant contributions to this field. He has spoken at the UN Climate action conference, 
+                        and is the co-founder of Earth Comes First, a non-profit organization raising awareness of the effect 
+                        of pollution and climate change on humans and animals.                      </p>                    </div>
+
+                </div>
+
+            </div>
+<!--         </div> -->
+    </section>
+
+    
+<script src="https://use.fontawesome.com/1744f3f671.js"></script>
+    
+    
+    
+    
+    
+<!-- End Hero -->
+    
+    
+    
+    <!---- Text Info ---
+    <div class="textinfo">
+    <div class="row">
+      <div class="col-lg-6" id="rightimage">
+        <img src="https://cdn.glitch.com/fe9ee492-4350-4c23-91a3-7de989bb85f5%2FScreen%20Shot%202021-01-22%20at%209.57.56%20PM.png?v=1611374286095" alt="" class="home__img">
+      </div>
+      
+      <div class="col-lg-6" id="lefttext">
+         <h2>Title Info</h2>  
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+      </div>
+    </div> 
+    </div> -->
+    
+      
+    
+
+<!---- Accordion Info --
+    
+
+    <div class="videoinfo">
+      <div class="video-blurb">
+        <h2>Enjoy Our Cool Features Smth</h2>
+
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit
+        </p>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-7" id="videoitem">
+            <div class="accordion1">
+  <h1>FAQ</h1>
+
+<div class="accordion">
+  
+  
+  <div class="accordion-item">
+    <div class="accordion-head">
+      What Else Do We Offer?
+    </div>
+    <div class="accordion-body">
+      <div class="accordion-content">
+        This is information.
+      </div>
+    </div>
+  </div>
+  
+  <div class="accordion-item">
+    <div class="accordion-head">
+      What Else Do We Offer?
+    </div>
+    <div class="accordion-body">
+      <div class="accordion-content">
+        This is information.
+      </div>
+    </div>
+  </div>
+  
+<div class="accordion-item">
+    <div class="accordion-head">
+      What Else Do We Offer?
+    </div>
+    <div class="accordion-body">
+      <div class="accordion-content">
+        This is information.
+      </div>
+    </div>
+  </div>
+
+  
+</div>
+</div>
+ 
+
+      
+        </div>
+
+        <div class="col-lg-4" id="video-vid">
+          <iframe
+            width="500"
+            height="420"
+            src="https://www.youtube.com/embed/NSRh78Qw6HY"
+          >
+          </iframe>
+        </div>
+      </div>
+    </div> -->
+    
+    
+    
+    <!---
+    
+     <div class="why">
+          <h2>Why?</h2>
+          <p>
+            Plastic, Paper, Cardboard, and Glass, some of the most used materials in the world,  are recyclable. 
+            Although only around 9% of recycled materials get recycled. In addition, the municipal solid waste recycling rate in the US is as low as 35%. Considering how 75% of American waste is recyclable, 
+            it's even more astonishing. Many things contribute to these low numbers - from how we manage our waste systems to the unavailability of recycling. This has to change, as recycling helps
+            reduce greenhouse gas emissions by reducing energy consumption. 
+
+
+          </p>
+        </div>
+    
+    
+    <div class="pic">
+      
+      <img
+            src="https://cdn.glitch.global/a3e1e2df-01b9-4a3f-ba7e-87785f32b8ed/thumbnails%2Fprogramming-0eab1e9a.png?1643478540615"
+            alt=""
+     
+          />  
+    </div>-->
+    
+    <div class="how">
+          <h1>Recycling Competition</h1>
+          <p>
+          To raise awareness, we’ve come up with a fun way to recycle: by recycling materials into art!
+Gather all the recyclable materials you can find, and create whatever you can think of. You can use plastic bottles, 
+            cardboard, glass, even paper bags, as long as it’s renewable. Work in teams or even individually to complete
+            this project. To make this even more fun, post it on TikTok, and gather views. Just remember to add our hashtag 
+          when you post. May the most viewed TikTok, aka the best recycler, win! 
+
+
+
+
+          </p>
+      
+      <div class="row">
+        <div class="col-lg-6" id="rightimage">
+<img
+            src="https://cdn.glitch.com/fe9ee492-4350-4c23-91a3-7de989bb85f5%2FAutomatic%20Messaging%20Bell%20Graphic.svg?v=1617594945363"
+            alt=""
+          />        </div>
+        
+        <div class="col-lg-6" id="righttext">
+          <ul>
+            <li>The videos must be three minutes or less in length. Videos longer than this will not be considered. <br> No exceptions!</li>
+            <li>You have a 2-hour window on the second day of the conference to create your art piece and video. </li>
+            <li>Use the hashtag <span style="color: #7DB4A5;">#theresnoearthwithoutart</span> to tag your video. </li>
+            <li>Tune into our awards ceremony at 4:30 PM to see who the winner is! </li>
+          </ul>
+        </div>
+        </div>
+    </div>
+    
+    <div class="textinfo">
+      <div class="row">
+        <div class="col-lg-6" id="lefttext">
+          <h2>Upload Your Video!</h2>
+
+           <div class="form2">
+                  <form>
+                    <input
+                      type="text"
+                      name="username"
+                      placeholder="Add Your Account (Social Media Account)"
+                    />
+                    <input type="text" name="username" placeholder="Name or Team Name" />
+                    
+                    <button>Submit</button>
+                  </form>
+                </div>
+        </div>
+
+        <div class="col-lg-6" id="rightimage">
+          <img
+            src="https://cdn.glitch.com/fe9ee492-4350-4c23-91a3-7de989bb85f5%2FVideo%20Services%20Graphic%20Camera.svg?v=1617588775027"
+            alt=""
+            class="home__img1"
+          />
+        </div>
+      </div>
+    </div>
+    
+  <!-- 
+<div class="form2back" id="scroll">
+  
+     <div class="textinfo" id="scroll">
+      <div class="row">
+        <div class="col-lg-4" id="lefttext">
+          <h2>Why?</h2>
+          <p>
+            Plastic, Paper, Cardboard, and Glass, some of the most used materials in the world,  are recyclable. 
+            Although only around 9% of recycled materials get recycled. In addition, the municipal solid waste recycling rate in the US is as low as 35%. Considering how 75% of American waste is recyclable, 
+            it's even more astonishing. Many things contribute to these low numbers - from how we manage our waste systems to the unavailability of recycling. This has to change, as recycling helps
+            reduce greenhouse gas emissions by reducing energy consumption. 
+
+
+          </p>
+        </div>
+        
+        <div class="col-lg-4" id="rightimage">
+          <img
+            src="https://cdn.glitch.global/a3e1e2df-01b9-4a3f-ba7e-87785f32b8ed/Untitled%2085.png?v=1642909216600"
+            alt=""
+            class="home__img"
+          />
+        </div>
+        
+        <div class="col-lg-4" id="lefttext">
+          <h2>How?</h2>
+          <p>
+           To raise awareness, we’ve come up with a fun way to recycle. 
+            By recycling materials into art! Gather all the recyclable materials you can find, 
+            and create whatever your imagination provides you. 
+            You can use plastic bottles, cardboard, glass, even paper bags. 
+            Work in teams, individually, in a large-scale project, or even something that takes you 5 minutes to complete, 
+            as long as you have fun! To make this even more fun, post it on TikTok, and gather views. Just remember to add our 
+            hashtag and post within the time frame of the event! May the most viewed TikTok, aka, best recycler win! 
+
+
+          </p>
+        </div>
+      </div>
+    </div>
+  
+</div> -->
+
+    
+    
+    
+     <div class="textinfo" style="padding-bottom: 20px !important; margin-top:-250px;">
+      <div class="row">
+        <div class="col-md-6 col-md-push-6" id="lefttext">
+          <h2>Trash Cleanup</h2>
+          <p>
+           We’ve also made helping combat pollution a whole lot easier and more fun! Organize a trash pickup or clean-up day 
+            in your local area, with friends, family, or a group of people. Send us a plan of what you would like to accomplish 
+            and we will send you everything you need and get you in contact with a member of our organization to help you out. 
+            At the end of the day, all we ask of you is to send us info on how much trash you’ve collected and a picture for our 
+            records and shoutouts! Unlike most events, this one will last for a while, so contact us when you want and help make 
+            a difference for you and the people around you!
+          </p>
+        </div>
+
+        <div class="col-md-6 col-md-pull-6" id="rightimage">
+        <img
+            src="https://cdn.glitch.global/a3e1e2df-01b9-4a3f-ba7e-87785f32b8ed/Untitled%2085.png?v=1642909216600"
+            alt=""
+            class="home__img"
+          />
+                </div>
+        </div>
+      </div>
+ 
+
+    
+    
+   
+    
+    <!---Footer---->
+  
+  <!-- footer -->
+    <div class="bottomfooter">
+      
+      <div class="custom-shape-divider-top-1644035655">
+    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M1200 0L0 0 598.97 114.72 1200 0z" class="shape-fill"></path>
+    </svg>
+</div>
+      
+      
+   <footer class="footer">
+  	 <div class="container">
+  	 	<div class="row">
+  	 		<div class="footer-col">
+  	 			<h4>CC22 Summit</h4>
+  	 			<ul>
+  	 				<li><a href="index.html">home</a></li>
+  	 				<li><a href="about.html">about us</a></li>
+  	 				<li><a href="blog.html">news updates</a></li>
+  	 			</ul>
+  	 		</div>
+  	 		<div class="footer-col">
+  	 			<h4>Themes</h4>
+  	 			<ul>
+  	 				<li><a href="reforestation.html">Reforestation</a></li>
+  	 				<li><a href="pollution.html">Physical Pollution</a></li>
+  	 				<li><a href="transportation.html">Transportation</a></li>
+  	 				<li><a href="plant.html">Sustainable Agriculture</a></li>
+  	 			</ul>
+  	 		</div>
+  	 		<div class="footer-col">
+  	 			<h4>event details</h4>
+  	 			<ul>
+              <li><a href="schedule.html">Schedule</a></li>
+  	 				 <li><a href="contact.html">contact us</a></li>
+
+  	 			</ul>
+  	 		</div>
+  	 		<div class="footer-col">
+  	 			<h4>More</h4>
+  	 			<ul>
+            <li><a href="donation.html">Take Action</a></li>
+  	 				<li><a href="about.html">citations</a></li>
+            
+  	 			</ul>
+          
+  	 		</div>
+  	 	</div>
+  	 </div>
+  
+  </footer>
+      
+      
+      
+            
+    </div>
+    
+    
+    
+    
+
+<script>
+      const accordionItemHeaders = document.querySelectorAll(".accordion-head");
+  
+      accordionItemHeaders.forEach(accordionItemHeader => {
+      accordionItemHeader.addEventListener("click", event => {
+    
+
+    accordionItemHeader.classList.toggle("active");
+    const accordionItemBody = accordionItemHeader.nextElementSibling;
+    if(accordionItemHeader.classList.contains("active")) {
+      accordionItemBody.style.maxHeight = accordionItemBody.scrollHeight + "px";
+    }
+    else {
+      accordionItemBody.style.maxHeight = 0;
+    }
+    
+  });
+});
+  
+  
+  
+  
+  
+  const left = document.querySelector('.left');
+const right = document.querySelector('.right');
+
+const slider = document.querySelector('.slider');
+
+const indicatorParent = document.querySelector('.control ul'); 
+const indicators = document.querySelectorAll('.control li');
+index = 0;
+
+indicators.forEach((indicator, i) => {
+  indicator.addEventListener('click', () => {
+    document.querySelector('.control .selected').classList.remove('selected');
+    indicator.classList.add('selected');
+    slider.style.transform = 'translateX(' + (i) * -25 + '%)';  
+    index = i;
+    
+  });
+});
+
+left.addEventListener('click', function() {
+  index = (index > 0) ? index -1 : 0;
+  document.querySelector('.control .selected').classList.remove('selected');
+  indicatorParent.children[index].classList.add('selected');
+  slider.style.transform = 'translateX(' + (index) * -25 + '%)';
+});
+
+right.addEventListener('click', function() {
+  index = (index < 4 - 1) ? index+1 : 3;
+  document.querySelector('.control .selected').classList.remove('selected');
+  indicatorParent.children[index].classList.add('selected');
+  slider.style.transform = 'translateX(' + (index) * -25 + '%)';
+});
+
+  
+  ch
+  
+</script>
+    
+           
+
+        <!--========== SCROLL REVEAL ==========-->
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+        <!--========== MAIN JS ==========-->
+        <script src="main.js"></script>
+    
+    <!--========== MAIN JS ==========-->
+        <script src="message.js"></script>
+    
+    
+    
+    
+
+  </body>
+
+</html>
+
+
+
+
+
+
+
+ <script>
+      // vars
+'use strict'
+var	testim = document.getElementById("testim"),
+		testimDots = Array.prototype.slice.call(document.getElementById("testim-dots").children),
+    testimContent = Array.prototype.slice.call(document.getElementById("testim-content").children),
+    testimLeftArrow = document.getElementById("left-arrow"),
+    testimRightArrow = document.getElementById("right-arrow"),
+    currentSlide = 0,
+    currentActive = 0,
+		touchStartPos,
+		touchEndPos,
+		touchPosDiff,
+		ignoreTouch = 30;
+;
+
+window.onload = function() {
+
+    // Testim Script
+    function playSlide(slide) {
+        for (var k = 0; k < testimDots.length; k++) {
+            testimContent[k].classList.remove("active");
+            testimContent[k].classList.remove("inactive");
+            testimDots[k].classList.remove("active");
+        }
+
+        if (slide < 0) {
+            slide = currentSlide = testimContent.length-1;
+        }
+
+        if (slide > testimContent.length - 1) {
+            slide = currentSlide = 0;
+        }
+
+        if (currentActive != currentSlide) {
+            testimContent[currentActive].classList.add("inactive");            
+        }
+        testimContent[slide].classList.add("active");
+        testimDots[slide].classList.add("active");
+
+        currentActive = currentSlide;
+    
+       
+    }
+
+    testimLeftArrow.addEventListener("click", function() {
+        playSlide(currentSlide -= 1);
+    })
+
+    testimRightArrow.addEventListener("click", function() {
+        playSlide(currentSlide += 1);
+    })    
+
+    for (var l = 0; l < testimDots.length; l++) {
+        testimDots[l].addEventListener("click", function() {
+            playSlide(currentSlide = testimDots.indexOf(this));
+        })
+    }
+
+    playSlide(currentSlide);
+
+    // keyboard shortcuts
+    document.addEventListener("keyup", function(e) {
+        switch (e.keyCode) {
+            case 37:
+                testimLeftArrow.click();
+                break;
+                
+            case 39:
+                testimRightArrow.click();
+                break;
+
+            case 39:
+                testimRightArrow.click();
+                break;
+
+            default:
+                break;
+        }
+    })
+		
+		testim.addEventListener("touchstart", function(e) {
+				touchStartPos = e.changedTouches[0].clientX;
+		})
+	
+		testim.addEventListener("touchend", function(e) {
+				touchEndPos = e.changedTouches[0].clientX;
+			
+				touchPosDiff = touchStartPos - touchEndPos;
+			
+				console.log(touchPosDiff);
+				console.log(touchStartPos);	
+				console.log(touchEndPos);	
+
+			
+				if (touchPosDiff > 0 + ignoreTouch) {
+						testimLeftArrow.click();
+				} else if (touchPosDiff < 0 - ignoreTouch) {
+						testimRightArrow.click();
+				} else {
+					return;
+				}
+			
+		})
+}
+  </script>
